@@ -1,0 +1,368 @@
+Monowar Hossain  00:00
+Money and things like that to maintenance. So what I was told that this SIT environment was not created. So we are still in back here, meaning our dev Gainwell dev and SIT should be connected to the Acadia dev environment, which is non-PHI, however, we should be having UAT connected to their UAT, which is a new environment, and then obviously the prod is going to be the prod. So here is the change mainly. So UAT should be separated from the prod, and that should be connected to our UAT. So we wanted to get a context around it. Also, we are wanted to understand if this is the case, and you thought about it. Then, once we get that confirmation, and we know this is what exactly it is, then we have to talk about the other constraint related to the environment and data sets and other things. So, with I know we discussed about this briefly when initially I got this last week. Yes.
+
+Speaker 1  01:15
+Yes, but like so, this is is not going to work. I mean, since it has PHI, we can't connect depth to that.
+
+Monowar Hossain  01:26
+Seat has the PHI.
+
+Speaker 1  01:28
+Yeah, Sit. Sit has PHI, right?
+
+Monowar Hossain  01:32
+To my understanding, Cit doesn't have the PHI. That's not the work we are planning, right? It is only the UAT environment has the PHI.
+
+Speaker 2  01:42
+Yeah, Monowar, can you tell me who who explained this diagram to you and told you what the scenarios were?
+
+Monowar Hossain  01:50
+So again, this was initially created by Nilay and Virith, and this was the email came from Greg that we should be aligned with the involvement and
+
+Speaker 2  02:08
+Greg Seablo, not Craig.
+
+Monowar Hossain  02:10
+Greg Cialdo. Okay. Yeah.
+
+Speaker 2  02:12
+Okay. So yes, I'm going to just tell you how things work currently. I don't know specifics for Missouri and Illinois, but in all of our states-Texas, West Virginia, Ohio-Cit 100% has PHI. The way the current solutions have always worked is on a certain date, you copy data down from production to UAT to Cit, and then that way you have environments that are very closely aligned to production, so that's where we've always had PHI and SIT. Now I'm not. I don't know the specifics for Missouri and Illinois, so we need to find out for sure this extra environment SIT. What's the expectation? Because since it's multi-tenant, Ohio Sit has PHI, so you have to make sure that if a guy is going to Ohio Sit, it's using probably the one above it. See the UAT with PHI.
+
+Monowar Hossain  03:21
+Okay.
+
+Speaker 1  03:21
+Yeah, I think that would make more sense. That would make more sense, and that would be much more safe. We use the UAT like multi-purpose for sit as well, but using the dev that that hardly.
+
+Monowar Hossain  03:39
+So that is one part of it, right? That Sit has PHI. However, are we confirm at this moment that our UAT involvement is going to be connected to their UAT environment, or we do not know about that?
+
+Speaker 2  03:58
+So, which one are you speaking toward, Ohio or the future state, Missouri and Illinois? No,
+
+Monowar Hossain  04:03
+I'm not talking. I'm talking about the future state, meaning Missouri, Illinois, and so on. The other states are going to be coming in.
+
+Speaker 1  04:14
+Well, currently it's nobody's going to go in. Yeah. Okay. So yeah, so currently it's already connected. Like the the Gainwell UAT, which is the new UAT environment, it's already connected to the UAT R 23 for a while because they are doing some testing there, right? But in future, I mean, if we want to connect that environment, we can do that. Like it's on us. It's not something. It's just based on like what you guys want to test, and it's a 1015 minutes request.
+
+Monowar Hossain  04:53
+So, with that is what exactly we need to come up with that conclusion, right? So, as environment, it comes with a lot of things. You are well aware of it. So, first of all, we need to understand if that is the plan, whether that plan has been accepted by Egeria, because so far what I understood, they are not aware of this plan, and if that is so, then like I mentioned, right? The other data constraint, like you're saying, SIT has this PHI. Then obviously UIT has the PHI. We know that for sure. So we need that confirmation. And the reason of this call, I think Carl has mentioned that we need to get together so that we have our understanding, and we come up with a conclusion to include the larger team. That was my understanding. There was an email, and I don't know if you're on that email. I think VD were on.
+
+Speaker 1  05:58
+I'm
+
+Monowar Hossain  05:59
+not sure about many.
+
+Speaker 1  06:01
+So who do we need confirmation? need confirmation from? I'm confused.
+
+Monowar Hossain  06:08
+So first of all, first of all, what I understood. This is what Colonel has mentioned, right? As you see, Mehdi Vit and I went over the question briefly. They're going to get back to you with a specific answer. It may require an additional meeting, medevid and Monowar So, what you know? These are the questions set right, Max. Send them out, right? So, first question is that is that the plan? What I'm just showing right now. So are you saying this is not going to be the future state? The UAT is not there.
+
+Speaker 1  06:54
+UAT is there, but UAT is
+
+Monowar Hossain  06:57
+not connecting to our UAT, right? What you are saying, the UAT, UAT. This is next.
+
+Speaker 1  07:04
+So currently, it's being used by the Ohio account. Does that make sense? I mean, but like later when we have misguided coming up, it will be available.
+
+Monowar Hossain  07:22
+So how many environment it will be from the Agedia side?
+
+Speaker 1  07:26
+Three environments.
+
+Monowar Hossain  07:30
+Three environments.
+
+Speaker 1  07:31
+Three environments.
+
+Monowar Hossain  07:32
+It will be prod, UAT, and Dev from Agiria.
+
+Speaker 1  07:35
+Yes. Yes. Okay. Multi-purposely use them for you know.
+
+Monowar Hossain  07:41
+So the UAT environment
+
+Speaker 1  07:46
+is new from ADSI. Yeah, that one. I think the testing team is already aware of this. They were doing some testing in E2E earlier because this was earlier connected to E2E R31, right? So I know they were doing testing, and I like they asked me for some of the members from there. But yeah,
+
+Monowar Hossain  08:08
+no testing team is aware of these two teams. Even even they confirmed about that with that they have just only two. Yes.
+
+Speaker 1  08:15
+No.
+
+Speaker 2  08:16
+They're wrong. They're wrong. So that's why I keep asking you who told you this. We have three environments. We have PA Hub Production, we have PA Hub UAT that goes to PHI, and then we have the original PA Hub UAT, which can only ever connect to either Deb or Stage Three, and it's currently appointed to Ohio Dev. The The
+
+Speaker 1  08:40
+first, the first site that you have that pre-production. Before production, we had like why production lease. We had that architecture, but after production, there were there were conversations for God. You to spin up another environment, which was the game evaluation, and it's been available for quite some time.
+
+Monowar Hossain  09:02
+Right. Even in Craig's email, it has mentioned that two involvement. C R E G. Wait, what's the correct?
+
+Speaker 2  09:15
+So I understand, Monowar, what new people to Agadia are saying, but Bid and I have been working on it from the start, and it is a fact that we have three PA Hub user interfaces, and we broke it down for you. So what you're claiming is future state, we actually have currently.
+
+Monowar Hossain  09:37
+Right.
+
+Speaker 1  09:46
+Here is the one I team is already working on this one.
+
+Monowar Hossain  09:59
+So he mentioned to be clear,
+
+Speaker 1  10:09
+and I remember this conversation, Monowar. Like earlier, when we were having, and you showed me, I told you like, because we had four in that list, right? Like, I I don't know about four, but we do have three. We do have three available. I mean, we just agreed on removing the fourth one, but
+
+Monowar Hossain  10:38
+two test environment. See, so everyone is aligned with this understanding. Even Max, keep me honest. In one of the calls from Agadia, they had they wanted to get a confirmation from me and the team that we are aligned. They have just two involvement. I said I need to comment on that later on because we need to discuss that internally. Now you're telling me there are three involvements.
+
+Speaker 2  11:09
+There, there. Wait a minute. Why? I three total. The first one we talked to you about is production. That's not a test environment. That's production.
+
+Monowar Hossain  11:21
+Okay, they had two test environments.
+
+Speaker 1  11:24
+Yeah, two test. We have two test environments. Yeah, I mean, they are correct from their sense. Production is not tested.
+
+Monowar Hossain  11:39
+So these two are tests involved. That's what they're referring to. So and so this diagram is okay. Then in that case, it is connecting to the dev, non PHI.
+
+Speaker 2  11:49
+You need to get rid of that sit arrow going to dev because sit has you PHI. I don't right now nobody's even using sit, so your diagram is not correct until you get rid of that arrow.
+
+Monowar Hossain  12:03
+So that's not my diagram. First of all, I was just given this one, ready. I'm just displaying on behalf of other people so that we get the information. And that's what I was
+
+Speaker 2  12:14
+asking.
+
+Monowar Hossain  12:14
+Yeah. Who
+
+Speaker 2  12:15
+shared this with you? So you said a vice president gave you this bond, right?
+
+Monowar Hossain  12:20
+No, not vice president. It came from the Vidit. Vidit, what is Vince last
+
+Speaker 3  12:27
+night?
+
+Monowar Hossain  12:27
+Right.
+
+Speaker 2  12:28
+Vidit a test night.
+
+Monowar Hossain  12:30
+No, Vidit is a senior director of testing tower. Vidit Tagi, and Nile. You know Nilay already? Nilay Sing have created this guy.
+
+Speaker 2  12:45
+We do not point sit, which has PHI, to a God is non UA non PHI UAT environment.
+
+Monowar Hossain  12:58
+Okay, so this should be then what we're talking about. Then we have to separate this SIT to PHI, right? And Dave is non-PHI. Okay, let me see if I can do this. One second.
+
+Speaker 2  13:15
+Yeah. Since you were modifying these, I thought these were yours. So my misunderstanding about this, but yeah, so Vidit is incorrect that we would have ever pointed Cit to a Gavia Dev because we would have been exposing PHI.
+
+Speaker 3  13:31
+Yeah, we do have the so said the the new environment because I remember we did complete that in Ohio, where it's like some funky name. Well, that's that's
+
+Speaker 2  13:40
+why that's. I would say that's his yellow box right above editing, right? That's new UAT that has the permissions to look at PHI. I
+
+Speaker 3  13:50
+believe so. Yes.
+
+Monowar Hossain  13:52
+So, maybe if sorry, Max, please.
+
+Speaker 3  13:57
+Well, just just quickly, just to provide even more context, I know it is a little bit confusing, and coming into a meeting not really knowing where where things are coming from. But originally, this was made almost like I venture to say close to a year ago between the dent and delay, and so that's ultimately we're trying to just get to a point where we're all singing the same tune about the environments and how they work, and I think I think we're making good progress here. But I just wanted to add that there because I know it's kind of confusing coming into this and might feel a little bit blindsided.
+
+Monowar Hossain  14:31
+Right.
+
+Speaker 2  14:31
+Okay. Then the question is though, Monowar, why are you making a for Agadia interface?
+
+Monowar Hossain  14:40
+No, I'm I'm just trying to see how we should be doing it because I know it's gonna be just these two. So one was saying the SIT is gonna be in the PHI. Dave is not is gonna be non PHI. So that is connected to one. I'm trying to understand how that works, or that is separate.
+
+Speaker 2  15:01
+You're asking if Deb and Sit are pointing to the same thing.
+
+Monowar Hossain  15:05
+Same thing or different in Brahma? Yes,
+
+Speaker 2  15:08
+it have to be different. But right now, right, Vid, nothing's pointing to any Sit environment.
+
+Speaker 1  15:14
+No, Sit. The Sith AG is just sitting there. It's not pointing to anything.
+
+Monowar Hossain  15:19
+So it's not there.
+
+Speaker 1  15:21
+The plan was to maybe use the UAT for sit also, but that just depends on because I'm not. I don't know what kind of testing we we are going to do in sit because we didn't do in you know for Ohio, so even if that is needed or not, I'm not sure about that. But I'm, but I mean, like additional environment testing would be good. So, but yeah, we can point the UAT to sit as well. I think I don't see any issues in that.
+
+Monowar Hossain  16:01
+So, maybe one by one we can go. So the dev, this is correct. Dev is pointing to their non-PHI dev environment. Okay, sit as we have mentioned. There is nothing is connecting to the gate at this moment. It's just sitting there, so we can leave that aside. UAT is still the same. It's pointing to the UAT environment PHI, and the prod is PROT, right? So then we have two test environment. So the plan is then we're going to be testing in Dev, which is our going to be SIT. Is that the plan?
+
+Speaker 2  16:40
+Why did you just say Dev is your SIT?
+
+Monowar Hossain  16:44
+I'm just asking. Why did
+
+Speaker 2  16:44
+you say instead of SIT?
+
+Monowar Hossain  16:47
+Instead of SIT, because SIT is not connecting to the GADIA, right? So where are we going to be doing our?
+
+Speaker 2  16:56
+I wanted to ask. Well, one,
+
+Speaker 1  16:58
+that kind of depends on how you guys are planning to test. You know, if you really want sit testing to be in sit, yes, you can have it. No,
+
+Speaker 2  17:07
+no, good, no. But
+
+Speaker 1  17:09
+the same one, no,
+
+Speaker 2  17:10
+no, it had to be dev because of the cover my meds and sure scripts connections, right? So a lot of our testing is limited to dev. So that
+
+Monowar Hossain  17:27
+was the higher limitation, right? We didn't have that cover by med and sure scripts connectivity during the stage. There's going to be
+
+Speaker 2  17:35
+a limitation to all of our states because the vendor cover my meds and sure scripts absolutely don't allow their lower environments to point to true Medicaid data.
+
+Monowar Hossain  17:50
+Got that. So how we're gonna be doing then in here if you don't have an SIT? So we need that. We've
+
+Speaker 2  17:58
+been skipping SIT the whole time. So we go from dev, and then it gets up into Ohio UAT, and then it gets promoted to production.
+
+Monowar Hossain  18:10
+I get that, but I thought maybe you were referring to the same. This restriction will apply over here as well. CMS sure escapes won't have that connectivity. So if we are doing in the dev environment, and we do not have SIT environment, so with that limitation, we have to do our SIT testing. That's what you are referring to, Madi.
+
+Speaker 2  18:35
+I'm just saying your testing can only be in dev to dev, Gamewell Dev to Agatia Dev,
+
+Monowar Hossain  18:46
+but that's that's that that's our SIT environment. That's what. Then
+
+Speaker 2  18:52
+you're saying then you're saying that you're treating Dev as SIT.
+
+Monowar Hossain  18:57
+No, all I'm saying I'm asking. So if we want to do the SIT system integration testing, we want all the connectivity to be there before we move it to UAT. Even the UAT, the plan is is not gonna be us testing it. Is gonna be Missouri State doesn't require us for the testing team to test. We're gonna be supporting them. Is gonna be the Missouri State. They are gonna be coming up with the test scenarios and test cases. Most likely, they are gonna utilize a subset of the test cases we are gonna be providing to them, but it's not gonna be us testing it in the system itself. It's gonna be their dedicated team. To my understanding, they are gonna be doing that. So ours. Yes.
+
+Speaker 2  19:39
+So let's let's let's let's hear this out then. Initial testing is going to be dev to dev. That's the only way you're going to do end to end with the vendor, right? Then, if you guys want to do some other testing, like the system integration testing that excludes the vendors, then you could take the Agadia UAT and while you're testing, let it point to that sit down there. Then, when you pass your test, then you point it so that it's UAT. But there's a lot of problems in going that route because there's continual development testing going on. So, without getting a fourth Agadia environment, which would be your third test environment. You will never be able to do true sit testing without either impacting the Missouri UAT testing team and as well as your own. Because the minute if we only work with this one yellow environment and keep flopping it between sit and UAT, sit and UNT, then you have whole teams waiting because they cannot test because the environment is not going to the proper place. Okay,
+
+Speaker 1  20:48
+I mean long term we cannot do that. Like that's only possible when you know the code has not made it to UAT and it's only available in set. You know for that time being. Like in future we can't really you know.
+
+Monowar Hossain  21:07
+So that's the huge constraint. Then we cannot complete our SID testing. If I were to say that in a full-fledged having all of this connectivity again on the cover by meds or shorts, if we wanted to do in the lower environment because we do not have SIT connectivity at this moment. Only way to resolve, like Madhu said, if we would have another SIT environment from the AGDA side, which is connecting to our SIT, that will be the only resolution, correct?
+
+Speaker 1  21:45
+But still, I mean, like CMM and source script won't be connected again.
+
+Monowar Hossain  21:52
+CMM and be
+
+Speaker 2  21:53
+able to do system integration testing with the vendor because they will only ever point to Dev.
+
+Monowar Hossain  22:00
+SIT even, including SIT, they won't be connecting to the SIT.
+
+Speaker 2  22:05
+No, SIT has PHI, so please keep in mind anything that has PHI, the vendor SureScripts and CoverMyMed will never point to a PHI environment which is SIP.
+
+Monowar Hossain  22:26
+Then I'm confused now because over here when we had the earlier stage, and please bear with me. I thought we have the full connectivity. That is the PHI. already
+
+Speaker 2  22:45
+thought that because if it was true testing, we never let CoverMyMeds insurer scripts connect to an environment that contained Ohio Medicaid member information. In the very beginning, before production went live. We pointed production to Ohio UAT for initial testing. Once we went live, Ohio production and Agadia production pointed to one another and never went backwards. Then the Ohio UAT knew one that they got, which they're allowed to look at PHI. That one we allowed to point to Ohio UAT, and then Ohio Dev was always the one that they tested SureScripts and CoverMyMeds with was always Ohio Dev and Agadia original UAT, which was no PHI.
+
+Monowar Hossain  23:40
+Okay.
+
+Speaker 3  23:44
+Would we have to do something like that for, say, like each new client, like briefly point the production environments at UAT for sit testing? I have no doubt. I'm just asking.
+
+Speaker 2  23:58
+Yeah, we only did that because we were standing up something new, and Jonathan and I wanted to be able to like test the production endpoints and everything, and that was the only way we were able to get around it as close to possible as production by pointing it to UAT. Okay.
+
+Monowar Hossain  24:16
+So I don't know. It looks like the lot, Max, to be honest, and I don't know. I should be calling that out. And I have a hard stop actually to join a call. I missed twice before. And in two minutes, Max, I was just wondering: is that something? What would be the next step? Is that something we need a bigger discussion, or we should send out a meeting note so that everyone on the same page. How we're gonna do that?
+
+Speaker 3  24:46
+Yeah, so I can send out some meeting notes for this, but it seems like decisions need to be made way above us on how this is like exactly. That's what I found that
+
+Monowar Hossain  24:59
+too.
+
+Speaker 3  25:01
+So I, I believe it. I don't know exactly all who would need to be escalated to, like whether it be say like Nelly and Greg and all those folks, or who. But I mean that would be the next step because we got the answers from the team here. Thank you, Medhi and Vid. Yeah, and so with that, all we can do is recommunicate our understanding of the environments upwards and see what the next steps are because we're not the decision makers. Exactly.
+
+Monowar Hossain  25:35
+That's what I was keep repeating, Medi to Medi and Vid. That I'm just asking. I do not know, and you are expired on it, and you know how that's connected too. I'm just asking this information so that we can update our test strategy document, and we can plan accordingly, right? So I agree with you, Max. I think the next step should be also including with a larger team, including maybe Nilay and Vidit, as they were in that impression indifferently, so I think it would be better to clarify. Okay, this is the state we have, and this is the constraint we have. Instead of sending out the email, I think many people will be confused if we are giving all of these details in emails,
+
+Speaker 3  26:24
+yeah. So keep it to that smaller group and then go go from there. That sounds good.
+
+Monowar Hossain  26:30
+Yes, that sounds good to me.
+
+Speaker 3  26:32
+Okay. And if we can input
+
+Monowar Hossain  26:33
+also Tuan, maybe I had a discussion with Tuan also, but we couldn't conclude that, so I think the 200 would be also helpful.
+
+Speaker 3  26:45
+Okay. Yeah, I'll send. I can work on the draft now. I have a little bit of time before my next meeting. I'll send it over to you before sending anything out. So we're on the same page.
+
+Monowar Hossain  26:58
+Yes. Thank you very much.
+
+Speaker 3  27:02
+I know we're in over, and I know you need to start another meeting. So, again, thank you guys so much for your inputs. I really appreciate it.
+
+Monowar Hossain  27:10
+Yeah, Samia, thank you very much, Med David.
+
+Speaker 1  27:13
+Thank you.
+
+Monowar Hossain  27:14
+Bye
+
+Unknown Speaker  27:14
+bye.
+
+
+Transcribed by https://otter.ai
