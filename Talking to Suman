@@ -1,0 +1,680 @@
+Speaker 1  00:00
+What Smithali was saying that what you were showing on the screen it was not she asked for but she so you have you were talking about the interface batch process right inbound and outbound correct
+
+Monowar Hossain  00:17
+not exactly the batch processes these are geodescrite
+
+Speaker 1  00:22
+and the MMS CMM. Those are the vendors. Those
+
+Monowar Hossain  00:26
+are the vendors, but those are not the batch process I'm referring to. I was referring to we have number of interfaces like AG services. Then we have the customer service API. We had the six different APIs. That's what I was referring to.
+
+Speaker 1  00:47
+So, how your transaction? How you're sending the transaction to those? Is a real-time API or is through a file process?
+
+Monowar Hossain  00:54
+These are real-time APIs. So, not all of them we need to do in from the API perspective or Swagger perspective, there are few we do. However, these interfaces, once we are requesting the data, we get the response through the interfaces we have as the application talks to each other.
+
+Speaker 1  01:16
+Okay. So now, give me a a visual diagram that let's say that how you are connecting with share script and CMM. Do you have that visibility or any drawing or anything that would represent? Because that's what Smithali was saying that if we listed out in this fashion that okay these are the interface it is connecting with and respective vendor share script okay what type of data we are using PHI non PHI something you can put in a table format and put a diagram next to it that okay these other thing this is calling real time API do you have anything which will be which should be the part of your presentation towards the environment team and also I wanted to call out the risk because if sit and dev use the Agadia dev, what would be the risk? Because here in Gainwell, they I'm not sure if you are aware of this thing. Every DDI they are dependent on the conversion team to give them the data. So that data. So let's say that the conversion team is dropping the mock phase one data, right? It could be members' data and provider data. No claims. Similar data has to be ingested in the dev environment at the same time. Otherwise, Agadia dev will not be able to communicate with both systems. You got the picture, right? You understand what I'm saying?
+
+Monowar Hossain  03:05
+Correct. Do you mind if I share my screen? I have something similar, but I don't know if I will be able to describe this in one day. So there are number of diagrams, but one of the diagram. Okay,
+
+Speaker 1  03:24
+you can share your screen.
+
+Speaker 2  03:26
+Sure.
+
+Monowar Hossain  03:32
+Not this one. I'm looking for. Looking for this one. So we have some architectural design document and somewhat similar to API authentication. These let's say PA data integration API performance data monitoring. I'm just trying to see what you're referring to.
+
+Speaker 1  04:03
+Are you sharing your screen? You're sharing your screen, but I'm seeing the picture there only.
+
+Monowar Hossain  04:08
+Oh, I'm sorry. I thought I'm sharing the window. Okay, my bad. How about now?
+
+Speaker 1  04:24
+Yes, in there, but I haven't seen anything yet.
+
+Monowar Hossain  04:27
+Do you see? Do you see this P PPT now?
+
+Speaker 1  04:42
+We. no, I don't see anything.
+
+Monowar Hossain  04:46
+What is happening? One second, please. One second. Let me connect to my other screen. Something is happening with this screen.
+
+Speaker 1  05:32
+Nothing came up yet.
+
+Monowar Hossain  05:35
+Yeah, sorry. I was connecting to my other screen. Should come up right now. Ah, but now you can see it, right?
+
+Speaker 1  05:56
+Yes.
+
+Monowar Hossain  05:57
+Okay. So this is what I was referring to. You can see this architectural design document, right?
+
+Speaker 1  06:07
+Yeah, I have seen before.
+
+Monowar Hossain  06:08
+Okay, so what I was referring to, it has those.
+
+Speaker 1  06:15
+Where is the short script and CMM in this one?
+
+Monowar Hossain  06:31
+It doesn't have
+
+Speaker 1  06:34
+that overall picture. This is this is this is the network networking diagram. That probably will not help you. That will confuse everyone. All this, I I gave you one combined everything for your testing diagram.
+
+Monowar Hossain  06:50
+Correct.
+
+Speaker 1  06:50
+You remember I gave you a power. I gave you a diagram.
+
+Monowar Hossain  06:54
+Right. However, you mentioned not to use that for any. That's for just understanding, right? You want me to use that? Yeah, that's for
+
+Speaker 1  07:03
+understanding. But right now, looks like if you don't have anything, we need to find out what the CMM, how this Agadia is interacting with CMM, and is she or so. That's where you will be. That's what how many vendors you have? Two vendors, right? Besides Agadia.
+
+Monowar Hossain  07:24
+Correct.
+
+Speaker 1  07:26
+So these two sources now. How many interface you have for sure source? How many interface you have for CMM? Out of those, how many of them are inbound or outbound? Now, as you say that you send a response. You ask. You putting in the API. You getting a response. Now, are you getting a GET method? Are you using a POST method? Those things, if we can put into an architecture format, design format, that probably will give us a landing zone. Then the next question will come: What type of data we are using? Now you had a concern that PHI or something vendor testing. We just want to make sure that you we articulate them correctly. That what is our dependency on the vendor? So what now in high level? What is your dependency on shear script?
+
+Monowar Hossain  08:31
+What do you want from the dependency on once we start our testing, they should be ready with their changes as they are making these changes from their side. Let's say some of these fails when they are updating as a form of JSON that is getting updated, right? So we are making our changes. They are making their changes. So those should be done before we start, right? So that we are ready for it.
+
+Speaker 1  09:03
+That's your entry criteria,
+
+Monowar Hossain  09:05
+correct?
+
+Speaker 1  09:07
+Okay, so that you can call it out, and I think that's how for Ohio probably it's a learning curve. No one was ready, but for this DDIs, it will not be like that.
+
+Monowar Hossain  09:21
+But I don't have any such diagram, Shomand. Then have to create one, and without in a proper discussion, that would not be an appropriate way.
+
+Speaker 1  09:34
+Okay, do you know the interface names for ShareScript and CMM?
+
+Monowar Hossain  09:47
+I do not have that segregation. I know we have the number, this six. I have the list I can give you. Member search, prescriber search, claim test, claim history, authorization, and customer service. I do not.
+
+Speaker 1  10:03
+Those four what you are talking right now. Those are the part of a UI that UI is calling the API, right?
+
+Monowar Hossain  10:10
+Correct. Those are the part of the UI, correct? Like I just named you in your chat. So these are the sites.
+
+Speaker 1  10:18
+Sorry, but how, how this search thing, this sixth thing, what you sent, where you have a dependency on them?
+
+Monowar Hossain  10:31
+So these are
+
+Speaker 1  10:32
+all search bubble. So it looks like it's all get method, right?
+
+Monowar Hossain  10:37
+Most likely they are get method. Yes.
+
+Speaker 1  10:41
+But why? Where is your dependency on share script and CMM? Because you raised that concern, and Smithali got you right away because that's our favorite topic. Now you're screwed.
+
+Monowar Hossain  10:56
+No, so that that is vendor has to be prepared, right? They are making their changes.
+
+Speaker 1  11:00
+Correct. Data has to be prepared. So now,
+
+Monowar Hossain  11:02
+so so
+
+Speaker 1  11:04
+your entry criteria. You explain me that okay, they have to be their coding has to be ready before you start testing. Okay, fine, fair enough. Then what? I'm not seeing anything after that. I'm like you need to say that okay, I have a dependency on them, on this particular interface, that particular interface, the six interface what you posted here, those are nothing but those are just an API search, API calling from a UI. So now, is that for electronic prior authorization?
+
+Monowar Hossain  11:46
+These are electronic prior authorizations as a part of that. Yes, that's those are the interfaces. Is get connected through the UI, correct?
+
+Speaker 1  11:57
+Okay, so
+
+Monowar Hossain  11:58
+what you are referring to, I think we're talking about two different things. Sorry, go ahead, please.
+
+Speaker 1  12:07
+Okay, go ahead, go ahead. Let me understand you, because this is what they asked you to articulate tomorrow, right? Yeah. So if
+
+Monowar Hossain  12:16
+if they are asking me to do that, I don't have that information. I cannot just make it right. I can utilize what we have, so that information I do not have.
+
+Speaker 1  12:26
+You, Monowar, in the call you said that is it the right forum to talk? I remember that what you saying that about the vendor testing. All those people were very much okay. Got you. Okay, what do you need? What do you need? Because they want to set up the dependencies. Because see, everyone is running from one go. Get you a seat environment, right? Now, in order to do that, want to get you a seat environment, you need to show that okay, these are the these are my interface. That's what Smithali was saying. That do you have that flow that which is inbound and which is outbound? Do you have any design? Put it on that deck. Those type of things.
+
+Monowar Hossain  13:09
+So that sort of diagram, I never seen that. To be honest, that should be coming from the architecture design document, or the engineering team should be providing that. Don't you think so? That is not my job to come up with the flow. I can do the testing what you have done. I'm
+
+Speaker 1  13:27
+not disagreeing with you
+
+Monowar Hossain  13:31
+because I can come up with something that that may or may not be accurate. Correct? How do I know if I'm not providing that?
+
+Speaker 1  13:39
+No, I'm not disagreeing with you, Monowar. I'm just saying, since you brought that concern, you need to close that loop. So how are you gonna close that loop? You got that concern, right? No, I brought that concern
+
+Monowar Hossain  13:53
+actually. That's what I was trying to say. Two different things. One, we are talking about the interfaces. These are even interfaces talking to each other when we have five applications, right? We have P half, we have Vue 360, we have CMM, we have SureSkips, then we have what is the other one? I am not. It's not coming in my mind right now. Okay, so all these five application one is talking about right coming to talking to each other, right? They have these interfaces, they're calling through through the services, right? That specific diagram I do not have it in that holistic way. It is somewhere here, but this is not what they are looking for. If you are looking for that precisely, okay, shear scripts is talking to here, but shear script talking to there. I don't have diagram. Then that has to be 50 feet above, like I showed during the call. This is the integration point, right? Where is it? This one. This
+
+Speaker 1  15:10
+one. This is integration point for where is the short script here in this diagram?
+
+Monowar Hossain  15:17
+So this is CMM sure scripts. So Prescribe creates the PA, right? Then it comes to the CMM, sure escapes EPA vendors. It goes to Agadia, then from Agadia it comes to the Vue 360. That's the very high level, right?
+
+Speaker 2  15:34
+So that is
+
+Monowar Hossain  15:36
+what I was showing. But if now I need to define, okay, let's say this interface is here, this interface is there, and this interface is coming to here. That diagram I don't have
+
+Speaker 1  15:50
+it. Okay, fine. So now we can we can work on this one. Now think this way. In this first diagram or first row, where is your concern?
+
+Monowar Hossain  16:04
+I don't have any concern. Well, I was saying there were two questions. That one is the involvement. We are not talking about the inbound right now, but as a part of that, I was asking: Can we ask SureScripts and CMM to get their test results as well, so you can see what has been done, and that can be documented, right? I think that is also
+
+Speaker 1  16:29
+you want their test results as well, right?
+
+Monowar Hossain  16:36
+That was my understanding. If that
+
+Speaker 1  16:40
+is your ask, if that is your ask is that I want that CMM and shared state test result to view,
+
+Monowar Hossain  16:50
+I'm done. So that
+
+Speaker 1  16:51
+means like you want to see that test case plus test results that what they have passed. Do you think they're gonna give it? But are you supplying your test case to them?
+
+Monowar Hossain  17:02
+We are supplying to our client, so that was asked. Can we do that? Because usually, some of the states they do ask for their vendor test results document. We have their client, right? They are our vendors. Like Nevada project, we ask for that for the other vendors to provide their results for
+
+Speaker 1  17:24
+us. Let's let's say Misery. Misery wants to see share script and CMF's test results. So that would be driven from the PMOs, not even I, right? Yeah,
+
+Monowar Hossain  17:39
+that was a question. Can we ask that? That was not something of that decision or conclusion.
+
+Speaker 1  17:47
+I think that got the whole thing got confused. Everyone got confused. Now they were asking. Everyone is excited. I was like, "What the hell is going on right now? So, besides this thing, besides this thing, can you go back to the PowerPoint slide which you are presenting?
+
+Monowar Hossain  18:09
+Sure.
+
+Speaker 1  18:15
+Not this one. The other one.
+
+Monowar Hossain  18:18
+You mean the and this one? Okay.
+
+Speaker 1  18:21
+No, no, no, no, no, no. The one you're presenting to Vidhi and oh, okay,
+
+Monowar Hossain  18:26
+okay, sorry. Yes,
+
+Speaker 1  18:28
+correct. Now I am going. I'm looking at the perform testing box, batch file, integration, letter process, metadata, fax, EPS, CMF, sheer script. Right. Correct. Now when you perform testing, what batch file you are taking? Batch file integration looks like this is one.
+
+Monowar Hossain  18:52
+So batch file integration. This is for the later. So the batch file is mainly coming from Agadia.
+
+Speaker 1  19:03
+Coming from
+
+Monowar Hossain  19:04
+Agadia, coming from Agadia. So that is the file mainly get processed when we are going through the Cyprus and seeing these letters at the end of the USC process, right? So that
+
+Speaker 1  19:21
+file comes.
+
+Monowar Hossain  19:23
+I think that's now automated in every hour. That used to be ad hoc basis. We used to request open ticket and things like that. That got easier now. So these are automated job. They run now every hour, and then file kept generated in our SFTP. We go there and we check that the file is there. Once that file is there, there is a process to you know go through that through the Cypress, so the letter can be generated. Okay, I think that is what we are talking about over here, and that is something a process established as of today. I think for Missouri, we may not need to do much on that because again, he already automated that job. Okay, so I will update this. This is something I may have to update, that is automated batch process
+
+Speaker 1  20:34
+regarding the. So now Smithali was very much on the DDI because all the pharmacy DDI is helped. Okay. Now MNO, how many MNO accounts you have?
+
+Monowar Hossain  20:45
+How many accounts?
+
+Speaker 1  20:46
+That Agadia will be implemented. Texas and West Virginia, right?
+
+Monowar Hossain  20:54
+Texas already done, right? To my understanding, West Virginia is done as well. Now it's gonna be Missouri. Did you
+
+Speaker 1  21:01
+tested already?
+
+Monowar Hossain  21:02
+I did not test, but I I was told that Texas is done and West Virginia was done. What I understand, I was not involved on those. First thing I have done as a part of
+
+Speaker 1  21:17
+Ohio. So who tested the West Virginia and Texas?
+
+Monowar Hossain  21:20
+They are different team. I wasn't aware of that. One of the resource in my team, Jessica was involved in Texas. Who is Virginia? I do not know.
+
+Speaker 1  21:31
+So Jessica tested at least, or no? She doesn't. She did not even.
+
+Monowar Hossain  21:36
+She did test in Texas. Yes.
+
+Speaker 1  21:39
+So then, your answer is yes. We completed testing in Texas because Jessica represents you, right?
+
+Monowar Hossain  21:46
+Earlier, she was in a different team. Yes, she was in different team at that moment.
+
+Speaker 1  21:53
+Oh, you talking about Texas implementations?
+
+Monowar Hossain  21:56
+Yes, I am talking.
+
+Speaker 1  21:57
+No, no, no, no, no. We are not talking about those are MNO. They're two different things. Missouri, Illinois, are the brand new state coming to gain one for their pharmacy business.
+
+Monowar Hossain  22:12
+Okay.
+
+Speaker 1  22:14
+Okay, so that's why it is called DDI.
+
+Monowar Hossain  22:18
+Correct.
+
+Speaker 1  22:18
+It's a project.
+
+Monowar Hossain  22:19
+Correct.
+
+Speaker 1  22:21
+On the other hand, Texas, West Virginia, they were already implemented two years back. Texas was implemented back in 2025. january 1 was the go live. Jessica was the was the tester there.
+
+Monowar Hossain  22:39
+So that's Virginia,
+
+Speaker 1  22:41
+and right now Texas is in a MN office, maintenance and order.
+
+Monowar Hossain  22:46
+Right.
+
+Speaker 1  22:48
+So they're going to implement the Agaria solution for Texas.
+
+Monowar Hossain  22:54
+Okay. Oh, that has not been implemented yet. Okay, I was not aware.
+
+Speaker 1  23:00
+West Virginia was implemented way before Internet came in, and if I'm not mistaken, the test manager name is Wendy Twain.
+
+Monowar Hossain  23:11
+Okay.
+
+Speaker 1  23:12
+So that also a pharmacy business they implemented right now, currently in maintenance.
+
+Monowar Hossain  23:20
+I see
+
+Speaker 1  23:21
+in Production, so they're going to implement the Agadia solution for those states as well. Now, for DDI, it is very straightforward: dev, seed, UAT, production. What you are showing right now, that is, but for West Virginia and Texas, they probably not have this defeat, UAT, and production like you. They probably will have the same as Ohio, where the lower environment has the PHI. So that's what you need to find out. Have a separate call with Wendy, and right now talk to Liliana. Can help you on that one for for Texas because she was the test manager there. She can give you, or if not, do you know who is Ramesh Pusla?
+
+Monowar Hossain  24:21
+Yes, I had contacts few times with Ramesh Kusnak.
+
+Speaker 1  24:25
+Yeah, Ramesh is the delivery director for the maintenance.
+
+Monowar Hossain  24:32
+Okay,
+
+Speaker 1  24:32
+you can talk to him. He can tell you the left side. This four environment you see, you have this green. Yes, he can get you those four details for Texas and West Virginia. What environment they has? The right side will not change. Right side is the Agamia. Left side, state to state, it will change when it is an MNO. Like remember you had for Ohio stage three SIT UAT something,
+
+Monowar Hossain  25:01
+right?
+
+Speaker 1  25:02
+Stage three dev something. Every account, the lower environment is different. So the left side, the four boxes, you're gonna get the information from Ramesh, and you'll ask them which of this environment has PHI or non-PHI.
+
+Monowar Hossain  25:23
+For Missouri State, or you're talking about Texas State now?
+
+Speaker 1  25:28
+Missouri and Illinois is DDI.
+
+Monowar Hossain  25:31
+Okay.
+
+Speaker 1  25:33
+Why don't you just put in the bracket first the account slash Agardia before account
+
+Monowar Hossain  25:41
+Over here.
+
+Speaker 1  25:43
+Yeah, Illinois then then same Illinois DDI.
+
+Monowar Hossain  25:48
+Right.
+
+Speaker 1  25:52
+DDMS is an implementations for them.
+
+Monowar Hossain  25:54
+Right. Design, development, and implementation is a complete implementation.
+
+Speaker 1  26:00
+LA is an existing account. It's not. It will not be a. I don't know what exactly they will be doing. LA is already taking care of their pharmacy business. So I don't know what DDI. It's small
+
+Monowar Hossain  26:17
+somewhere, but I could be wrong. Yeah, similar moment. Okay,
+
+Speaker 1  26:22
+at this very moment, there are two DDIs: m1 Illinois, Missouri and Illinois. These are the two. Now you should have a separate slide similar for Texas and West Virginia. Now after Texas, you will write this way, like the way you did it, Texas in bracket M and now bracket M and L. That's how you're gonna put your next as see and and
+
+Monowar Hossain  27:01
+N, okay.
+
+Speaker 1  27:03
+Maintenance and order,
+
+Monowar Hossain  27:05
+right? Takes and that should be West Virginia, Virginia.
+
+Speaker 1  27:11
+It was West Virginia, right? Right. Okay, M and O. So now you need to find out the left side. The four boxes you have dev, sit. What are the environment? They call it. Now in the DDI, they probably call dev, sit, UAT production. Now in the Monowar they probably call they probably will be calling monowarssumanal vidit, right? You need to get the correct name. Then you need to find out, is that PHA or non-PHI? So connect with. I know that Ramesh will, you connect with Ramesh. Ramesh will say that okay, go to that person. So it's better you. I'm giving you the name. You contact them directly and say that it's an urgent. You need it. So they are the TDL. or IRL, whatever the heck
+
+Speaker 3  28:08
+it
+
+Monowar Hossain  28:09
+is. I know team delivery leads is a TDL. What is IRL swamp?
+
+Speaker 1  28:15
+Infinite Regional Leader.
+
+Monowar Hossain  28:18
+IRL. Okay.
+
+Speaker 1  28:22
+So I will share my screen. Take the name from here.
+
+Monowar Hossain  28:26
+But one question, though, for tomorrow's meeting, we do we need to include Texas and West Virginia if we're not doing it immediately?
+
+Speaker 1  28:35
+No. So that can be for future. I want you to have it ready.
+
+Monowar Hossain  28:40
+Okay.
+
+Speaker 1  28:42
+Have it ready in sense. See, I'm a DDA director, right? But end of the day, you are my my reporting. I I don't want you to go like a jumping from like a ping pong ball from one court to another. So when we do, we do it together and we finish it in one shot.
+
+Monowar Hossain  29:01
+Okay,
+
+Speaker 1  29:02
+you got it, right?
+
+Speaker 4  29:03
+Yes.
+
+Speaker 1  29:06
+Theoretically, Ramesh should be giving you this data. Ramesh will not give you the data, but Ramesh will direct you to his reporties or someone IRA. But I am telling you, you is better you do it. So you reach out. I will like be proactive. Finish in one shot, and so with this guy. Okay, Westwood. This is Wisconsin, Tennessee, Tennessee, Tennessee. No, so we need this one. West Virginia, West Virginia, West Virginia. Then Idaho, D.C. Ohio. Ohio, Texas. You talk to this guy. His name is Thomas Benson.
+
+Monowar Hossain  30:08
+Okay.
+
+Speaker 2  30:10
+Okay.
+
+Monowar Hossain  30:11
+Thomas Jensen. Benson.
+
+Speaker 1  30:13
+Or you talk to this guy, Thai Aljib. Right. He is a very nice guy. Tell him that you name this, his name is Thai Babe something, but just we put it here. This is the guy. Pick the name so that you can get this information. That what environment they have and what data it comes.
+
+Monowar Hossain  30:42
+Okay.
+
+Speaker 1  30:43
+This is the time, baby. I write it down.
+
+Monowar Hossain  30:51
+One second, please.
+
+Speaker 1  30:52
+Okay. When you ask me if you feel that you want to keep me in the loop, feel free to do that. But he would be even like okay, he would give you the information. Don't set up a call. Tell that. Ask him that. Can I connect with you for two minutes? Then call him directly. Get the data. Fill up the data and walk out.
+
+Monowar Hossain  31:16
+Okay.
+
+Speaker 1  31:18
+Okay. That is. So you took his name.
+
+Monowar Hossain  31:20
+So that should be giving me the for the Texas and West Virginia.
+
+Speaker 1  31:25
+No, Texas.
+
+Monowar Hossain  31:26
+Only Texas. West
+
+Speaker 1  31:27
+Virginia, you will be. Yeah, West Virginia, you will be going to this lady, Wendy throwing.
+
+Monowar Hossain  31:34
+Wendy, I know. I think Wendy. I connected with her, windy.
+
+Speaker 1  31:46
+Place for West Virginia. Yes, that's it.
+
+Speaker 5  31:49
+Okay.
+
+Speaker 1  31:49
+Get this. Get this to the left side. If the same as Texas, then you done with one slide. If the Texas lower environment is different than West Virginia, you need two slides for MNO, right? Just to make your case.
+
+Monowar Hossain  32:06
+Sure.
+
+Speaker 1  32:08
+Okay, that is number one.
+
+Monowar Hossain  32:12
+Okay. Okay.
+
+Speaker 1  32:14
+Now, going back, so you already have the name. Fill out those things. In between, let me see if I can get some architecture for you on this dependency and other, and we take it from there, and we will see what the and we need to work out on the risk if SIT and Dev environment is using the Agadia dev, what risk the testing team will face. Okay, that is the risk we will call out in a separate slide. Yes,
+
+Monowar Hossain  33:00
+and so sorry, God, please. Can I share my screen?
+
+Speaker 1  33:04
+Mentally wanted you to. So, first thing first. Put the slide in a SharePoint so that I, if I needed, I can update as well. This particular slide, what you are working on, put in put in a SharePoint. So I might be able to provide you some updates or anything needs to be modified. I will do it.
+
+Speaker 2  33:25
+Okay.
+
+Speaker 1  33:26
+Okay. Including this diagram. Um. I might not have access to that one, but yes, create that one. Name it. So, if
+
+Monowar Hossain  33:53
+you are not in favorable, you may not be able to access it here. You want me to put someone else there?
+
+Speaker 1  34:00
+Is a misery misery favorable? I'm misery favorable. Yeah. Oh, okay. Is it the misery?
+
+Monowar Hossain  34:05
+Yes, it's the misery.
+
+Speaker 1  34:08
+So put it as an MO environment. Just put it as an Agadia environment. Don't put MO.
+
+Monowar Hossain  34:15
+Okay.
+
+Speaker 1  34:15
+Because Agadia is a solution, multi-tenant.
+
+Monowar Hossain  34:18
+Right.
+
+Speaker 1  34:47
+Which part of New York you live?
+
+Monowar Hossain  34:50
+I live in Staten Island, New York, Shiman.
+
+Speaker 1  34:54
+Wow, do you go? So, people in Staten I mean, like, you take the fedry to go to the city all the time, or
+
+Monowar Hossain  35:03
+if I go to Manhattan, yes. But I always drive to Brooklyn mainly because of family member and things. That we have the breeze called Verizon and Airs Breeze. That I
+
+Speaker 1  35:16
+know, I know, brother. I know, brother. Oh, you used to live here. I grew up there. I lived. I used to live in Queens. Oh, really? Used to live in Brooklyn first, Osen Park, then moved to Astoria. Oh,
+
+Monowar Hossain  35:31
+Brooklyn Osun Park. My lords live in Brooklyn Osun Park side. You know where the Liberty Avenue and things like that, where all of these Bengali people.
+
+Speaker 1  35:43
+My my girlfriend used to live just the last right before the Verazar the Brooklyn. I forgot that area name. What is that name?
+
+Monowar Hossain  35:54
+Benson Hearts, Bensonhurst and Bayreach, Bayridge area.
+
+Speaker 1  36:01
+Was that a bear range? Or like last?
+
+Monowar Hossain  36:04
+Yeah, yeah. Barry's area is the last before you take the breeze exit three. So exit five and four, mainly berries area.
+
+Speaker 1  36:16
+Yeah, that's where I used to used to live.
+
+Monowar Hossain  36:19
+Oh, I See, yeah, Stella is beautiful.
+
+Speaker 1  36:26
+I have few friends; they live in Stellar Island.
+
+Monowar Hossain  36:28
+Oh, I see.
+
+Speaker 1  36:29
+Houses are brethren, but I don't know about right now. Give me the access. Share me that location.
+
+Monowar Hossain  36:36
+Okay, one second. I'm trying to upload another one too. Let me give you this one. Okay, copy link. I pinged you in that team chat. Let's try
+
+Speaker 1  37:10
+there. Request access. Do one thing. Go back. Go back to the folder.
+
+Monowar Hossain  37:16
+Yeah, I need to.
+
+Speaker 1  37:19
+Yeah, manage access. Click on it. Click on this dot dot dot. Manage access. Go to the manage access on the top. Right. Top manage access. Put my
+
+Monowar Hossain  37:37
+name. Maybe I have to share because this is the people I have to share. Then it will come to you. Oh, I think I need to give you access to as a Editor.
+
+Speaker 1  38:02
+There you go.
+
+Monowar Hossain  38:06
+Great ones.
+
+Speaker 1  38:08
+Yeah, I like that one.
+
+Monowar Hossain  38:11
+Is it still rolling? Let me reshare. Over here, I can edit. So it's gonna be another email, maybe to you. Yeah, you should be having any excess now. Okay,
+
+Speaker 1  38:46
+give me one second. Yes, I do. All right, that's fine. I will take a look. I will see what needs to be done? Then we'll connect tomorrow, and we'll finalize this one. And between tomorrow, just your homework. Check with those two people and see what can you get.
+
+Monowar Hossain  39:36
+Again, since I'm going to be focusing on this one, that Texas and West Virginia, we can deal with after tomorrow, right?
+
+Speaker 1  39:44
+What happened? The MNO you can do later. Yes,
+
+Monowar Hossain  39:49
+that's what I'm saying. So for tomorrow, we are focusing on Missouri and Illinois, right? So for that, let's see if I can get any other diagram which you were referring to earlier, most likely I don't have it, but other than that, I was thinking to focus on DDI.
+
+Speaker 1  40:13
+Go ahead.
+
+Monowar Hossain  40:15
+Let me reshare that and mention what I am planning, so so this is not gonna be there. Just I'm gonna be separating separating the oh which one I updated. I think I updated different one anyway. So I got that. So this is gonna be updated for Missouri. Then there will be another one for Illinois, and I will have more description to that. Let's see what I can put them, and the other slide. Let's say one slide for Missouri, one slide for Illinois. Then I will have risk call out in a different slides, right? Which is going to be third, and then, and I will try to see if I can put something together which shows the high-level diagram of these interfaces beside what I have shown you over here, which I can I will try to break it down if there is anything, right over here, and that will be then four or five slides, right?
+
+Speaker 1  41:25
+Okay. Alrighty. So I need to connect with you later.
+
+Speaker 2  41:30
+Sure.
+
+Speaker 1  41:32
+I have to drop.
+
+Monowar Hossain  41:34
+But what I was saying, you know, that is the plan, right? That's that's how we should be proceeding, correct?
+
+Speaker 1  41:38
+Yes, yes, yes. And once that
+
+Monowar Hossain  41:40
+is done, I will definitely let you know, and you could see also the progress online as that is being shared. That's the one I may be doing in kind of separate before going there because sometimes it's kind of tricky when you do online, and it's better to do it on the application than upload it there. But you will see the update there. Once that is done, I will notify you.
+
+Speaker 1  42:05
+Got it. Okay.
+
+Monowar Hossain  42:06
+Okay.
+
+Speaker 1  42:08
+Thank you.
+
+Monowar Hossain  42:09
+No problem. Thank you very much for your help, Stomach. Have a good weekend. Not weekend yet. Good evening.
+
+
+Transcribed by https://otter.ai
