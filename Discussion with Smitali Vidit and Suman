@@ -1,0 +1,875 @@
+Speaker 1  00:00
+Guys, like I had given the names earlier, right? Correct. So have you had a chance to like Liliana, Schwinn, Annie, and then you have Suman and all the folks? Yes, I speak. Because there's a little concern, right? That's coming up on the DDI calls, and Greg is already suggesting certain things, and it's confusing everyone because we have not internally aligned. So I was surprised to hear is recommending already something for Illinois, right?
+
+Monowar Hossain  00:37
+That's right. Yes, I
+
+Speaker 1  00:38
+will let you complete what you have to present and what you've discussed with the folks so far, and then we can talk.
+
+Monowar Hossain  00:47
+Shri Spatali, I see Vidit and Suman too. Thank you for joining.
+
+Speaker 1  00:54
+Hey guys.
+
+Monowar Hossain  00:56
+Hi. I see Anne as well. Thank you for joining as well. I think we have everyone, so we can begin, right? I know Gay Three looks like off today.
+
+Speaker 2  01:13
+You can continue, Gayathri. Fine, that's
+
+Monowar Hossain  01:15
+fine. Sure.
+
+Speaker 1  01:16
+Yeah.
+
+Monowar Hossain  01:23
+So I'm sharing my screen. So with it, I was trying to kind of come up with a overall picture of the diagram, what we wanted to see, or how we could resolve it. So just to give you a update, that I met with number of people, as mentioned in the email from the engineering team, like Vit is the technical lead, as you know, Alsmeddy, and I was working with Max with different folks to connect to and talk to, so that we all. Hey,
+
+Speaker 1  02:01
+one second, one hour. With it, we need Rupa also for these three, or is it Rupa or someone you want? So just so we are not confused, who's yeah, we can get Rupa, right?
+
+Speaker 3  02:14
+Yeah, we can get Rupa, but after this discussion, I'll bring her up to speed.
+
+Speaker 1  02:20
+Okay, all right, that's good. So, so
+
+Speaker 3  02:22
+I want to structure this conversation. Sorry, I cannot stop myself. Monowar.
+
+Monowar Hossain  02:27
+Sure.
+
+Speaker 3  02:28
+So, on the right hand side is the set Agadia infrastructure as we know it. There are three environments: production, UAT, and dev. Dev is because Agadia will not agree to have PHI data in their lower environments, or are they okay with UAT having PHI in their lower environment? PHI data in UAT.
+
+Monowar Hossain  02:54
+They have the PHI data in the UAT already with it, so that is the things we are connected to with Agadia, PHI, UAT environment to gain vow, so we have the PHI data. So
+
+Speaker 3  03:09
+no, no, I get it. I get it. So so net net, Agadia as a package is giving us three environments: production with PHI, UAT with PHI, end dev with no PHI. That's the package. That's the constant that we are getting from our partnership or contractual whatever agreement with Agadia. On the left-hand side, this production UAT sit dev and sit with PHI was a Ohio specific constraint. This left-hand side view will change from Ohio to Illinois to Texas to whatever states are in condition. Yes,
+
+Speaker 1  03:51
+hold hold that thought, right? Can we please put a box on top there saying Gainwell accounts, Gainwell existing accounts or something?
+
+Monowar Hossain  04:00
+Sure.
+
+Speaker 1  04:00
+Like how you have Gainwell infrastructure, regarding no, no, no, no, no, no, no.
+
+Monowar Hossain  04:05
+You mean on top of these green
+
+Speaker 1  04:07
+boxes? On top.
+
+Monowar Hossain  04:09
+On the top of the green boxes.
+
+Speaker 1  04:12
+Like how you have gainwell infrastructure, a guardia infrastructure.
+
+Monowar Hossain  04:16
+Oh, over here. Okay.
+
+Speaker 1  04:19
+So that becomes your existing accounts, Gamewell accounts, correct?
+
+Monowar Hossain  04:25
+Correct.
+
+Speaker 1  04:25
+And assuming all three have these environments and just
+
+Speaker 3  04:30
+the Gamewell test environments, Gamewell test environments. Okay. Now the Sit PHI, monowars I was explaining, was a Ohio specific situation because they have in Ohio, that's how it is structured, and blah blah blah, whatever, whatever Ohio policy. Illinois, whatever is the next state, Missouri will not have that policy. So, so the right, if the right hand side is fixed, which is a guardia infrastructure, where we are only getting three environments, and then you you you may have a very I don't know that's what I wanted you to figure out, right? What is the situation in Illinois? What is the situation in Missouri? What is the situation in the next one? Whatever it is, then each account you will see new newer problems. You may be able to. We were able to work it out with Ohio because it also had PHI and blah blah blah and whatever whatever. Each account will require a sort of a different approach, depending on what environments they have and what data is there in those environments. And you are you following what I'm saying?
+
+Monowar Hossain  05:40
+Yes. One correction to that though we did what I was told by Medhi Alexander and Vidwer that not only Ohio but Texas.
+
+Speaker 1  05:52
+Okay.
+
+Monowar Hossain  05:52
+So Medi is the application designer overall from the Agedia side, and the Vidwear is the tech lead assigned to the Missouri. He's part
+
+Speaker 3  06:02
+of Nila's team.
+
+Monowar Hossain  06:04
+Correct. He's
+
+Speaker 3  06:04
+part of Nila's. Yeah.
+
+Monowar Hossain  06:06
+So what they have told me that Ohio, Texas, and West Virginia, which are the current states, they all had this seat with PHI data. However, they could not confirm me on the future states, Missouri, Illinois, or
+
+Speaker 1  06:24
+that we will talk. Monowar, that's where I said for the DDI discussions, you need to be in sync with the group here, Annie and Liliana. Okay, so let's talk about that. Please wait. I have a question on the purple box. What what does that mean? No dedicated Agadia environment, and you are connected to what is connected to Sit PHI today? Is it UAT environment from Agadia?
+
+Monowar Hossain  06:48
+So it's not connected to any Agaria environment at this moment, because they were recommending to connect
+
+Speaker 3  06:54
+both to Dev Agardia Dev.
+
+Monowar Hossain  06:58
+Yeah.
+
+Speaker 1  06:59
+So Dev non PHI sit PHI connected to Dev Guardia.
+
+Speaker 3  07:05
+Yeah, so Ohio. What was the final state that we landed upon? Right. That also. So so net net. There were a lot of cross connections. I also don't remember. Right. And which is where I was hoping that we just finished Ohio. So you guys will know. Right. There are only three environments here and four environments on the other side, and there was a lot of cross connection, and we somehow made it through. But going forward, depending on what is the situation in Missouri or Illinois or whatever it is, can we make do or not? Right, and how it'll, how many environments do we need in order for our testing to be successful, efficient, and without any cross connections, where we see
+
+Speaker 1  07:45
+a lot of current state, without that we can. So, are we saying we have three definitive environments from Agardia, and for Ohio we were getting data from their UAT environment to sit, and we were fine. Is that right? Go back to your yeah.
+
+Monowar Hossain  08:06
+That is correct. Yes.
+
+Speaker 1  08:08
+Okay. All right. So when you get to a DDI Monowar, you will have only you will have the same set of environments, but sit will not have PHI. Sit does not have PHI. It has only de-identified information. Okay.
+
+Monowar Hossain  08:29
+For the Missouri you are referring to.
+
+Speaker 1  08:31
+Let's talk one by one. So yeah, Missouri also Illinois. Missouri and Illinois. Yeah. Both.
+
+Monowar Hossain  08:37
+Okay.
+
+Speaker 1  08:37
+You can go to the next slide now.
+
+Monowar Hossain  08:40
+Yes. So this is what actually I copied and tried to kind of pictureize as Vi that you just have mentioned. What would be the successful way of doing it for Missouri, Illinois, then Louisiana and other states in future? I think this is the solution we could have come up with, and I do not know all of this constraint and. So are we
+
+Speaker 1  09:01
+asking them for creating a new sit environment with no PHI?
+
+Monowar Hossain  09:07
+That would be ideal to have our sit testing done, right? In that case, we do not need to be involved in the dev environment. That should be a development environment. And
+
+Speaker 3  09:17
+then they had money-related constraints, right? And all that will be a problem. Cost cost was a problem, right, on the Agadia side. So we were only getting two non-production. Two testing environment,
+
+Monowar Hossain  09:31
+correct? Right. So Annie,
+
+Speaker 1  09:34
+can you can you please explain or just narrate what was told by Gret today morning? What is he thinking about for Illinois? So there was so he just or Erin mentioned on behalf of Greg, sit there will be no Agardia in the Sit environment. Sit testing will happen or Agardia testing will happen in a lower environment. That's what they informed this morning.
+
+Speaker 3  10:04
+Which is dev.
+
+Monowar Hossain  10:04
+Which is dev environment. Which
+
+Speaker 4  10:05
+is dev exactly. Yeah. So what essentially they are telling
+
+Speaker 3  10:09
+is that sit and dev gain well environments will be connected to dev Agadia
+
+Speaker 1  10:15
+environment. Dev environment. Correct. Okay. I am okay with what is the problem with that? If we are connected to, I will
+
+Speaker 3  10:25
+just a lot of see we'll have to make do right because I don't think we are not getting
+
+Speaker 1  10:31
+another one. Yeah.
+
+Speaker 3  10:32
+Yeah, yeah. So just that you know, a lot of deployments may happen. Blah blah blah. It's connected to your same set environment may cause problems, but as long as we are on the same page and learn how to manage it, create some guardrail processes. No, no. But I want to hear
+
+Speaker 1  10:47
+from Anavar. What what is your experience from Ohio? What kind of disruption did we face when with that setup for Ohio?
+
+Monowar Hossain  10:57
+So not much on that beside what Vidhan has mentioned, so the data.
+
+Speaker 3  11:02
+Hold on, Ohio set has BHI, so it was connected to UAT.
+
+Speaker 1  11:07
+UAT. Oh, that is a better. That's better. You understand what I'm saying, right, Monavir? Yeah.
+
+Monowar Hossain  11:15
+So why we didn't have the set, right? It was not connected. So basically, it was connected to the Dave environment to their dev, so no, it
+
+Speaker 3  11:22
+cannot be because Ohio had set had PHI, right, Monowar?
+
+Monowar Hossain  11:26
+So yeah, that's that's what I'm saying. So we didn't connect to any Agadia PHI. I mean Agadia environment. You connected it to
+
+Speaker 3  11:34
+UAT or production.
+
+Speaker 1  11:36
+So then can you fix the slide first? Remove that purple box. Let's say PHI to UAT PHI.
+
+Monowar Hossain  11:41
+Sorry, I think we are getting confusion over here for Ohio. Let me rephrase. We had four environment for Ohio, right? This is the current state. But during the testing, we had the stage environment. I'll just copy it just to show you, or maybe I have that slide what you have shared with me earlier, with it, and just want to
+
+Speaker 4  12:08
+focus. Can we perform the SIT in UAT for Missouri and Illinois? I I mean,
+
+Speaker 1  12:16
+no, don't even go there. Missouri is not allowed. So
+
+Monowar Hossain  12:20
+this this was the state, right? This was mainly the state when these wire div non PHI stage three. This actually currently reflects that for wire div and stage three. So we tested in the stage three, which was connected to the UAT environment to the agaria, and then wire dev to non PHI, which is connected to their wire dev environment, and this is how basically it connected, right? And then we had that UAT environment separately itself. So this is mainly yeah. This was mainly yeah. There was
+
+Speaker 4  13:02
+no
+
+Speaker 3  13:02
+state environment there. There was no state environment. There is no
+
+Monowar Hossain  13:05
+state environment, correct? And that is what I'm saying. How do you
+
+Speaker 1  13:08
+come up with that? Okay. What do you? No, no. So hold on,
+
+Speaker 3  13:12
+hold on. So this was Ohio specific. First time implementation. Lot of confusion. Make do this environment connected to that environment, but what he is asking is that knowing the limitations that we have on the Agadia side, which is you are going to get only two non-prod environments, UAT and Dev, it has to be hot through because the left-hand side will not remain the same, right, for Illinois or for Missouri. So now comes the we have to put on the thinking. It if you have the set and misery, which environment will it connect to on the Agadia side? That's what we need to discuss and get information. That's
+
+Speaker 1  13:53
+what I'm trying to connecting to UAT
+
+Speaker 3  13:55
+of Agadia.
+
+Speaker 1  13:56
+No, no, right? You can't because you have non PHI. You have de-identified information. My question was: If we connected, what are the problems that
+
+Speaker 4  14:10
+if if we connect to Dev? If we connect to Dev, I I I don't think like all the coding. It's it's a single code drop, so aren't we gonna get overlaps? It's just
+
+Speaker 3  14:28
+disruptive, Linianna. You are saying it correctly. You cannot point Smith, Tari, as to why it it will not work. It can work, just that it will be messy, chaotic, and disruptive.
+
+Speaker 2  14:39
+And off would you agree? Data sync up should data sync up would be a biggest challenge because the conversion team.
+
+Speaker 1  14:46
+So then you know this is not a problem I want to solve. I want to take that problem statement back to the both the ELs. Like there are five ELs on these two DDIs, and say that we because with it so Greg has gone and made some statements right that you connect the dev to sit and he's on his thought process. We have to fix that quickly.
+
+Speaker 3  15:06
+No, no, we don't have to fix it. All we have to do is project the current state as they are envisioning. So on the left hand side you have Missouri environments. On the right hand side, you show the connections and then call out the potential problems. This is what the problem we are going to face in Illinois. This is the problem we are going to face in Missouri. And please understand, there are risks and get buy-in from there, from them. Correct. That's what. Or our request could be that see, these are the problems, potential problems. If they say quantified, we cannot quantify. We are telling you that this is going to cause problems later. The best way is give us another environment so that you have no cross connection. But if that is not possible, this is how we are envisioning it will work in Illinois. This is what our understanding it will work in Missouri, and there will be problems. And we are just making everybody aware. I think that's my takes, Mathar.
+
+Speaker 1  15:59
+Okay, okay, yeah, great. Great. And we we will open. We have to open risks. Yeah. Yeah. But basically, we will have to have calls with Greg and the EL for each TDI, this is because like all the issues that you've gone through in Ohio, it's same thing is gonna happen. So these people need to be aware.
+
+Speaker 3  16:33
+So Monowar what we need is one slide per state because your left hand side may change, may not change. I don't know. That's where. So Illinois, this is how the game will test environment. From
+
+Speaker 1  16:46
+our side, it's all going to be same, right? Is
+
+Speaker 3  16:48
+it the same across the board?
+
+Speaker 1  16:49
+Yeah, yeah, yeah.
+
+Speaker 3  16:51
+Okay. So then, this is the same. Then let's create a callout here and say the potential problems that we see is this. Potential risk that we see is this, and then we can have a conversation. Do you want to mitigate this risk or not? If you want to mitigate it, is there a possibility to get an additional guardian environment? No cross connections, clean. Not expected.
+
+Speaker 1  17:12
+Not
+
+Speaker 3  17:13
+expected. But if it doesn't happen, then here are the risks that we are calling out right up front.
+
+Speaker 1  17:19
+So, Monowar, can you add another slide with all those risks? There will be mock runs on all these environments. How that will be managed, right?
+
+Monowar Hossain  17:32
+Sure, I can call them out. Like the points are regarding the data refresh and also the developer environment will be used for SIT and things like that, so yeah, I will. I can come up with these bullet points to call out this risk.
+
+Speaker 3  17:53
+And and just one other point, Smithali, you said left and right side will remain the same.
+
+Speaker 5  17:58
+Oh yeah, and we are doing this as part of
+
+Speaker 3  18:01
+DDIs, it should remain the same. And I am not sure. Are we doing any Agarte implementation that is outside of DDI, similar to Ohio?
+
+Speaker 1  18:10
+I think he had that first three. So that see, I I don't know. That's what I was saying, Rupa. We need to have 15. Yes, because there
+
+Speaker 3  18:19
+you might not get this disciplined structure of a DDI where you get yeah that is separate
+
+Speaker 1  18:24
+conversation right so like yeah DDI is this for I need the TDL that's why we need the TDL too
+
+Speaker 3  18:31
+yeah so Monabar is the manager for Agadia Monabar you should understand the difference are you understanding what we are saying Smitani and I especially with respect to the left-hand side part of the slide,
+
+Monowar Hossain  18:45
+correct. I understand. So there is a DDI project-wise based on the different states versus yeah. Under the
+
+Speaker 3  18:53
+DDI, you will get all these environments because it's baked into the how data are constructed. Sorry,
+
+Monowar Hossain  18:59
+correct.
+
+Speaker 1  19:00
+I think I might have spoken incorrectly about LA. LA is an existing account. Liliana, can you find out what is the situation with LA environment?
+
+Speaker 4  19:11
+Okay.
+
+Speaker 3  19:12
+And LA is with Laura, and I remember LA being a messed up account. I don't think there are any team members, but I may be wrong, Liliana. Talk to Laura, so you may see see situations in pure play MNO engagements where we are trying to do this in in a MNO setup, not in a DDI setup. In a DDI setup, these green boxes apply. Good.
+
+Speaker 1  19:36
+Should apply. So then, you know the right hand side, then overlap.
+
+Speaker 3  19:41
+Yeah. Yeah. Then you know the right hand side, and you can call out the problems in MNO. For let's say Louisiana, you may not even get these many green boxes. So then, how it is supposed to happen? Because remember, Monowar this this Agadia team is supposed to move from implementation to implementation, right? You guys are the experts, so you'll have to understand nuances for different states where these implementations are going to happen. I just want you guys when you do these discussions, just you should have in all this in your peripheral vision, right? So, man, are you understanding what I'm saying? I do.
+
+Speaker 1  20:21
+I do. I know. We should engage all the folks on these accounts. Ramesh should be there. The TDL should be there. And Monowar, you need to know that this is not an independent thing. You'll have to collaborate before you put together any suggestion. DDA is a little straightforward, but when it comes to the existing accounts, we need to learn what is their current setup. It will change, like Mohammed and something else.
+
+Speaker 3  20:47
+Greg, yeah, Greg is putting the onus on us because right hand side part is Greg's responsibility. He's saying I have these three environments. You guys, testing team, figure it out how it's going to work. Now the on the left-hand side setup may change from account to account, whether it's a DDA or Remino or whatever, whatever. He's giving us the right-hand side three, and we have to figure out does it work with our all the state, you know, environment structure or not, and how can it be done? Can it not be done? Or if it can be done, what are the risks, and we have to call those out.
+
+Speaker 1  21:25
+So, Liliana, going back to your thought, can we do the Agardia-related testing, or should we do only an EUT?
+
+Speaker 4  21:37
+I think. I mean, given given the risk, the timelines, and everything, I think it's cleaner in UIT than than to do it in in dev because we're gonna face like deployment parallel parallel testing dev team trying to test defects while we are trying to test SIT. So I I really I really, I think I'm not saying it's not possible, but it's it's very, very, very challenging to to do death in SAT on the on the same environment. When when we say these type of but remember, this
+
+Speaker 1  22:19
+is limited to a guardia, so we have to be clear which piece of the testing you think will overlap, and why can't we sequence it in a way?
+
+Speaker 4  22:30
+We're talking about getting transactions like I can tell you right
+
+Speaker 1  22:40
+now. Adding another environment is going to be next to impossible. It's it's just not the ending we will get. So, what will work? What will not? And we need to have that conversation with each year.
+
+Speaker 4  22:56
+But like like SSO, we're not doing like SSO in SIT. We're doing SSO in UAT because you know that's
+
+Speaker 1  23:06
+all right. That's a different topic. Here you're talking about exact function. You're talking about core functional testing, right? So,
+
+Monowar Hossain  23:15
+however, Smitali, sorry to interrupt. For Agebia, Missouri, the state is not asking for us to do any UAT testing. We are just required to do the SIT testing and provide the test cases and test results, the review and approval. UAT just the support from the Missouri state. So technically, we are not going to be doing any UAT testing from our own, we're just going to be supporting whatever they need.
+
+Speaker 3  23:46
+No, no, but for for your SIT testing, for your SIT testing, you will be connecting to Dev.
+
+Monowar Hossain  23:53
+That is correct. Are they
+
+Speaker 3  23:54
+going to be okay to to approve on those results with non-identified data? There are no answers here.
+
+Speaker 1  24:04
+And I'm sorry, but how do now? How do you know what is being asked for UAT in Missouri? Who are you talking about?
+
+Monowar Hossain  24:11
+So Mylene, who is the project manager and mainly in contact with Missouri State, she has stated that. So
+
+Speaker 1  24:19
+no, no, no, no, no. Here, here. Your point of contact is Liliana only on Missouri. I need her to be in every conversation. You cannot have parallel talks. I'm, I'm sorry, but she's the one who knows in and out what we are committing to the state. I get it. You're working with the PM, but you need to have the point person from Gainwell on each of these conversations.
+
+Monowar Hossain  24:45
+Not all the call Liliana is attending. I thought she is managing the DDI side of it, and yeah, but your work for a
+
+Speaker 1  24:56
+guardia will overlap with our plan for DDI. You need to work with Liliana, and you need to be in sync. Like you have to review the plan with her before you go out of this group.
+
+Speaker 4  25:11
+And and I think one of our like she's saying she's saying yes. The contract says we are supporting, but there's multiple times that the support expand us performing those testing. So saying that we're not gonna do in UAT is no, I I don't think that. And PM is
+
+Speaker 1  25:32
+not defining anything. Please, she is not in charge of testing, right? We are. So we define what we want to do. Where PM is not going to tell you. Not on this. Not on the three DDIs. Okay, please talk to Liliana on Missouri. For Illinois, it is Annie. LA, it will be Ashwin.
+
+Monowar Hossain  25:53
+Sure. That defines based on the contract rate. That anyway, I will take that offline with Liliana. But that was my understanding mainly.
+
+Speaker 1  26:11
+Yeah, whatever is written in contract, I need you to go through Liliana. That that's it. I don't know how to explain. Mylene is a PM. She does not manage testing.
+
+Speaker 4  26:22
+My limb is gonna go through me, Monowar, in case anything happens with the UAT. So,
+
+Speaker 1  26:33
+are you okay, or do you have any confusion? Why? What?
+
+Monowar Hossain  26:38
+Yeah, yeah, I'm okay, Spinali. I don't have any confusion. So, what would be the next step? Then, how we're gonna move forward? There is a pending discussion with Maxwell Corey, who is a PM from the Gadia. Also, he wanted to meet, including Nilay, to have this discussion and come up with the conclusion. Nilay Singh is the you know engineering team director. I
+
+Speaker 1  27:08
+understand. Who's Nile? I I think we need to list down all the issues that will come up if we connect say. with dev. So we need to create another slide and list down all the issues and risk. Here is the current state, right? This is the only option we have. The best way to approach this is get me another environment that is connected to sit. If they say no, then you connect it to dev. But here are the 10 problems that will happen.
+
+Monowar Hossain  27:53
+Right. So this is what I tried to portray that there is no dedicated environment. I can make more notes to that. This will be ideal. Yeah, you
+
+Speaker 3  28:04
+can. What you can do is expand expand this dev box, and and connect it to the two arrows, right? From sit and dev.
+
+Monowar Hossain  28:14
+That I have. And then add a
+
+Speaker 3  28:15
+callout. Yeah, and and then you have to call out the problems, because some of your third-party show script and all will only work here, right? Not even in UAT. Yes, you cannot do end-to-end UAT. So you have to call all those out, and that becomes our going in position. That with this approach, and again, I'm only talking about right-hand side. Left-hand side, I am not sure whether you are getting all those green boxes that we are assuming we will get across the board, we will not. And I may be wrong, but we have to do something. So can we?
+
+Speaker 1  28:49
+I don't want to look at slide one. Sorry, slide two. Create another one recommended and have a box for SIT. We ask for that. It's declined. Okay. The other option is to connect dev to set, but here are the 10 issues. So don't say expected on top. Say recommended. Create a brand new slide, and move this to option B or plan B, whatever.
+
+Monowar Hossain  29:16
+Right. That's what I tried to do in the first one mainly.
+
+Speaker 1  29:23
+And say create set non phi. Someone you can add if you have thoughts. Please pick up curator set.
+
+Speaker 2  29:39
+I know the mass it will be. What mass?
+
+Speaker 1  29:42
+Another gun then I need. your help to draft that mess, right? What risks you to tell? And this, I was hoping that this when I sent the email one week back, Monowar, please discuss. This is what we wanted to do. I don't know why we've been talking to PMs. They don't define our testing strategy. We define what we need to do.
+
+Speaker 2  30:01
+So, Monowar, I will ask a question: How frequently the Agadia Dev Environment and Gainwell Dev Environment gets synced? Because this is all prior authorization based on the member and claims data, right? So, let's say whatever the member you have, John Smith in Dev saying, John Smith should be available in Hagadia Dev, correct?
+
+Speaker 3  30:25
+To my understanding, that's the ad hoc
+
+Speaker 2  30:27
+environment.
+
+Monowar Hossain  30:29
+Sorry, yeah, I got that question. To my understanding, that's ad hoc basis. We do not have a kind of a scheduled job. That okay. This is gonna be the timing. We're gonna be doing it, so we discuss that, and that's how that is being done as of today.
+
+Speaker 2  30:49
+And for DDI, Mikali, I can call out like we're when we're dependent on all this conversion, right? Mark one mark A, B, C, D, E. Yeah,
+
+Speaker 1  30:58
+we have to draft it for him. He Monowar is not going to follow through. And
+
+Speaker 4  31:03
+so, Suman, let's not forget the the dependency we have on the unit testing for Misuri, because before before it sent to seat, it has to pass unit testing. So you you will we will need to have the environment pointed from them to the dev, and then run unit testing, and then change the environment like the pointing like seed to dev, and then run seed and and do those combinations and coordinate the deployments and coordinate diversions and and all of those things are the the the real issues we're gonna have.
+
+Speaker 2  31:52
+Correct. So that's a misery-specific challenges. What you just mentioned. So we have to talk everything. Everything. So ideally, you should have.
+
+Speaker 3  32:03
+No, no. I think that you should have separate slides. So Missouri desired state, Missouri sort of compromised state, and and problems, right? And you may you may have same problems, okay, but you may have different problems also. I mean that would be my recommendation.
+
+Speaker 1  32:24
+Yeah. So for misery, I think it is lesser of a problem because they expect the UT to finish first. So imagine that you don't get a set environment. You could have it pointed to sit only. You will point the dev to sit only, and no one else will be working on it. Because Missouri expects unit testing to get done first, right? So why do you think is a problem for Mizori, Jillian?
+
+Speaker 4  32:56
+Because because any defect you're gonna have, they're not gonna be able to do spectacular
+
+Monowar Hossain  33:00
+defects.
+
+Speaker 4  33:01
+Yes. So, so you're gonna be putting that. So it's the
+
+Speaker 3  33:06
+problem after you have started sit, not before. After you've started sit and you start logging defects or whatever, whatever, then dev comes into play, right? And you're testing for those defects while you are doing sit.
+
+Speaker 1  33:18
+Understood. So then, I guess the ask for all three is the same, right? Ask for all three is same. Recommended a recommended environment setup for connections for all three is for all DDIs.
+
+Speaker 2  33:37
+It's the same. Oh, all
+
+Speaker 1  33:39
+DDIs. Sorry. Yes, all DDIs. And then oh, you
+
+Speaker 3  33:41
+may not have that many beach boxes on the left side, so that's another problem, set of problems. Is
+
+Speaker 1  33:52
+there a timeline, Monowar? On each one of these, we should create a slide on that also. Like, what testing is happening when?
+
+Monowar Hossain  34:05
+Yes, we do have a timeline which aligns with the Egeria timeline as well, and we have three test execution timeframes starting from September 16 to all the way January 15.
+
+Speaker 3  34:26
+Let me ask one more question. On the when they say multi-tenant environments, they are talking about the right hand side, the guardia infrastructure. Correct. There is no multi-tenancy on the left side. Each each state have their own set of environments. So this multi-tenancy, that these three environments, or basically two non-production environments, which is UAT and Dev, will be utilized by multiple sort of AGDI implementations across multiple states. Correct? Are we supposed to certify that these this multi-tenancy is is happening correctly, or not? That will be a question from my side. Why should I do it? Agatia has to certify that, right?
+
+Monowar Hossain  35:15
+We have a number of seers with it for the Missouri state, creating as a form of features and user stories for multi-tenancy. Basically, those are the one we are coming up with test scenarios to be executed. So you have to answer your question. Yeah.
+
+Speaker 3  35:35
+So those are not DDI requirements. Those are Agardia requirements for Missouri implementation. Am I summarizing that correctly?
+
+Monowar Hossain  35:44
+I am the requirement. Sorry, referring
+
+Speaker 3  35:47
+to
+
+Monowar Hossain  35:48
+those. Those are the features, mainly the enhancement for the Missouri states, and these. But why would
+
+Speaker 3  35:55
+Missouri agree to a multi-tenant structure? It cannot be part of Missouri DDI require it is part of Agia implementation for Missouri is where these requirements must be originating from.
+
+Monowar Hossain  36:07
+That is correct. Yes.
+
+Speaker 3  36:11
+Okay. So so this is transparent to state of Missouri.
+
+Monowar Hossain  36:16
+That is right. Yes. So some of these years not only will be applicable for Missouri, but it will be global. But as of today, what we are focusing on based on the Missouri's features and user stories from all the channels. Yeah.
+
+Speaker 3  36:34
+So as long as we understand that the right hand side is now set, it's one sort of infrastructure that will support Missouri, Illinois, whatever Ohio. The right hand side is set. It's a set of environments that Agadia's provision are multi-tenant, which means that they can manage multiple states, and there are proper data segregation and all that. So there's no confusion. So there is one set of agadia infrastructure, but three environments: one fraud, two non-prod, connected to a host of different environments for across different states. Correct?
+
+Speaker 2  37:12
+Will it will it be okay? Because gain will other MNO accounts. We create multiple slides just to showcase, like example.
+
+Speaker 1  37:23
+Each one of them. So that's why we are not even talking MNO right now. We are not. DDI is pretty set for environments. I want a slide to be created on the risks. That's it. The other three, I don't know if Ohio still under construction. Ohio is done. That'll be done, right? So then, then first of all, change the slide name to Agardia Environment Planning or something, so we can we can reset expectations on that. And slide one should be current state of Agardia infrastructure, right? And then, what is needed for all the DDIs, which is the same for all three, expected or recommended version? I mean, yeah, recommended infrastructure setup for a guardia. If not, Plan B is this, but then there are these risks. And for MNO, for each state, it's going to be different. You need to talk to that group, find out what the existing environments are, and then we go back with a recommendation. You you don't have the right information right now for all the other two states. You had Texas and Texas in West Virginia.
+
+Monowar Hossain  38:42
+That's right.
+
+Speaker 5  38:44
+Yeah.
+
+Speaker 3  38:52
+So, this is this is heavy duty work. This is heavy duty work because you are essentially running a program that spans multiple DDIs and multiple MNO accounts with same infrastructure. So this situation, this picture may change based on what you have on the left hand side. But TDI is it might remain the same. So it's not a one time slide thingy.
+
+Speaker 1  39:16
+Correct. I hope. And you and it is okay to have multiple calls, Sandy. So like, let's move on, right? Now we know. I think. Can you get these three slides done for the three DDIs? Let's go back to Greg. He had asked for updates and discuss this. The next step will be after talking to Greg. We need to talk to all the ELs and make them aware of this.
+
+Monowar Hossain  39:42
+Sure, Smita. I can work on that kind of separately. Definitely
+
+Speaker 1  39:46
+reach out to the folks on the ground for the other two states and understand what is the environment setup. Okay, move. Can you move the slide to a shared path, please? So, yeah, we all have access. Sure, I
+
+Monowar Hossain  40:02
+can upload initial path, and I will share then the link with this group.
+
+Speaker 1  40:07
+Yeah, yeah, and you will need to collaborate with more folks on our. It is not the PMs, right? We have to define what we need. We have to call out risks. End to end, this has to be driven by us. PM has nothing to you. You go back when you have asks for PM. That's it.
+
+Monowar Hossain  40:28
+Yeah, I'm almost talking to everybody almost regular basis. We had more discussion.
+
+Speaker 1  40:34
+More with our folks on this side, not with the PM group, right? Like we need to be in sync first.
+
+Monowar Hossain  40:44
+Sure, it's been to you. We'll do more.
+
+Speaker 1  40:45
+Yeah. Okay. One thing I had a question though. Close the DDI stuff. So can you please create those three slides tomorrow day after we go back to Greg have this discussion, right? And then we see what the next steps are while you collect data for the two accounts.
+
+Monowar Hossain  41:10
+Right. One question I had, though, I don't know. I should be bringing that up here. I can take that offline with Lydian as well. I had one kind of clarification needed based on these vendors. When I say the vendors, meaning show scripts, then cover my maths, and obviously we have the idea. So as of today, they don't provide any you know sort of let's say they're testing results to us for review or verification when we are starting our SIT, is there something we can ask for it? Do you think that's a feasible, or that is appropriate way of asking it? Usually, they should be providing what they are doing. I have
+
+Speaker 3  41:53
+a fundamental question even before that. So, show scripts and whatever these guys will they test with non-PHI data? They can only test with non-PHI. Yes,
+
+Monowar Hossain  42:05
+they will be testing with the non-PHI because they are not connected to our PHI environments.
+
+Speaker 3  42:11
+Correct, because they said no, it's a big risk, and that's a change in strategy that happened after Ohio, right? Now before, why we didn't connect
+
+Monowar Hossain  42:20
+to that PHI. So
+
+Speaker 3  42:22
+I have a fundamental question which nobody is able to answer. We do de-identification based on our algorithms, Delfix or whatever. How will we coordinate
+
+Speaker 1  42:34
+with them? How will they have always with PHI? So why would no? So
+
+Speaker 3  42:39
+so there is this thing, right? And I need Monabar, and that's why I wanted Gaythri to be here. They were fine. Something changed during Ohio implementation, where all the vendors, including Agadia, said no. We will not have any PHI data in our lower environments. Is that true, Monabar? Because I remember listening to that conversation when or somebody was explaining it, am I remembering it right or no?
+
+Monowar Hossain  43:06
+Yes, lower environment do not have any PHI data, correct? That's the reason they will
+
+Speaker 3  43:11
+not test with us with PHI data, right? In their lower environment, that was there. So then, then we have a problem. The data that we have in our lower environments is de-identified by our masking or de-identification algorithms. That is Delphix. How will they get that data?
+
+Speaker 1  43:28
+What would it even mean to them? Like, what are you going to achieve by doing that testing?
+
+Speaker 3  43:32
+So, guys, I'm telling you, this is we have fundamental issues here, and I think we need a session with Nilay and whoever that team, we we need clarity, and and the reason why this ask is coming to us again, my take on it from Greg is that knowing the limitations that we have, we are seeing across the board from these vendors that are part of this Agardia implementation process, Agardia infrastructure limitations, is testing team aligned and have they thought through of a testing strategy on how they can perform testing with known limitations? Is what I believe he is asking, and if we just agree to it without raising risk and without discussions and calling out issues, the headache is on us. Then they will say, why didn't you think about all these things?
+
+Speaker 1  44:22
+So what are the vendors? Seer scripts and what is the other
+
+Monowar Hossain  44:26
+one? Cover my mats, CMM.
+
+Speaker 1  44:29
+So, two
+
+Monowar Hossain  44:31
+and Agadia, you know, obviously is our main vendor.
+
+Speaker 1  44:34
+Yeah, yeah, yeah. I'm talking about Agadia and these vendors.
+
+Monowar Hossain  44:37
+Yep.
+
+Speaker 4  44:38
+But for them, for them and seed, don't do they send testing files like de-identified files so we can test with with that?
+
+Speaker 3  44:51
+I don't know. I'm asking: Are we doing that? Are they okay in ingesting that data? If we are doing it, then it may not be a problem.
+
+Speaker 2  45:00
+I saw in DC this in the file, then it get de-identified, then they process the file.
+
+Monowar Hossain  45:07
+So we get the file from them. We get the metadata. That is how we process them, and get this done through our system so that we can see it. But I was asking a different question, right? You get that that what they are doing before even sending that on their from their side what testing they are doing it if we can get a hold of their testing so that we can review the so what did we do
+
+Speaker 3  45:34
+so Ohio they were I think we worked with non PHI data
+
+Speaker 1  45:41
+and did it work in production?
+
+Speaker 3  45:43
+It worked, but now they have changed their policy. They will not test with non-PHI data and PHI data in lower environments, is what I heard. And what they test and who is doing de-identification? If we are doing it, how are they getting the data? If we are sending the feed, fine. If they are sending the files, are they de-identifying, and how will we correlate to that data? I'm and again, my questions may be 100% wrong. Just explain it to me, Monowar. Two systems that have to interface on testing have to work on same data set. Are they sending us the data, or are we sending them the data? Who's identifying? How are we working on the same data set?
+
+Monowar Hossain  46:29
+So we have these APIs. I think as of today, we have six different APIs interfaces, right? So those APIs, through those APIs, data is getting converted and talking to different interfaces, that's how this is going through. And to my understanding, the data we are getting, these are being set up, right? The de-identified data, these are not the actual data. So somewhere, I do not know exactly which team is responsible for that. No, we
+
+Speaker 1  46:57
+need to know exactly, right? Otherwise, okay. So hold on one second. Can you draft that flow? What is inbound? What's outbound? What goes out of Agardia versus what goes out of Genwell? Is it possible for you to draft a flow novel?
+
+Monowar Hossain  47:14
+Yeah. So over here, let me see if I can make it bigger. This was shared by. This may have more details. So this is the this is some of the flow. Mainly prescriber creates that PA, then CMM sure scripts the EHR system is connects to, then it goes to the Gedia recipient from CMM Azure Scripts, then it comes to the Vue 360, our internal application. That's how basically it happens today when EPA spending are open. Is that that is one flow of it, so we have different flow of it of the EPA than other when spending or open similar process basically happens depending on the state of those EPA. So that's basically very high level from 50,000 feet or above. Yeah,
+
+Speaker 1  48:19
+that 50,000 feet you need to convert into that slide that you have created. These systems need to be shown up there for us to understand. Otherwise, we're talking in air right now. What is inbound? What's outbound? We have to put that in the slide.
+
+Monowar Hossain  48:43
+Okay, I can give some bullet points on that, the inbound and outbound of that process, and also with I think we have a diagram of the details. So your guardia
+
+Speaker 1  48:52
+is there, right? View 360 RX is what you have the first column, correct? So you need to insert these other vendors and the EHR system in that slide for us to visualize.
+
+Monowar Hossain  49:07
+Sure.
+
+Speaker 1  49:07
+Does it make sense? Yeah. Then we can have a conversation.
+
+Monowar Hossain  49:12
+You are talking about this flow, right? From prescriber to CM to share scripts to Egedia to our system. Okay.
+
+Speaker 6  49:19
+Hmm. Hmm.
+
+Monowar Hossain  49:22
+Hmm. Hmm. Sure, we can definitely do that to put something similar to in the slide.
+
+Speaker 1  49:33
+Yeah, let's can we just do it for the DDIs? It's the same, right? So one slide with an end-to-end flow showing the environment split up. Current situation where you have only three environments in a guard here. Yeah.
+
+Speaker 3  49:52
+So think from this perspective that if we have to do this, we need to know right what is connected to what, how the data is going to flow, will it be in sync or not, right? If we have to actually execute it,
+
+Speaker 1  50:05
+yeah. So how is it any different than the interface testing we do, where the vendors are aligned to our UAT environment, and why are we not able to follow that process with it? Like, why do I need to test with your scripts in SIT? I'll do. I don't know.
+
+Speaker 3  50:24
+That's where I need. I've been away from idea for a while. I need to know if they can work with PHI data or not. Yeah. So so are there any new limitations that have come in where nobody can work with PHI data in the lower environments, we have a problem. Or can are we supposed to do this testing with PHI data only in UAT environments?
+
+Speaker 1  50:50
+Correct. Yes. So standard protocol is in a CT. All the interface testing, you just check the layouts, the column records, that type of information. There is back and forth. There is
+
+Speaker 3  51:03
+back and forth. If if short strip and if short strip and no no anywhere whether SIT or UAT, if Shortstrip can only work with non PHI data, then how are you going to test that?
+
+Speaker 1  51:17
+Okay, so are they saying that that they cannot work with PHI. That's what you heard, Monowar. This
+
+Speaker 3  51:23
+is the level of detail we need to get to. Which environment is connected to which account environment is going to be connected to which Agartha environment is going to be connected to which third parties? What data? And are there any limitations there because of the three environment approach.
+
+Monowar Hossain  51:44
+Yes, so like we discuss, I can come up with this one, but this has to be approved by the engineering team, right? Before we finalize it, correct? That's the plan. So,
+
+Speaker 1  51:56
+what do you mean? What? What? Why would they say anything about what we are doing in SIT?
+
+Speaker 2  52:03
+So
+
+Speaker 1  52:04
+I'm not following. Like what? What does engineering team has to do anything here?
+
+Monowar Hossain  52:09
+So as we are assuming this is non-PHI, or we are confirming that it is a non-PHI. The first ask is going to be the creating SIT, which is more like you mentioned, is almost near about you know it's never going to happen, right? Then what is going to be our next step? In that case, we're going to be proposing okay, this is going to be our step, and if that is so, how we're going to be connecting? And if we're doing in the SIT, what data constraint we have, and all of these vendors are going to be connected to MPHI.
+
+Speaker 3  52:43
+They'll be connected to dev of Agardia, dev of Gainwell, and set of Gainwell at the same time. Correct?
+
+Speaker 1  53:01
+No, but we have to confirm that first. That is what we need to confirm first. Obviously, yes.
+
+Monowar Hossain  53:06
+That's what I was referring to. So that's the confirmation need to get from who? From the engineering team, correct?
+
+Speaker 7  53:15
+Yes.
+
+Speaker 1  53:16
+Why? Because yeah, yeah. Is
+
+Speaker 3  53:20
+it? Yeah, yeah, yeah. They they are managing all that, right? For anything to do with Agardia, it's Nilay's team, right? Whether it's a DDI on the left hand side or a MNO account on the left hand side, Agardia implementation is driven by Nilay and team, right? And Greg and all these guys. It's a program. It's not a DDI. It's not a MNO work. This is an add-on.
+
+Monowar Hossain  53:39
+Exactly. Yeah. So these confirmation, to my understanding, they need to confirm. Okay, this can be done. What we are planning for, and the data constraint as we are bringing up this risk that can be mitigated, and then we can proceed.
+
+Speaker 1  53:54
+Hold on, hold on, Monowit. So now, for all the states that we want to implement, we keep going back to SureScripts and confirming this approach, and that we will test with you for all our states.
+
+Speaker 3  54:09
+No, no, no, not so. So we need confirming. Sure scripts will only integrate with Agardia, right?
+
+Speaker 1  54:15
+Correct. Yes. So so we we we know the right hand side picture
+
+Speaker 3  54:19
+already.
+
+Speaker 1  54:20
+Yeah, yeah, I get it. But I'm trying to define the need to bring in a vendor every time for every state.
+
+Speaker 3  54:27
+No, no, the right hand side is fixed. If we take take it for a fact that right hand side is fixed, then then sure scripts and everything is fixed. Now your left hand side changes from DDI to DDI. How you get your IVNB to review results, your UAT to go through. They may want review done from a non-PHI data point of view, right? Real data point
+
+Speaker 1  54:50
+of view. I say I don't want those opinions from IBMB. I know that in UAT I need to do end-to-end vendor testing. Correct. So the
+
+Speaker 3  54:58
+vendor is only going to work with non-PHI data, Smitali is where there are questions. Why are we discussing this? Because Agadia is an add-on. They have their limitations, and they have told us their limitations. If if you have to get your DDI to be successful, and Agadia becomes a part of it, we have to figure out a way to mitigate those limitations and still make sure that DDI is successful. If on the right hand side they can only work with non PHI data, and your approvals.
+
+Speaker 1  55:30
+Let's find out that.
+
+Speaker 3  55:32
+Yeah, yeah.
+
+Speaker 1  55:33
+DDI, we need to do an end to end interface testing, correct? So the these vendors should be aligned from that perspective, and I am 100% sure Missouri will expect Illinois, maybe not. So we have to, and you're saying that where we have to call out the problem. Yeah, Nilaya manages that relationship with your script. Sure, find out then whether that group can work with us for Missouri, with PHI or not. If not, then we have to raise the risk for Missouri.
+
+Speaker 3  56:08
+Yes, that's exactly the point. It's an add-on. It's an investment project. Client and ask for it.
+
+Speaker 1  56:17
+DDI is different, right? So when you are moving for Missouri. You need to still test everything. I'm not talking about DDS in my accounts. For DDI, we are expected to test. DDI is
+
+Speaker 3  56:29
+the DDI team has to ask the the Agedia program team that this will not cut the water in our case. So either that has to do, there has to be a testing strategy. If we go in blindly, we are going to face problems where there will be challenges on the infrastructure side. I
+
+Speaker 1  56:49
+think we have to start these discussions. So let's put that slide, call out the risk, and when you are putting slide, I think we need a better slide. We need that end-to-end picture, Monowar, for all the components that are there, and what is connected, what is the current state, and then we discuss. I think there's a lot to talk.
+
+Monowar Hossain  57:14
+Sure, I will try to come up with that, and we'll share with Suman first before we circulate that to you and all, and we'll come up with that then.
+
+Speaker 1  57:24
+Yeah, please put it on a share. So why I'm bringing this up is links.
+
+Speaker 3  57:30
+Yeah, why I'm bringing this up is that this is not a small. This requires a lot of thought. What worked in Ohio may not work for Missouri at all,
+
+Monowar Hossain  57:41
+exactly. It's a
+
+Speaker 3  57:42
+DDI, different set of environments, expectations, IVNV. So, so just we cannot just go in just because it worked in Ohio. It'll work everywhere else. That's why we have to take each DDI, you know, and just map it out and see what are the problems, and call call those out.
+
+Speaker 1  58:05
+Yeah, correct.
+
+Monowar Hossain  58:06
+Yeah, absolutely right. We did because it may have a different requirement for state to estate. Like Ohio state was different than the Missouri, so yeah, we have to go with the state itself.
+
+Speaker 8  58:18
+Yes,
+
+Speaker 1  58:20
+and that is where you need to work with one-on-one with these guys, where a little more coordination is needed from your side. Monowar, don't go in with any assumptions.
+
+Monowar Hossain  58:30
+Sure, Smita.
+
+Speaker 1  58:31
+You need to know the current state of each of these accounts. Okay, all right. Yeah, let's connect tomorrow. I think we need to get to a closure at least on the immediate next steps and get in front of Greg on what we have. And I think
+
+Speaker 3  58:47
+one other thing is I would recommend we are making a lot of assumptions that you know show scripts cannot work with this or that. Can we have a call with Nilay and team and just clarify this?
+
+Speaker 1  59:00
+Yeah, once we Max may not
+
+Speaker 3  59:01
+know anything, but Nile, somebody, Nile, he will know. So maybe a call tomorrow with Nile and this group, Monowar.
+
+Monowar Hossain  59:14
+Yes, I can set up a call. Actually, Maxwell was asking for it, so including Max. Yeah, we can include Maxwell
+
+Speaker 3  59:19
+also. He can listen and right. I don't expect a lot to come from it. It'll primarily come out. But let's get
+
+Speaker 1  59:25
+our slide before that. Ah,
+
+Monowar Hossain  59:27
+correct.
+
+Speaker 1  59:27
+Whatever is needed too. So we are all on same page and looking at the same information. Okay, and we have very pointed questions for Nilay also. Clarify on these topics. Let's first get that on the agreed
+
+Speaker 3  59:42
+100% Monowar, can we do a little bit of clean up here as we discussed, and then we go with our understanding and our problem statements. And he may say this doesn't apply; it's not relevant. Why? Because of this and this. We will keep updating as we discuss. So at the by the end of the call, all of us will be on the same page.
+
+Monowar Hossain  1:00:01
+Yes, I like that idea better. So definitely, I will work on it, and we'll discuss then with the slides on.
+
+Speaker 3  1:00:11
+Okay, thank you, guys. We'll talk tomorrow.
+
+Speaker 1  1:00:14
+All right.
+
+Monowar Hossain  1:00:15
+Thank you very much. Thank you all.
+
+Speaker 1  1:00:17
+Thanks. Thank you.
+
+
+Transcribed by https://otter.ai
