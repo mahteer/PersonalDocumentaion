@@ -1,0 +1,476 @@
+Speaker 1  00:03
+Yeah, because when we brought it up to Avery, we didn't get an estimate, but she did say it would be costly.
+
+Speaker 2  00:10
+Yeah. So, and I'll double check if I heard back from Ross because we were looking for some time with him. That was late last week. Okay. Right now, he's suggesting something for tomorrow or today. Let me see if I can make one of those work. That's that's the next step. We want to have a conversation with them. Okay, so no final decision yet whether we're gonna do it or not. No, I gotta see if I can make this time work that he suggested, and it looks like I can.
+
+Speaker 1  01:08
+Okay, awesome. All right, so I know I was. We were going to have a call today. Nalay cannot make the call regarding the budget and what the spend is so far for engineering. So I'm going to have to change this meeting. I it's really hard to coordinate Greg, Dan, and the lay. Your schedules are are very packed. I'm going to try to get something later. Like I'm East Coast, but if it has to be like 6p.m. or whatever East Coast time, I don't know. I think Greg through Central time, right?
+
+Speaker 3  01:56
+I'm East Coast.
+
+Speaker 1  01:58
+East Coast. Okay, so I don't know what Dan is, but I think we we have to have this meeting sooner than later. Greg, I also know last week in the Missouri Agadia call, Mira asked me what's going on with the LOEs, and I said we are just still discussing that with leadership. And I said, please, if you have concerns, can you direct them to Greg? So she did send you an email on Thursday last week.
+
+Speaker 2  02:28
+Yep, to me and to Dan. Yep.
+
+Speaker 1  02:30
+Yep. Okay. So I know she's going to ask me again this week, but I wanted we have to have this meeting, like I said, sooner than later because we have to, we have to get these FOBs approved, or at least some kind of feedback back to them. So, if it has to be sorry, if it has to be late when people don't want to meet, I think at this point this is just when it has to be because we have to to get to get through this. So I will look at calendars and engage admins, admin assistants where necessary. But for everybody that I'm going to invite to that call, I apologize ahead of time because it might not be a convenient time. But this is something we just have to do.
+
+Speaker 2  03:17
+Who are the critical people that we need? So get
+
+Speaker 1  03:21
+it's going to be you, Dan, Nalay. I'm assuming Jeff would like to be there. Perry, you'd probably like to be there, right? So are those the five that I need? And then I think we also wanted Margaret there, right?
+
+Speaker 2  03:42
+Yeah, make her optional.
+
+Speaker 1  03:44
+Okay.
+
+Speaker 2  03:46
+And and why does Nalay need to be there? Not Nilay. You're more than welcome. I'm just curious. Is he? I think it's
+
+Speaker 1  03:53
+because of that. We were talking about that $500,000, and was that the engineering budget? I think that was part of the discussion.
+
+Speaker 2  04:05
+All right, then we definitely need Margaret there if that's the conversation. Thought it was the criticality of the future, but if it's the budget,
+
+Speaker 1  04:12
+no, no, no. This is more of budget talk.
+
+Speaker 2  04:15
+Okay, yeah, I think just schedule it for like 6o'clock tomorrow, make your life easier, or 530 if people can do that.
+
+Speaker 1  04:23
+Okay. Thank you.
+
+Speaker 2  04:24
+Margaret, Margaret, and Perry are in the West Coast. Yeah, it's really just me in LA. They're on the East Coast, and you.
+
+Speaker 1  04:34
+Okay. Perfect. Um, and then the other thing, the one thing I want to bring up is I know it came. This was on last week for Steerco, so SSO single sign-on. Agadia had asked us to bump it to a later release, so I went back to them and asked why, and they just identified that there is more work than they had originally anticipated, which makes it difficult to meet the December release. I think they bumped it to February.
+
+Speaker 4  05:20
+Di ambiotasi lo ke bolte pari naik za ni, hidhan ane bul kora jawana. Ambu cen yu karan Hossain bulhile trust trade problem hoy. Winti lasli hukce, amikan dua terusnya tekni. Kanak ni akta di pania bula akta diktar. Itu simple jin, siapa mutuki bulini? Kintu wu arta jenis boleh terutama matai nai di apni tu negative teskut ter negative boleh meaning aja 6806a amadi group tattoo v 3.026 correct itu ekanamadiktu pari nai karon ekane we did data nai extract vibhiti kenan nan uri po tan niya judi dahi ni hikpi koti guli wehan in kunut acehina jadi illegible kinte exact ojata boleh ce kuli reasonable kota boleh apa itu bukan Nana, ita ita ni bibiri pot ni sen, oi grupo jun. Niya dekla ni kan je procedure kuda say kunota apna match pore kina ujama dehikfi ji kurdi 149. Arikan alli down
+
+Speaker 5  07:19
+to.
+
+Speaker 4  07:22
+I can't even conundrut eligible hoy kina jeda extract ace jadi nata ke ekane eligible kinda extract kaya problem.
+
+Speaker 6  07:40
+Just set up Ohio differently.
+
+Speaker 7  07:42
+No, so that is going to be a bigger conversation because in that case, if you go with that plan, Agadia has to manage to do one URL pointing to Ohio specific one and one going to this multi-tenant solution. So, I mean, I cannot make that decision. I need Anil, Anil to come here and return for this Ohio reason. But if we do not get decisions alone, there may be a problem for having one single URL where Ohio is not approved. Then we don't have a choice at all.
+
+Speaker 6  08:18
+Right. So it sounds like we have a drop dead date, right, of when we need a decision, because the multi-tenancy APIs needed are going to be tested next week on Platform Gamewell, or in a couple weeks. In
+
+Speaker 7  08:37
+in in dev environment, which environment are we talking
+
+Speaker 6  08:43
+about? Depends on the first line item. So it should be so right now, right? Agadia UAT is connected to death. If we need them to repoint it, right to sit, Ohio sit or at platform Gainwell or wherever right this this these environments are going to be set up. Then we need to tell them, but everybody knows right that Agadi is ready to deliver these multi-tenant APIs in a couple weeks, in less than a couple weeks, and Gainwell is not ready. We have a lot of open risks tied to this multi-tenant model, right? Including our testing strategy, and and so we we really need to make some decisions, right, to get testing started, or we tell Agadia we're on hold because we can't get our, you know, our our ducks in a row. We haven't. We we're not able to give them test data. We're not able to, right? Like tell them, like is our dev environment or all the services going to be up and running there for them to even test the APIs?
+
+Speaker 7  10:12
+Let me discuss with Viliver. I don't think testing API should be a problem, Pari. By what? Let me confirm with Viliver and Jonathan. because I'm not sure. Greg, did testing team reach out to you about the go-to strategy for testing environments?
+
+Speaker 8  10:34
+We have yes, the first one.
+
+Speaker 6  10:35
+Yes, the first line item we met, right? We're looking at costs, but as of right now, where it sits, Agadia UAT is connected to Dev. If we need to repoint it to sit until this conversation is cleared up, right? Because there's minimal services on Dev. If you look at right the grid and that testing presented, all the services are really sitting on Sit right now. So couldn't you just do like Postman testing in Dev and right, like no
+
+Speaker 7  11:07
+no API testing can be done. That's what I'm saying. I'm not against that one. Absolutely.
+
+Speaker 6  11:12
+Yeah, but that's that's all that can be tested right now, right? So we need to we need to figure out what we want to do with Agadia UAT because there's such limited testing right now of what because of where Agadia UAT is pointed. Right, Dev has minimal data. Not all the services are connected. Like that's where we made a decision pretty quickly.
+
+Speaker 7  11:43
+Are we? Is the idea approved now for Missouri to share the data, even if it is just right? I'm very. I have to be very
+
+Speaker 6  11:50
+no.
+
+Speaker 9  11:51
+No.
+
+Speaker 6  11:51
+Missouri has a different blocker, right, with the background checks and stuff. I'm talking about Illinois as well, right? So it's not just Missouri focused. Right, right. But the
+
+Speaker 7  11:59
+moment we open up the traffic, right? It will open up a boat.
+
+Speaker 6  12:07
+Not if Missouri environments aren't connected to platform game well yet. I don't think we can connect them until we get the blocker squared away because we can't share
+
+Speaker 7  12:20
+data. Technically, it can be doable. Let me discuss with Jonathan and with the world to come up with a technical plan around it. But yes, to your point, API testing can be done without any. Now, when I say can be done within Gainwell environment only, not from the guardian.
+
+Speaker 6  12:40
+Right, and that's what Agadia wants. Right, they want to send a transaction to us using their new API, the new APIs, and they want a response back with test data. And we can't give them Missouri test data. The team is finding out when the AI synthetic test data creation is going to be done with Illinois. There's all these moving pieces right now, right with this upcoming delivery. Right, you have platform game well being stood up. You have the environment. You know the state-specific environments. You have the test data that's needed. There's like all these dependencies that I'm hoping somebody is tracking in detail, but high level, right? This is what I understand.
+
+Speaker 2  13:46
+So where are we landing with this
+
+Speaker 6  13:51
+one? I think Milay said he's going to go talk to Jonathan and come up with a technical plan. All
+
+Speaker 1  14:05
+right. So, can I just throw something else in there with the test data? So, I think for if we're talking about Missouri, I think the last I heard, test data wouldn't be available. De-identified test data wouldn't be available until 1015, and. and then I went back and said, "Well, what about Illinois? So I don't believe we have a date yet because, and I think we are trying to get synthetic test data for Illinois, and we don't have a date yet for when that will be available. And yes, Max, go ahead.
+
+Speaker 9  14:46
+I was just going to reiterate for the Illinois. There's no timelines. I think this coming Wednesday or tomorrow, from Joanne and I think it's Samar, so that we would have a more up-to-date timeline for when the de-identified data will be completed, or just just anything for in Illinois. But I did reach out because they did say that they can make manufactured synthetic data, and I confirmed with I believe it was Lillian and Metali that we could use that manufactured synthetic data for testing in Illinois, and then so Joanne basically said that that process couldn't take very long-a few days at most. So we reached out to her to get a timeline to when we can get that data just for testing in Illinois.
+
+Speaker 6  15:34
+So I think right, like we need to give dates instead of saying when can you give this to us, we need to say we need this by X date, or it it delays our testing, right? Because I'm not hearing, right? I'm not again, right? Going back to being tactical and getting dates and stuff. I was just about to ask Nalay, hey, that technical plan, can we get that in the next couple days? Because we we need a telegadia if we're going to be ready for testing or not,
+
+Speaker 1  16:02
+and the two well, and CMM wants the test data by Friday for both Missouri and Illinois. So before, I mean, obviously, we're not going to have that. But I wanted a better idea of when they can expect
+
+Speaker 7  16:20
+it. So, mr. Quick question: Why CMM needs the test data? Don't we have works with access from CMM portal? So
+
+Speaker 1  16:29
+they're asking for test cases. So has SureScripts. It's just that SureScripts hasn't given us a hard deadline of when they want
+
+Speaker 7  16:39
+it. Are we talking SureScripts or So for
+
+Speaker 6  16:41
+every for every client setup, the EPA vendor has to do configuration, right? So they need our bin, they need our PA form, they need a bunch of stuff, right, to do the configuration on their side. I guess the MM is giving a date of this Friday. I don't understand why. Right? Is there standard SLA? Don't know the contract either. Is it a 30-day right SLA TAT for configuration if we want the right the the sandbox for CMM for Illinois to be ready by 10:1, right? So we got to back into our dates again. Like when is Illinois, right? Like when is our phase two testing going to start for EPA, right? When? Why does Cover My Meds need this much time for testing? Are they going to only be configuring the testing sandbox, or are they going to need all this information for their production configuration? Because they shouldn't, right? Because we don't go live for a few months. So those are the questions we should be asking CMM. Just because they give us a date, right, doesn't mean we can we need to accept the date. We need to confirm why they need this date, and if we don't have some of the documents ready, what can they still do to set up the configuration? Right. We know that hey, the forms are for the provider, or the forms for the providers, or are they for the testing team? Can they set up a generic form for us, right? Until we get the finalized form, like those are the kinds of questions we should be asking the vendor.
+
+Speaker 7  18:29
+So here is my request: that particular test data needs to come from the IP team. So who is the IP data for Illinois and Missouri in this call? Do we have Subashi and do we have someone from Illinois who is leading those implementations?
+
+Speaker 10  18:49
+So Nalay, I can only speak for Missouri. We're still waiting for the new process that will be established for background checks. We did get an update from Justin on Friday that they approve the forms. Now it's just a matter of days. I think they're just finalizing the step-by-step process and sending that over to the team. So we should be able to clear that blocker soon. But only then we'd be able to send data. But we have the data. In fact, the the PA data just came in today, so it'll be part of our conversion mock. Girish is the Girish Nair is the conversion lead for Missouri. Yeah, mock two. Yeah, mock two. But you know, you may know that mock one and mock two are actually happening in parallel for Missouri. So it'll all be completed by September 22nd. If we align the background checks to that, then you know soon after. I'm thinking early October is when we'll be able to send data for Missouri specifically. But for Illinois, I'm not sure. Yeah.
+
+Speaker 1  19:54
+So wait, Mylene, are you saying that the? I know we can't send it, but you're saying that the Missouri de-identified test data will be available September 22nd.
+
+Speaker 10  20:04
+That's right. We just won't be able to send it, but we'll have it.
+
+Speaker 1  20:07
+Right.
+
+Speaker 10  20:08
+It's part of our conversion mock that's running right now. Yep.
+
+Speaker 1  20:12
+Okay.
+
+Speaker 7  20:18
+So, Christian, we need to find out someone from Illinois perspective as well, what is the line of sight in Illinois's time? Because I feel we will not be able to meet this Friday date, no matter what. And as Pari mentioned, we need to understand what the rationale behind it, and let's huddle internally and identify when this data will be available, and then can it be shared so that we can give the timeline from our perspectives and let CMM come back whether it works or not.
+
+Speaker 2  20:47
+Okay.
+
+Speaker 1  20:57
+Okay. Does anyone have any? I have stuff. I think I have like two walk-on items, but does anyone have anything else before we move on?
+
+Speaker 2  21:05
+Just back to the favorable status for the Agadia resources. Have we communicated a line in the sand yet to the implementation that if something isn't done by X, we can't make date?
+
+Speaker 1  21:21
+Communicated that to the state.
+
+Speaker 2  21:24
+Well, to to the implementation team.
+
+Speaker 1  21:28
+Oh, I don't think so.
+
+Speaker 10  21:34
+Yeah, no, we haven't. So last week on the
+
+Speaker 6  21:36
+Missouri, well, last week on the Missouri call, right with Agadia, they said that if they don't get test data soon, right, it's going to delay their testing, and they're not going to be able to commit right delivering the code to Agadia UAT. So I think that's what we need to find out, right? What is Agadia's drop dead test drop dead date, you know, so that they can finish their testing, and then that's the date that we need to communicate to the implementation team. If right, and and we kind of know right now we know that it's 9:22 for Missouri, right? So pretty sure Missouri testing is going to be delayed for Agadia, and that's where we were shifting our focus back to Illinois. So now we got to go to the Illinois team, right, and say, "Hey, what is you know? I heard I heard Max say a few a few days, but what's a few days, right? When and and then also it's not just the historical data, right? It's everything like the benefit setup, right? Like you can't do any of this PA functionality without being able to submit a claims test, right? So, is our claim edits going to be set up? Is our benefit edits going to be set up? Like everything needs to be ready upstream, right within Vue 360Rx. It's not just PA data. It's not just claims history data. It's everything that we need, right? As part of sending this the the data back in the APIs to be able to test. I know a lot of people are focused on this, on you know the members and and you know claims history and things like that. But it's actually what's the claim config timeline for Illinois, right? PAE. I heard there's an open question on PAE for Illinois. We're leaning towards no, right? But that hasn't been confirmed. So there's all these, all this system configuration that has to happen on our side before any of this test can even start.
+
+Speaker 2  23:47
+Okay, so my lien is on here for the Missouri side of it, right? So my lien will get you that date, that drop dead date, but just want you to be aware that we're getting to a critical point unless timelines shift in Missouri, which I know there's discussion.
+
+Speaker 10  24:08
+Yeah, yeah, and it's on our rate as well, so it gets reviewed on the internal rate call for for the PBA project. So Subasis and Tammy and you know Craig at the time when he was still here, they're they're all away. Yep, we're expecting a delay with that.
+
+Speaker 2  24:25
+Yep. So then let's pivot to Illinois. So who can answer what the date is for Illinois? I don't think we have a Mylene on the call for Illinois. So, I think we need to understand what's the drop dead date and when they need synthetic data. I'm sorry, not synthetic data, but the the drop dead date that Agadia needs
+
+Speaker 6  24:57
+data. It's the same date, right? So they need they need test. They need testing date from any one of our clients, right? To test this multi-tenant API functionality, they don't care if it's Illinois. They don't care if it's Missouri, right? We have a blocker with Ohio, so we weren't planning on giving them Ohio test data, but that's it's the same date, Greg. They need test data.
+
+Speaker 2  25:26
+Yep. So we don't have a favorable status issue with Illinois. So what what's the holdup in the case of Illinois? Right. So
+
+Speaker 6  25:36
+getting that synthetic data created.
+
+Speaker 7  25:40
+Wait, but do we really need synthetic data in Agartha for the? That's another question. Have to be very careful because data should be matching end to end. And in Agaria, we have only a two or not three environments, I would say. And if we are putting synthetic data in the lower environment, there will be challenges.
+
+Speaker 6  26:05
+Why? Right. As long as the data matches whatever environment we're connected to.
+
+Speaker 7  26:10
+Right. Right. So that's what I'm saying. When you generate the synthetic data, same data needs to be shared. It does not require new synthetic data generation. So there will be a coordination for it. And again,
+
+Speaker 6  26:22
+well, they don't load. Yeah, like as part of synthetic data, right? If you're creating member 123, and part of your process is creating fake PAs for member 123, then our data needs to be right connected, right? When when Agadia calls to us, we're going to first give them that member, and that if part right, whenever we're loading PA history, right, they'll pull up those fake PAs with that fake member we created on our system, right? In our system, we need to make sure that synthetic data is coordinated through all the places that View 360Rx needs, right, to process a claim. So that's where, right? The synthetic data that's going to be derived is more on us, right, than on Agadia. So I don't know who's owning, right? What which team is creating the synthetic data, and if we need to have a quick call with them to make sure that they understand how right the PA Hub integration works, and that they're creating the synthetic data appropriately. Is that something only your team can connect with that team and kind of say these are right? These are the key critical data elements.
+
+Speaker 7  28:20
+Yeah, we need IP team to lead that one party because that IP leader should be engaging them because Sean West team is building the synthetic data. That's a different group there. I can talk to them honestly. I can give their requirements, but eventually it needs to be tracked as a overall project plan, which is driven by the IP data.
+
+Speaker 6  28:43
+So I thought there was a name. Hold on, let me find something about a new process for synthetic data. Came from some VP. Is it Brian Bearden? I know I read something.
+
+Speaker 7  28:59
+That's for de-identified data. Okay. Okay.
+
+Speaker 6  29:02
+Never mind. That's dear. Okay. So, are we gonna right? Is is there two phases? First phase is synthetic data, and second phase is de-identified data.
+
+Speaker 7  29:15
+Yeah. De-identified data is not needed if we are going with synthetic data, that's what I was asking. Like, do we need to go with the synthetic data, or should we take the de-identified data for Illinois? But I am not sure when that data is going to come. I don't have those time next year.
+
+Speaker 6  29:33
+So, is Illinois going to well, and that's and that's the question for Illinois as well, right? I think we need to have a call with the Illinois implementation team, but what data do they plan on using in Agadia PHI UAT? Right, we have this other environment that is specific for PHI data, but I didn't think Missouri and Illinois were going to use any PHI data. So is that where synthetic data comes in? I mean, de-identified data comes into play. Are you using? Are you going to use synthetic data in SIT and then de-identified data in UAT?
+
+Speaker 1  30:17
+And can I just ask another question too, to kind of even take a step before what Perry's asking, Max. I don't remember to. Why did we go the route of synthetic? Was it because the de-identified data wasn't going to be ready in time?
+
+Speaker 9  30:34
+Exactly. That's what it was. Kind of a proposed workaround for when
+
+Speaker 4  30:40
+as they get
+
+Speaker 9  30:41
+the timeline squared away for their de-identified data process, they can. In the meantime, we could get that
+
+Speaker 4  30:51
+synthetic data so that we can get. Okay, thanks. I couldn't answer Perry's question.
+
+Speaker 6  31:18
+Right. Right to test the the the next major release or whatever the multi-tenant API release is one release, and then the second was Mac. was going to follow up with the synthetic data team to see to to tell based off of that date, right? That Agadia gives, we're going to tell the synthetic data team that's when we need the data by probably a day prior to that date, a day or two prior to that date. Okay,
+
+Speaker 1  32:08
+I'll go back to Agadi and ask for their drop dead date.
+
+Speaker 6  32:13
+And then number three, Nalay was gonna go work with his team on the technical plan, right for these environments and platform gainwell. Okay, number four, right? We're going to set up a separate call with the Illinois implementation team to come up with the plan of what type of data needs to be created and figure out where you know where de-identified versus synthetic data is going to fit in the timeline and into which environments?
+
+Speaker 1  33:17
+Is
+
+Speaker 2  33:21
+there anything else that I missed? Because we had a lot of conversation. I just want to make sure that we have everything documented. Yeah, the other the other thing that we had was that I'm going to follow up with Ross on a review of the test environment. The test environment. costs.
+
+Speaker 1  33:46
+So you're talking about this creating the sit environment at Agadia.
+
+Speaker 2  33:50
+Yep. Okay. Yeah. If we go if we're going through everything that's going on.
+
+Speaker 1  33:55
+Okay. Perfect.
+
+Speaker 2  33:56
+And then the last thing was that you were going to set up a call for the LOE.
+
+Speaker 1  34:01
+Yep. Which I already moved. It's tomorrow night, 6p.m. Eastern time.
+
+Speaker 7  34:08
+Greg or Pani, do you guys know if Abadia is making changes for regarding the SSO compliance piece issue that we had earlier on from Soya? I think that's a line item. I think they have received all the requirements, right? But they said their delivery date doesn't get up until
+
+Speaker 6  34:30
+February. I don't know if that's been taken back to our SSO team to see if that's acceptable, but that is the initial delivery date that Adalia provided for the braid log that I just saw.
+
+Speaker 10  34:52
+Yeah, Perry, on that just for Missouri, we do have a risk on that because we need to have that completed as part of you know our SID testing, and the security team has a schedule that does not align to that date. So Deonte Brown, who's the the PM for that side, working with Aram from a security and IAM standpoint, will you know just speak to his timeline on Thursday's recall, and I'll be able to give you all an update. But that that has been reported to the PMO as a risk for Missouri. The initial target date was December 10. Is that right?
+
+Speaker 6  35:37
+But when is when is SIP for Missouri supposed to be completed? Given that we're pushing dates, right? There's there's already a delay, so it could be right that you do. I mean, single sign-on is a piece of it, but you could do the majority of your set testing, and then once the you know February release is is is delivered for for SSO. You can just test SSO.
+
+Speaker 10  36:09
+Agreed. Yeah. So it's not a blocker to starting it. It's just that we anticipate a delay with completion. So it could push our sig complete milestone. So we just need to monitor that, but but we can absolutely get started. So it's just something we need to keep an eye on. Right now, the schedule is showing that we'll still be. Let's see, final test results for Sid is march 9. Yeah, march 9 is when we would deliver those test results. So 228 is very close to that date, it could still be done, but you know, it's just something we need to keep an eye on.
+
+Speaker 6  36:46
+But are those the new dates, or are you guys thinking that Sid's going to be pushed anyways? Because
+
+Speaker 10  36:55
+yeah, I mean, probably it might
+
+Speaker 11  36:56
+be pushed.
+
+Speaker 10  36:58
+Yeah, so internally, I think we all understand that there's going to be a shift, Pari. I mean, if we're being honest, right? I don't believe anything's been made official, or you know, we haven't received executive approval on on the revised revised schedule. But I think it's all you know, it's it's known at least among this group, I don't have
+
+Speaker 2  37:23
+anything to add, Mylene. But right now you said March 9th official date.
+
+Speaker 10  37:28
+That's what that's what's in the schedule today. Yeah, the understanding is that you know there is some replanning happening right now for the PBA schedule, and we don't know what those new dates will be. Where we're being told to just keep pushing to what's in there today until they announce the new dates. So that's kind of where we are, Perry.
+
+Speaker 6  37:49
+And I get it, right? But but the team is right. There's a lot of work right now, and we got to figure out where we're gonna, you know, which battles to fight. So it's in the back of my mind, I know that right there's a potential delay. I don't want to right, like go and you know push agadia for for this delivery date. I mean, we we also have to talk about Illinois, right? So I get it for Missouri, but is Illinois fine with the February date? I don't know, right? So, so that's that's what we always have to keep in mind when we're seeing these dates, right? Is with all these, you know, so with these two clients, like, do do the dates make sense?
+
+Speaker 2  38:36
+Does SSO have? Is there a problem with SSO? I know it doesn't align to best practice, but is it a is it a blocker? Is it a showstopper, or is it that we want to do it a different way and we want to do it better, and that will be ready in February? Do we know? So I know
+
+Speaker 10  39:00
+this CI that was submitted has some sort of compliance, or you know, Saml OIDC. There, there's there's some sort of an upgrade in that change request, Greg Antoine. You can you know if you remember the details or you know or what you worked with Rich Trimble on, I just know that you know it was possible to hit our date. It just there's some additional compliance that needs to be met, and you know that was included in the CR, and that's why the effort was so high, and BLE came out so high, and they also need that extra time to to get. Yeah,
+
+Speaker 2  39:36
+I'm I'm I'm just trying to understand: is there a scenario where we could go out with something and then do a fast follow up for you know.
+
+Speaker 6  39:45
+Yeah, like can we set it up with how Ohio has it today?
+
+Speaker 12  39:49
+Yes. Yeah.
+
+Speaker 6  39:50
+Because I believe right, Ohio is supposed to be retrofitted anyways with
+
+Speaker 8  39:53
+right
+
+Speaker 6  39:54
+with the new security enhancements. So Tuan, is that something that we can go back to the security team and ask, given the delivery timeline that Pagadia has provided?
+
+Speaker 3  40:12
+I don't deal with a security team, so I'm just gonna work with Max to go back to Rich and Taylor to to see if this.
+
+Speaker 6  40:21
+Okay, then we need right. We need Vid. Yeah, we need Vid or somebody from the Lace team to to lead that you know technical conversation.
+
+Speaker 3  40:31
+Yeah, Max, would you mind set up another call with Rich and Taylor, please? I know their schedule is very hard to to find time slot. If it's this week, if possible, please.
+
+Speaker 9  40:43
+Yeah, absolutely, I can take that.
+
+Speaker 2  40:45
+So who's taking that? Max is taking that.
+
+Speaker 3  40:51
+Yeah, Max was tough set up a call. I'll I'll talk to Rich and express our desire to just basically use the current pattern with Ohio. Just try to push things forward, and then how we can have a revisit at yeah, it's
+
+Speaker 2  41:06
+a fast. Yeah, and I think I'd use the language fast follow-up.
+
+Speaker 3  41:09
+Yeah, yeah,
+
+Speaker 2  41:10
+right.
+
+Speaker 3  41:10
+But again, I can't promise anything is what's going on. What Bridget and Taylor is going to tell us, basically. Yeah.
+
+Speaker 2  41:17
+No, I understand, but I just want to say we need to push. Say, what are our options, right? If we don't want to delay everything, you know, is there is there a vulnerability? Is it best practice, or is there a vulnerability? You know, what's the risk? And then what is the risk? Define the risk. So if we understand, they they need to articulate the risk so that we can determine if we want to accept the risk or it's a risk that we can't accept. All right. So just back to the one thing on Illinois and the data. So, are we saying that we may have different Illinois data needs versus Missouri data needs, or one and the same? I guess I wasn't clear on that conversation.
+
+Speaker 6  41:56
+It's one and the same. Okay,
+
+Speaker 2  41:59
+because I thought you said Illinois a plan for what data is needed to be created, so so storage
+
+Speaker 6  42:07
+environments, right? So first, so so agadia UAT, or sorry, yeah, Gadia UAT because we're not going to have the de-identified data ready or any data from the client ready. They were going to create synthetic data. Yeah. Like we need any any type of data right now. Okay. Gotcha. Any test data, and then after that, right when we actually get the data from the client or from the incumbent vendor, we are going
+
+Speaker 8  42:39
+to
+
+Speaker 6  42:40
+identify that data and load it into another gainwell environment.
+
+Speaker 2  42:43
+Yeah. So where I'm really going with this is, if we're going to do synthetic data, why is the Missouri favorable status relevant when, if it's synthetic data, I'm going to be using it for Illinois? Can we proceed?
+
+Speaker 6  43:01
+Because Max followed up with the DDI team, and they said no data to be shared. Period.
+
+Speaker 2  43:07
+Well, the DDI.
+
+Speaker 1  43:09
+Wait a minute. I think that was de. I think what Max asked to be fair was de-identified, and they said no. I don't think we point blank asked them about synthetic.
+
+Speaker 2  43:21
+Well, and also there's
+
+Speaker 6  43:22
+synthetic deep data in scope for Missouri right now because they're gonna be like, we're giving you all of our data on 922. Who
+
+Speaker 1  43:33
+would say? Who would ask that?
+
+Speaker 10  43:36
+So if you need any kind of data, you'd have to to I I'll connect you to the conversion team, and they can make that call. Yeah.
+
+Speaker 2  43:44
+But but where I'm getting at is whether Missouri says yes or no. If we're using the same set of data for Illinois, is that what I heard?
+
+Speaker 6  43:52
+No, it's it's not the same set of data, right? It has to be different members.
+
+Speaker 2  43:58
+Okay. So so that's where the plan is. I follow now. I thought you said it was one and the same. I get it. It's it's the same concept, but it's different data. I'm clear. So we can proceed with the Illinois data. It's the Missouri data that we have to get the approval. Okay.
+
+Speaker 1  44:16
+So I just want to say something real quick, Vid. I know your hands up, and I know we're at time. I guess so. 9:22. The de-identified test data for Missouri will be available. The question is, will there still be a block for the background check? Because just because the state has figured out their internal process now, you know what if they come back and they say Friday? Yep, our internal process is figured out. Now we're going to move the Agadia folks through the process. How quick is that turnaround, right? Because don't all those Agadia folks still have to go get fingerprinted and all of that? So we might not still meet whatever Agadia's drop dead date is for data. So would it make sense? And I know Perry, you're saying if we go and ask for synthetic data now, or say we're going to use synthetic data, they're going to say, well, our date is going to be available to you as of 9:22. But if the background check is still a blocker, it could behoove us to look at synthetic data for Missouri as well, if they are okay with that.
+
+Speaker 6  45:27
+Well, that's if Missouri is ready for testing in all aspects too, right? So that's where I really need you to go back and rebaseline the dates once we get new dates from my lane. But right now, right now, I'm just creating it as a blocker, right? Blocker, we don't know. We need we need confirm dates to move forward, right? So as soon as you get those dates, you rebaseline, right? And then if the 922 date meets the new rebaseline dates, then you don't need to ask for synthetic data.
+
+Speaker 10  46:01
+Correct. Yeah, and I just want to confirm that you know it is in fact we may have the data on 922, but again, there's a process. Like it's the process of the background check. We don't. Yeah, it's the background
+
+Speaker 6  46:12
+check. It's it's it's getting it load right. Like getting the data is very vague, right? There's a conversion process that we need to do to get it into Gainwell databases, and then there's an extract process, right? That needs to be done for the PA history file. So there's, it's not just getting the data, but it's actually making sure the data's ready end to end. And we have right, like I think Garesh or whoever was we met with initially, he's like, I don't know if we're going to be using the Ohio procedure. I don't know if we need to build a new procedure, which wouldn't make sense to me because the game, the Agadia layout, is the same for all clients. We're not changing the PA history layout. So, as of right now, right, Missouri is blocked, and we gotta at least get some kind of data to Agadia, and we need to focus on Illinois until a got until Missouri clears their blocker.
+
+Speaker 10  47:10
+Okay. Yeah. Okay. And just a quick note on this. So we did talk about you know the scripts. They they have the scripts. They're reusing the same scripts that that Nancy had. Okay. So if that yeah
+
+Speaker 6  47:21
+that that's great right because there was confusion before so if we can get that decision documented, so we're all on the same page, right? That they they agreed that they're going to use the same scripts and procedures that Nancy did for Ohio for the PA history load.
+
+Speaker 10  47:40
+Yeah yeah correct and and the mock includes loading the data. So when you know that completion date of nine 922 is is will actually have the data loaded and de-identified and all all that good stuff. That's that's everything done at that point. So from then it's just extracting the you know running the scripts and you know getting the output in the format that we needed, which you know, Girish said would take you know maybe a couple days or so. But yeah, we we we you know again, it's it's the background checks. I think the the longer pool is just getting the background checks done. I think with the data will be there and we'll have it loaded and cleaned up, but we just won't. I don't know how long it'll take for the entire Daddya team to get through the background check process. So it may just be October. So, but yeah, I agree with Parry. If you all you want to focus on Illinois, I mean we've already communicated that to you know the team on our side that you know Illinois is the priority right now because we have blockers. So we're just gonna have to wait.
+
+Speaker 1  48:42
+Ben, I see your hands up. I know we're way over time. Go ahead.
+
+Speaker 13  48:47
+Hey, Christine. So there was one thing that I was discussing last week, and I was hoping if we can get some guidance from leadership. So there is a code change that we we were discussing with Agadia regarding the member and provider data generation time. Now we took back to our architects, and they like raised this concern that if we go, we are going to do it the way Agadi is asking, then it would actually be a bottleneck for us? And to go a bit technical, like the the idea was to use daily reconciliation to populate those two fields. But if we go through that, currently you know daily reconciliation is only for failed records or the one that like didn't come to us due to due to some network failure, but if we do this, then we'll have to do it for all records, you know, approve and whatever. So that will raise a bottleneck later on, since and that I mean that shouldn't be the right way to do it, so that's why we wanted to like bring up here. Since you know, last time we discussed with the guardia, they like outrightly denied that they can't do it. It's infeasible for them. So we wanna like go back to see if like they can you know adjust their architecture or something to you know incorporate an additional authorization API call so that those fields can be populated in real time rather than doing it later.
+
+Speaker 6  50:35
+So then I think you need to write this up, right? What the problems taken in? What impact is going to cause to the annual processes, so that we can right we we can have a conversation around
+
+Speaker 13  50:49
+it. I mean, I have that email. I'll like put up follow up email, include all of you guys, and just give a detailed analysis. I'll do that.
+
+Speaker 1  51:03
+right. Yeah, yeah. I I need more details. Thank you. All right. Thank you, everybody. I know we're way over. I appreciate your time. Have a great day.
+
+Speaker 9  51:13
+Thank you.
+
+Speaker 1  51:14
+Thank you. Bye.
+
+
+Transcribed by https://otter.ai
