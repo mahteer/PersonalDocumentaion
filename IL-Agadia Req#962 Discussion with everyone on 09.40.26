@@ -1,0 +1,310 @@
+Speaker 1 0:02
+Yeah, as far as I know, Illinois doesn't actually use that therapy. It would have a a PDLs. There are instances where a member would have to use a preferred drug prior to getting a non-preferred drug, but it's like that's just set up in the system to reject as as non-preferred, then they would have to request a prior off to to get the override.
+
+Speaker 2 0:24
+Okay, that's exactly what Rich said. So I just want to make that clear too. Under the description where it says step therapy, these are those NASPO standard requirements that they pulled in, and that doesn't apply to Illinois.
+
+Speaker 3 0:40
+Can we add comments?
+
+Speaker 2 0:43
+I was told I can't change that. I can't change. No, but we can add
+
+Speaker 3 0:48
+comments, not in the description. If you go to the comment section, Monowar
+
+Monowar Hossain 0:52
+Yes.
+
+Speaker 2 0:52
+Oh, here.
+
+Speaker 3 0:53
+Yeah, here we we can add this comment.
+
+Monowar Hossain 0:57
+USC provide clinical exception approval.
+
+Speaker 3 1:02
+Oh yeah. Similarly, if we can add for the step therapy, Jennifer or Joel. Okay. Okay. And also the subdomain on this requirement. Do we need to tag it for prior authorization? This is
+
+Monowar Hossain 1:23
+the both, to my understanding. It's not only just prior authorization. Yeah,
+
+Speaker 3 1:28
+right now it says track current. Let's try for prior authorization also, right, Joy? The owner is yeah.
+
+Speaker 1 1:35
+Yeah, I guess the question are are we trying to test the entire process all the way through with this one. I was like, "Is this looking at can we put a a prior off into PA Hub approve it and then have the claim pay? Because if that's the case, then yeah, we will need Emily or somebody from from prior off to be included in this to make sure we get that stuff counted for.
+
+Monowar Hossain 2:03
+Yeah, yes, do it. Well, it says
+
+Speaker 2 2:10
+according to like I'm not. I'm looking at my version of what you're displaying. It says satisfied by reference deliverable approval and test result deliverables, pharmacy claims processing manual, prior authorization operating procedures. Those are like the outcomes of this one. You've got those. Yeah. So does that is that not explicit enough then? I mean, like I'm just wondering if it's clear to me if it's clear if we're all in agreement that that part's okay.
+
+Speaker 1 2:58
+Yeah, and it's Jennifer. My question is I'm I'm not sure if all of that needs to be included in like this specific item because I thought we had other items in ALM that were looking at the the prior auth piece. So like I said, I I just and maybe it's just that I need to go back and look at the ALM requirements. I just don't remember off the top of my head if like I said, if this specific one is testing the process all the way through, or if this is just showing that we can override that, like a PA reject,
+
+Speaker 2 3:28
+I'm gonna I'm gonna share my I'm gonna steal the screen just for a minute. This this is kind of like sure what happened. Trying to get this back up again. Yeah. So this was this is what they had been reviewing for the past week when Rich sent all of this out. I asked Tricia to upload all of his comments into ALM when I couldn't get in there, and he gave some codes.
+
+Monowar Hossain 4:14
+Yeah, those we could see in the acceptance criteria for that recommend.
+
+Speaker 2 4:19
+And he ends with we need testing to verify that improved PA will override the PA edits. We need to test that edit overrides created for utilization management edits will successfully override the edit. But that's when he told us he told me about the step therapy not being an issue. So I'm sorry. You can go grab the screen back.
+
+Speaker 1 4:44
+Okay. Yeah. Yeah. Sorry. I missed a couple sentences at the bottom there. So if we do need to test that an approved PA will override it, then we will need to link this to Agatia as well to make sure that when when a PA is approved in a guardia that it enters the off correctly to overwrite yet.
+
+Speaker 2 5:07
+Okay.
+
+Monowar Hossain 5:10
+Okay. So what I was saying, Jennifer, that I see all the description what we had in the email, they are being mentioned in the here and the acceptance criteria, so that is fine. What I wanted to kind of separate the responsibilities of these two team was that
+
+Speaker 4 5:33
+like yes, I need to give my input because like we have did testing with 7705 edit and not with 7659 and 7240. Yeah, we never tested those edits, and I have. Yeah, we should know that all these edits, like the edits, need to be overridden. These are in the system or not? Based on that, only we can write the test cases.
+
+Speaker 2 6:06
+You've never, you've never done that compound PA, PA claims,
+
+Speaker 5 6:10
+no. It seems more about Illinois specific, that is right. If I say like that, because for a while maybe we haven't
+
+Monowar Hossain 6:29
+done that. And another question, like I do not know if we are just planning these three edits. How about these edits? All of these edits should be fired for the claim edit. This should be as part of the PA.
+
+Speaker 4 6:54
+That's the discussion I had. Sorry. Yeah, go ahead, Mia. Yeah, this is the discussion I had with Jason yesterday, Monowar. Like he said that he need to check whether these edit codes are there in the system or not. Like that's why he wants a CR to be created.
+
+Monowar Hossain 7:16
+Okay, but these are gonna be fired through the P Hub system, right? Has has that been confirmed? Or these are says other claim edits cannot be overridden by prior authorization. Require an edit overridden ride to be entered by a user.
+
+Speaker 2 7:44
+So the member gets a drug, and they try and put it through, and they you try and put a PA in, and it, our system needs to say no to all of these.
+
+Monowar Hossain 7:56
+Okay,
+
+Speaker 2 7:57
+all those edits, because if there's a drug to drug interaction, a critical level one drug interaction. We don't want that to be able to. We want to tell the pharmacist no and tell them why.
+
+Speaker 5 8:11
+Yes, Jennifer. So I know that so about three edits are specific to the prior operations where those edits can be avoided and with the PA. So, but the list below is can't be overridden PA. But P can be overrid with some override eight word override information, which we can enter. So, do we have those details on an?
+
+Speaker 4 8:33
+I think I think it's the other way. The 7705. It's the edit post for the PAS required that cannot be overridden the edit below like from three to two one, yeah those heads can be overwritten yeah and
+
+Monowar Hossain 8:53
+okay
+
+Speaker 5 8:54
+no no no sorry that that's not correctly guys so just see 72407659 and 705. Okay, let's say for these edits, whenever you receive that 75 rejection pain, so when you add the PA, the client will pay. Okay, so the other edit list you see 32212 whatever the list 7299 right. So even if you add the PA, you can't overwrite those edits. So for that you need the DRPPS overwrite information. So those information is entered. These edits can be overridden. So the PA specific ones are the ones you can see above. So the below ones, even if you add the PA, you can't override until unless you add the edit override information. So that is the information I am looking for, Jennifer. So is there any specific override edit order informations you have, Jennifer? Can you please send share those information for this edit? So we will write the test cases accordingly.
+
+Speaker 2 9:53
+Okay, I wasn't tracking all of that, but are you asking for like specific drugs or therapeutic classes?
+
+Speaker 5 10:02
+No, no, it's not classes. So that we, I think, yesterday I discussed with Sami on this. For I think for these, there is no your specific configurations available for these edits. But we'll go by the edit requirements and we'll try to trigger these edits. Once we generate the edits, to test the bypass or to override the edits we are receiving, and to make the claim pay, right? So we need some edit override information to be entered. So those details,
+
+Speaker 6 10:39
+yes.
+
+Speaker 2 10:39
+Okay.
+
+Speaker 5 10:40
+So those details we need that. But
+
+Speaker 1 10:43
+when you say edit override information, are you referring to like an actual manually entered edit override, or like the PPS codes that a pharmacy would enter?
+
+Speaker 5 10:54
+Yeah, PPS codes.
+
+Speaker 1 10:57
+Okay, because I don't think in some manual you did the the configuration. So correct me if I'm wrong, but I didn't think that Illinois allowed DUR edits to be overridden by by PPS codes. I thought everything had to be to call for a manual override.
+
+Speaker 7 11:17
+Okay. No, I think Joel like is only early refill edit is where they want to at severity one where they you need to call help desk, but Illinois came back with there are certain drug drug interactions, certain therapeutic duplications that they are okay to set at CVRT level of two and below, where you can enter the URPPS code combinations and then some of them as one edits. So they they came back with those.
+
+Speaker 1 11:58
+Got it. Okay. Sorry.
+
+Speaker 2 12:00
+No problem. So basically, guys, this this is going to be a hard edit, then, right? This is the ones with severity
+
+Speaker 7 12:08
+one. Severity level one is a hard reject. They have to reject 88, and the claim should show some kind of messaging like early refill, call help desk or truck drag interaction detected or something on those lines call help desk if it has severity one on those yeah so you still need the PDS codes then Monowar yes for severity two and severity three to five yes there was combination URPPS codes, and I was told that the source to get those combination codes is from pay or sheet, and I don't know where that exists. Yes, if that is the case, we would need those
+
+Monowar Hossain 12:54
+information. Let's
+
+Speaker 5 12:59
+say CVRT where they just it's a warning, right? So anyway, yeah, we we don't need PPS codes for that, right? For one, you don't just creating a message. Yes, that's what I'm saying. So for others, right? So what are the PPS codes we can enter specific codes to be entered, right? So if you can share that, we will. I am trying to get that
+
+Speaker 7 13:19
+information for you. All I get is it's in the payer sheet, and I don't know who has the payer sheet or who keeps that source. There's like combination of DURPPS codes, like one TD and 01 G. There's like a matrix, so that's what I'm looking for, and I don't have the source. And if you want me to, Jolie, do you want me to bring it up on the officers' calls? Then just ask Jen.
+
+Speaker 1 13:51
+So I don't know. Is because like their current payer sheet is post online. We can find that, but is it the same for what we will be using, or is that something that we do internally? I'm not sure.
+
+Speaker 2 14:07
+Yeah.
+
+Speaker 1 14:11
+Yeah, I don't know. That may have to be a rich question when he gets back tomorrow.
+
+Speaker 2 14:16
+Okay. I'm making a note.
+
+Speaker 5 14:22
+Okay, so from IL TVM testing SIT team, so this is the trending information we are looking for to proceed with our test case design. And Monowar and team they can proceed with the above three edits and the corresponding test cases, whatever is there in the PA specific requirements, right, Monowar? Do you have any?
+
+Monowar Hossain 14:46
+So you are saying these three should be our responsibility, and rest of it is gonna be your team responsibility.
+
+Speaker 5 14:53
+Yes. Yes. The biller table where there is no PA involved, right? So these we will take care. So the above acceptance criteria, where you see the PA specific ones, you please take care of that.
+
+Speaker 1 15:07
+Right.
+
+Speaker 2 15:07
+Wait, which which ones? We we need you need something else.
+
+Speaker 5 15:14
+No, Jennifer from sitting. So those previous. I'm just sharing a statement between these two teams, Agadiya and the city, who need to own the requirements. That
+
+Speaker 2 15:28
+okay.
+
+Monowar Hossain 15:31
+Okay, yeah, I can confirm that also in email. So these three edits will take off. It will have the test cases for it to make sure they are being fired, and whatever the scenario we need to do, we'll do that. And the rest of it is going to be then inside the team's responsibility, right? Okay. Yes.
+
+Speaker 2 15:52
+So, what's the timeline on on building that those three codes up there? Compound PA claims.
+
+Monowar Hossain 16:00
+You mean the test case creation timeline, Jennifer? The
+
+Speaker 2 16:04
+ones you just highlighted at the top, the compound PA 7240. What's your timeline for building that?
+
+Monowar Hossain 16:12
+I think we just need a day or two, so we wanted to complete everything. But today we will try to do it today. Like that's doable, right? To take the test cases by today, end of day.
+
+Speaker 4 16:27
+The thing is, I need to understand about the two edits Monowar. Like I need to discuss with Jason and Emily on that so that I can write test cases. Yeah, 7705 is fine. That last two years, yeah, we never tested before, yeah.
+
+Monowar Hossain 16:43
+So yeah, so maybe if not today, by tomorrow we'll try to get that done, Jennifer. Okay,
+
+Speaker 7 16:50
+that's good.
+
+Monowar Hossain 16:52
+Yeah, we just need some clarity maybe on that.
+
+Speaker 2 16:57
+What's your? You say two days to build it, but then do you have to test it out. Is that an additional?
+
+Monowar Hossain 17:03
+Correct. So for testing, it's a different case altogether. We have to test once the code is ready, as it seems we're not going to be beginning anyway until november 1. But to my understanding, what I hear that this is not even in a Gadia's list. So a CR new CR needs to be created so that whatever the change area they need to make, they they should be making it before we can begin. And again, the testing is not beginning before november 1.
+
+Speaker 2 17:45
+I'm new here, so I'm not sure. Yeah, change request side or testing.
+
+Monowar Hossain 17:54
+It's it's it's a it's not business side on the. I'm sorry. It's actually business side, but once the CR is being created, change requests to our vendor, main vendor, Agaria, they're gonna be you know evaluating their processes of in place, right? Evaluating and doing all of these, then they will provide their estimation and things like that, and then they will start developing. They will test it from their end, and once they are ready, they will integrate with us, and that is where they will tell us, okay, these specific things is ready and deployed, and we can do our integration test. So that is what we are expecting. That right now, the Ilina, to my understanding, we have provided the synthetic test data to them, so they are doing their internal test and making sure all this integration are going to be successful once we do our integration test, system integration test, and that is the targeted data as of now, unless anything changes november 1 with the de-identified data. And I do not know how long they are going to take for this specific one, but the assumption is once we start our system integration test, this CR whatever change they are going to be making, that should be also available for us to test with that assumption, you know, november 1 would be the earliest we can begin with the test execution.
+
+Speaker 2 19:28
+Okay, Joel, is that in line with when we're supposed to be completing testing or starting testing? Because I thought at the end of October were our dates we were shooting towards?
+
+Speaker 1 19:44
+Yeah, I'd have to go back and check the schedule. I don't remember off the top of my head.
+
+Speaker 3 19:48
+Not October, and as per the project timelines, we have till November and Jennifer. But as Monowar explained, right, we're trying to experiment this process so with the synthetic data creation,
+
+Speaker 2 20:01
+understood. Yeah,
+
+Monowar Hossain 20:05
+yeah. But
+
+Speaker 3 20:06
+Monowar the change request, I need to drop the call. But the change request process with Agere is new to me as well. But we need to talk internally first. The development of this is on our end only, right,
+
+Speaker 1 20:26
+Joel? Sorry, what was that? The
+
+Speaker 3 20:27
+development is aggregate team needs to do any development on their end. Is this whether any change from their end?
+
+Speaker 1 20:38
+I mean, I don't think this is like it's not new functionality or anything like that. If if that's what you're asking, I think there is still configuration work being done. But like I said, I don't know that it's development in terms of like creating anything new outside of configuration.
+
+Speaker 3 20:57
+Okay.
+
+Monowar Hossain 21:00
+I think Prasanthi, to get to bottom of these, we need product teams involvement because, as Lega has referred to, right? Jason, Jason has mentioned that we need a CR for that. So we need to understand that what CR then in that case, and you know what? Basically, we're requesting to Agadia to make change, and whether that is just internal to us or that require Agadia also how long that will take, and so and so forth. So I think to understand that properly, we need their involvement.
+
+Speaker 3 21:41
+Okay, how about Raja? Raja from our end, our test cases are good. But do we need any other clarifications?
+
+Speaker 5 21:50
+Yes, I mean we ask for the PPS codes information, so for war rights scenarios. So once we get that, we will
+
+Speaker 3 22:04
+ask, Naja, on this
+
+Speaker 5 22:07
+Jennifer and Somia they both look into it. Okay.
+
+Speaker 3 22:12
+We will attest to this requirement, Jennifer, Somia. Whenever you get that information. Okay. Yep, I've made notes. All right.
+
+Monowar Hossain 22:28
+So
+
+Speaker 3 22:28
+then, I I really need to drop the drop call on our other committee. Please continue if there is anything to wrap it up, and then
+
+Speaker 2 22:39
+yeah,
+
+Speaker 3 22:39
+we'll have a follow up call.
+
+Speaker 5 22:41
+Yeah, we are good from outside, so that is the only ask. So once we get that, we can finalize our test test cases from outside. Sure, I'll I'll
+
+Speaker 2 22:53
+connect with you offline too. Sure.
+
+Monowar Hossain 22:58
+Sure. One last question, Lega and Newton. You have any specific question for Raja or anyone, or are we good of writing the test cases for these two edits? I know you need to talk to Jason to get some more character Emily. That's a different case. But other than that, do you need anything from this team?
+
+Speaker 4 23:20
+No, Monowar I don't think so.
+
+Monowar Hossain 23:23
+Okay, so we are good on that, Rajaden. Thank you.
+
+Speaker 2 23:27
+Okay, thanks everybody for coming together in short notice on this, because we we need to move it forward.
+
+Monowar Hossain 23:34
+Sure, Jennifer. Thank you very much. Thanks, Jennifer. Thanks for meeting.
+
+Speaker 7 23:37
+Appreciate you. Thank you.
+
+Speaker 1 23:39
+Thank you. luck.
+
+Transcribed by https://otter.ai
