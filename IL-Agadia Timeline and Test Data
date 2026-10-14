@@ -1,0 +1,254 @@
+Speaker 1  00:01
+We need to complete this set by 12:30, right? Preferably by 11:30, 80% of the work needs to be done, so we can start the trading partner testing by 12:1. And this, the closure of set also impacts parallel testing. So it is, and then we have UAT starting for the DDI on 1217. So it's important for us to know the readiness with respect to a guardia, and can we complete set for a guardian by these dates, or do you see any issue?
+
+Speaker 2  00:53
+Um, I mean, I didn't have any issue until I heard today that the data is incomplete to test with CMM, and I, you know, I'm not really sure what those implications are because I've, I mean, this is, you know, using synthetic data and all of this is something that's new to you know my experience. Who
+
+Speaker 1  01:15
+did you hear from? Sorry, so Chris
+
+Speaker 2  01:18
+Chris Wagner said she was going to talk with Monowar because Chris was talking with Cover My Meds, like our Cover My Meds contact, and they said that they require phone numbers and fax numbers to process the cases, and our data didn't include that, so you know
+
+Speaker 1  01:47
+I'm. So are you working with Prabhut? Is that the person creating the synthetic data for you? Yeah.
+
+Speaker 3  01:57
+So you were the one who initially created synthetic data. However, there's what it appears to be another from did that synthetic data get wiped from the Illinois environment because the the mock 1B apparently went in last night, and I believe Leg and others were trying to find data based on the synthetic data.
+
+Speaker 1  02:23
+Okay, yeah, you're right. 1b was happening last night. Yes.
+
+Speaker 3  02:29
+So that so that that synthetic data is wiped out there, right? If
+
+Speaker 1  02:36
+they are connected to Illinois Dev, yes, everything is welcome.
+
+Speaker 3  02:42
+Okay, so then we don't have any synthetic data anymore, so that's one of the issues that we're trying to. So, Monowar, I need communicate. Yeah, sorry, Pastor. Give me
+
+Speaker 1  02:51
+a minute. So, Monowar, I need you to communicate with Prabod. Have the defects that were raised by the vendors, like you need to inform that these are the fixes that have to be done, and then they have to recreate the data for us. It should not take them long.
+
+Monowar Hossain  03:10
+Sure.
+
+Speaker 1  03:11
+Are you following? Yes, I'm following. Can you keep us all informed of what is going on?
+
+Monowar Hossain  03:16
+Sure, we'll do that.
+
+Speaker 1  03:17
+Send out an email, please, to Pravod and ask that data to be created with these fixes, it shouldn't take much long.
+
+Monowar Hossain  03:26
+Okay, Smithal.
+
+Speaker 1  03:28
+Ah, Prashant, we
+
+Speaker 4  03:36
+can. Mital, I'm not able to hear you. Is it me?
+
+Monowar Hossain  03:42
+No, same for me.
+
+Speaker 4  03:44
+No, I think. Yeah. Oh. Okay. Can you
+
+Speaker 1  03:50
+guys hear me now?
+
+Speaker 4  03:52
+Yeah. Now we can.
+
+Speaker 1  03:54
+I don't know how I did. I go on mute. Okay. No. What I was saying is, we just need to keep all informed that this group is also working out of Illinois Dev, right? Monowarendy Yeah. So everything that's happening within the PDI impacts their work as well. Okay. Okay. Yeah, it shouldn't take much long for them to fix the data. How much of your testing is complete so far, Monowar? In depth.
+
+Monowar Hossain  04:28
+We haven't started anything, Smithal, yet.
+
+Speaker 1  04:34
+You were starting today, and you could not proceed. Is that what you're trying to say?
+
+Monowar Hossain  04:38
+For Illinois, correct? Yeah, we have not started any test execution yet.
+
+Speaker 2  04:45
+Yeah, our start date isn't until
+
+Monowar Hossain  04:47
+november 2. Yes.
+
+Speaker 2  04:49
+Yep, november 2.
+
+Speaker 1  04:52
+Oh, but Emily, you just said that the data was wiped out. Lega was saying that they couldn't complete testing. So, what are we referring to then? If it is not again, I'm sorry.
+
+Speaker 3  05:02
+That's for the EPA vendor testing test cases that we need to get into those drives.
+
+Speaker 2  05:07
+Yeah, so that's their own like their own QA testing that needs to happen before they release the environments to us, right, Max?
+
+Speaker 3  05:16
+Yeah, right. Thank
+
+Speaker 5  05:17
+you.
+
+Speaker 1  05:18
+Oh, so this is this is just vendor vendor readiness testing. What is?
+
+Speaker 4  05:27
+It's it's Agaria Smithali. At that Agaria, it's doing their own testing before they release the product. Go
+
+Speaker 2  05:37
+backwards. Okay, got it. Okay, okay. Thanks for joining, Jason. I just wanted you a part of this conversation because I don't know if you talked with Chris today, but Chris made us aware that CMM reported that the synthetic data they received is not they cannot test from it because the synthetic data did not include fax numbers and phone numbers, and they need that to proceed. So that's that's one of the issues we're trying to tackle, and I'm not certain that there's more issues. But
+
+Speaker 6  06:12
+why would an EPA need a fax number?
+
+Speaker 2  06:16
+Let me check Chris's message. Provider fax and phone are required for testing per meal from CMM.
+
+Speaker 6  06:27
+Have we done that in the past?
+
+Speaker 2  06:30
+Well, I don't think it was a problem in the past because we've never used synthetic data. We've always just used real, like like you know, our UAT data or whatever, which included that information.
+
+Speaker 6  06:43
+Okay, but it's not like they're going to be sending anything through fax, right?
+
+Speaker 2  06:50
+Right.
+
+Speaker 6  06:51
+So just give them random numbers.
+
+Speaker 2  06:54
+That's what I thought was an option, and then there's another. It is an
+
+Speaker 1  06:58
+option. I don't think that's a big deal, Emily. So if if that's the request, we can ask Prabod, who is helping create the data, and just it shouldn't be a big. Yeah, if we can just
+
+Speaker 2  07:08
+put the if we can just have Prabo put in the random numbers, I think that would be a great solution.
+
+Speaker 1  07:14
+Yeah, yeah. So just send that request out, Monowar. I think that's an easy fix. Yeah, because there's no way for
+
+Speaker 6  07:21
+you to like, you know, click a button to have it sent through fax. You know, I think it just needs to be a, you know, a seven digit or 10 digit for the area code. All right,
+
+Speaker 7  07:39
+anything else?
+
+Speaker 1  07:45
+So this is a guardia vendor readiness line to be done by what date? What what is the date they need to be done by so that this works for the set testing in the MI?
+
+Speaker 3  08:01
+For the vendor, then. I think the deadline to have this data was either yesterday or today, and so we're working through that. I know Chris is working through that.
+
+Speaker 1  08:14
+Okay. Okay. So this week they should be done.
+
+Speaker 3  08:17
+Yeah. Then
+
+Speaker 1  08:18
+we do. Then we can move to sit. Can Monowar start working in sit in Illinois
+
+Speaker 3  08:32
+for the november 2 date, like the start date of that? I remember one of the outstanding items was the data that monewarrior requirements. I haven't seen anything back from Probo because I believe the next step was to have the de-identified data put into the database, and then he's going to see if there was data that fits our requirements or the requirements that you laid out in that email. And if if that's the case, then we would then have to make scripts to be able to pull out that that data, so that then we could test and sit with that data. If not, then we would have to go the the route to create more synthetic data with those requirements. So I think that's the last step before we can start sit, unless there's something else outside of that another way.
+
+Speaker 1  09:22
+Okay, okay, Max. So, am I understanding this right? That that I think we have enough time to get this done before 12 one, and if anything prevents us from meeting these dates, we need to know, right? Because it's going to impact all the other testing that has to happen next.
+
+Speaker 8  09:43
+Okay.
+
+Speaker 1  09:46
+Monowar, you are in alignment, right?
+
+Monowar Hossain  09:50
+Yes, Miss Mindali.
+
+Speaker 9  09:52
+Okay.
+
+Speaker 1  09:54
+All right. Anything anyone else has that sees anything wrong on this plan, or anything that will prevent us from meeting these dates.
+
+Speaker 4  10:05
+Just so I understand, Smithali. So all we are saying is data is the only dependency for us to get started in sit
+
+Speaker 1  10:15
+for configurations. Everything
+
+Speaker 4  10:17
+is for the prior or the updated.
+
+Speaker 1  10:22
+Okay, so that's a
+
+Speaker 4  10:24
+good. The the code is not ready. the code The code is not ready, and there's pieces of the code that are scheduled to be delivered late November. And this was a discussion yesterday under under steel code because we have requested the the final dates from Agadia in order to do our final planning. So right now, Monowar, he's gonna he's gonna take the dates that we have received as final and provide us with with a plan on when when we think we're gonna we're gonna be finishing based on those dates,
+
+Speaker 1  11:18
+which is 11 211 two. is the date when Monowar starts his testing in sit for Illinois. Therefore, that all the work with the vendor needs to be done. So they are stuck right now because they have some issues with the data that was given, which has to be fixed. No, but it's
+
+Speaker 4  11:37
+in the the the the situation is that it's in phases. It's not a single code drop, so there's gonna be there's gonna be certain functionality that it's not gonna be available in the 11 two.
+
+Monowar Hossain  11:55
+Yeah. So based on the latest date, what I have seen, and that's the confirmation we need Liliana and Skintale that the date they have provided from Igeria those are accurate. Lastly, what I understood. Yeah, go ahead, please.
+
+Speaker 4  12:13
+Yeah, but so so I mean, based on yesterday's conversation, we're gonna do the planning with those dates as if they were final, because we need to also provide to Craig any any addition of resources that we might need to support all of the Agaria work. So we're gonna take those dates as as as final for now, in order to provide him with the plan on next Tuesday.
+
+Monowar Hossain  12:47
+Correct.
+
+Speaker 1  12:55
+So, Max, are you on the same page with respect to multiple code drops that might impact our this timeline, or I'm sorry, I'm not following. Like, if if all this gets done by 12 one, I think it's still okay. But if that those dates are impacted, or it impacts this Illinois sit testing, then it's gonna impact everything. Is there a better view with additional tasks that are being tracked, which we can look at. Max, is is that something you were tracking overall plan?
+
+Speaker 3  13:58
+I'm I'm sorry, I was muted the whole time. Okay, that
+
+Speaker 1  14:02
+was like a white. Am I on wheel?
+
+Speaker 3  14:06
+No, so bad. So no, I need a. There is a couple of outstanding items with that I need to work with Trihari and Menowar to get the timelines. I believe when you look at the message, I don't have like a good view to show as my tracker's kind of jumbled up, but I can take that back and I can report back to this group the update for the the items with the the delivery time.
+
+Speaker 6  14:31
+Okay.
+
+Speaker 3  14:31
+Yeah. Yeah. Sorry. I was talking to myself there for a couple minutes.
+
+Speaker 1  14:38
+We can reschedule the call. Maybe we can look at the plan together once you have it, and see if there are additional risks that will impact these states. Absolutely. All right. Okay, then we will meet again once we have additional details. Meanwhile, Monowarth, we send those requests to Prabhu so he can continue creating the data with the fixes that the vendor has requested.
+
+Monowar Hossain  15:06
+Sure, Smitalo. I'll send out an email. I'll see see you then.
+
+Speaker 1  15:10
+Yeah. All right. Thanks, everyone.
+
+Monowar Hossain  15:13
+Thank you.
+
+Speaker 2  15:13
+Thank you.
+
+Monowar Hossain  16:00
+Visana, the mortar, please.
+
+
+Transcribed by https://otter.ai
