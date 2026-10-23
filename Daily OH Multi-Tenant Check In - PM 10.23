@@ -1,0 +1,254 @@
+Speaker 1  00:00
+Have what I call is a whiteboard sessions that we can all work through together and and oh my god second funny and brain you know a brainstorm what works best for us. So if I understand the problem statement, here is we have different testing focuses. I was going to use the word focuses for now. A focus for now. The focus is as a base product before we release it out to Ohio, to Missouri, to Illinois, to Louisiana, to Pennsylvania, to Connecticut, to West Virginia, whatever. Right. We want to test the base product. We want to say our base product is working. Correct. Then, when we release it, we then focus on hey, let's go test at the Missouri, Illinois, Pennsylvania, Ohio, whatever, and say hey, this works. Let me show you a testing document that we can go to the state and say this works like they anticipated, and they can sign off, and then they can, you know, promote that to their productions, right?
+
+Monowar Hossain  01:30
+Correct. So,
+
+Speaker 1  01:31
+I think I'm just gonna get the word focus there. However, I don't have anything on the top of my mind. I would willing to basically listen on whatever idea that you guys would have on how we would achieve that and make that scalable for you and your team. You know, as you test it at the base product, and you know, and and provide all the awesome, and obviously, that at that level, Jason or myself are going to be the person you go to for responsible for say, yep, I have seen that you know the the base product is working. I am approving for this to be now released out from the base product that Ohio can have it, Illinois can have it, and then when it gets Ohio to Illinois, you know, then it's it's a fair game with the operation on how they want to kind of see like okay you know I want to test with this drug versus this drug this female versus this male this age versus that age and showcase the test result to my client. So I'm I'm I'm open happy to hear on what what your thoughts are, and whatever works best for us that you know scalable for you guys. Happy to hear it.
+
+Monowar Hossain  03:12
+Great, thank you for that openness and willingness to work with us. So my proposal is this, Tuan. So team is not. Hold
+
+Speaker 1  03:22
+on one second. Is someone going to write this now?
+
+Monowar Hossain  03:26
+Yeah, I'm. I'm keeping the notes aside. So yes, yes. So I will send out the meeting notes so that that is being documented, and we know this is what we have discussed, and we can follow through, not on the Missouri and Illinois, but also for other states, as you just have stated. So there are a couple of things I need to call it out, but let's talk about the process. What I'm proposing, I'm proposing actually nothing different than what we have, but you know the process-wise, maybe we can do little better in that sense, for example, from the beginning, let's say this is the you know feature what I'm currently displaying right now. So we have the bunch of requirements in this feature, and let me see. I don't see any user story. Maybe in that other user story we have created, which is money count has created. But anyway, so usually when a feature is assigned to a tester, let's say I'm just picking Jessica over here, then she's gonna go to and see what is in the description, and the scope, and the testing, and all of these details, right, in acceptance criteria, and she's gonna look into if there is any user story. For an example, that's the user story we're gonna go to. If we have any, let me see. So it has bunch of user stories. So not only that feature, but also she's gonna go each of these user stories, and the way we have laid out in our ALM, everything is ALM. Source of truth is that currently, and it's going to be in future as well. So it's going to be the feature. Then the tree is going to be the user story, the number of users we have under that feature. So all of these scenarios, test scenarios, and test cases are going to be built based on the user stories under that feature, and the feature what is mainly overall altogether, and definitely you know Jessica as I'm picking her name, and so she's going to be discussing whatever is needed with you or anyone in your team to understand the process, or if she has any kind of clarification needed or technical question she may have. So during that process, once she does that, she creates a bunch of these test scenarios and test cases that's going to be peer reviewed internally, right? And once that is done, that phase is done, and that is ready for your or your team's review wherever it is. Then we're going to be setting up a quick call and go through the test cases to present that. Okay, these are the test scenarios and test cases we have created for that specific feature and the user stories, and we'd like to review it and get your feedback. And if there is any feedback, you know that need to be incorporated and make the update that we are going to do. So once that is done, and let's say there is a feedback and that needs to be incorporated before that's need to be reviewed. I mean, that's need to be approved. Then we'll do so, and we will submit a an updated version of the test cases or test scenarios along with whatever the changes required, right? And that is what we are expecting to get that test cases or test scenarios to be approved by you, Twan, right? So once we have that, then
+
+Speaker 1  07:07
+that's a lot of that's a lot of good information. So let's pause there for a second, and I'm just gonna do a quick summary. So what I'm what I understanding from you is if there is a feature, someone from your team, from this is the I'm talking about. I'm just gonna call this focus level one. Focus level one at the base product. Someone from your team would do the analysis Of the feature, create a correlated feature in AOM, and basically once that analysis is done, you will basically write Your, you know, write your draft of these are the focuses area that you want to test, and then you would present that plan of, you know, execution to Jason O'Meara myself to get an approval. That's that's what I heard so far.
+
+Monowar Hossain  08:24
+That is accurate. Yes, that's what I'm presenting. Yeah,
+
+Speaker 2  08:26
+and and I think Monowar, one thing that we might need to just ask at last slightly, because right now they have the test cases in in Missouri. We will need just to put it into the Agaria SharePoint because this is going to be based like product, so so we're gonna have to keep all product testing just within the Agaria ALM.
+
+Monowar Hossain  08:55
+Yeah, that we can do, Liliana. There should not be a problem. I can take out an extract out of ALM, and we have you know for various state we have the SharePoint location, and I can place that. Currently we have it, but that is not 100% separated with the base product versus the state-wise requirement. But once we have that segregation 100% ready, then maybe I can set up. I mean, I can get that extract and put it in the SharePoint and share across the team that can be used for future states. Okay. Yes, Tuan, you were saying something.
+
+Speaker 1  09:42
+Yes. So I guess my question is, we have the feature in ADO, but you write your test K and AOM. How does those correlated?
+
+Monowar Hossain  09:57
+Yeah, that's a good question. So you know, again, we are planning, and this should be the going forward. Everything would be the source of truth from the element itself, and that is what we are focusing on. So right now we have, again, going back the feature over here. So you know, wherever is assigned to that feature. They are going to go through again the process I already described. I'm not going to repeat as we have laid that out already. So they're going to go and then create these test cases as you are seeing right now. They have created, and I'm just going to pick the first one. I don't know who has created this one maybe Jessica, yeah. So so she has come up with the test scenario and the test cases over here. What needs to be tested? Then it was created as a test case in ALM, right? Based on the feature and the way you are seeing this is the feature under the mo underscore CRs for the Missouri state, we have it. Then the feature number and the feature high-level, you know, kind of summary of that. Then we have the scenario name mainly, and we have a you know standardized test case naming convention. That is what we're Following, and then we have the description, right? And the description contains few things, which is test case, objective, precondition, other details, and we have other things we are getting we are populating in here as well. So this is the description of it. Then Jessica adds she. she understood what needs to be tested as part of that scenario, right under that feature, she mainly came up with the test steps, designing it from initiation of that test to the ending. How she would be comfortable to say, "Okay, this scenario is working as expected. Once she execute that, right? So that is how basically we are linking from feature to the test case scenario. However, there is one part of it we do not have any way of linking these ADO features, right? As you develop features directly with Adam, these are two different system altogether that doesn't talk to each other. Some of the system they does, they do, but this is not the one we have that integration. So currently we have the requirement, and not all of the requirements, you know, can be linked from the feature to the user story label in ALM itself. Like for an example, these do not have currently a requirement to link with from ALM. So we could not identify a requirement from Missouri estate that can be linked with that feature itself, but some of the feature directly can be linked with the recombinant we got from the Missouri, and those are the things you are seeing right now as one of the feature. The next one, which is multi-tenancy, you are seeing these test cases, this test case was linked with the requirement with this one, right? So that is how basically we are linking. And I'm currently talking to my line. I haven't got a clear or the final answer on that yet. What we should be doing that one we cannot link because technically all of the test cases in a element, should be linked at least one of the requirement in a element, if if not more, right? So that is how basically from the ZU Devs feature and user stories, we're coming up with the test cases and we're linking with them. Hope that answers.
+
+Speaker 1  14:01
+So. of. I guess my my only thing here is I don't want Jason or I, you know, ask your team to go down this path. We have to walk into AOM to review these things. So that
+
+Speaker 1  14:20
+and and and make and try and try to make that correlation back to ADO.
+
+Speaker 2  14:27
+Is there a way or because I I I remember I have seen chess cases used to or ADO right like is is that what you will prefer for product testing?
+
+Speaker 1  14:47
+I think traceability-wise, I thought ADOs is where we want it
+
+Speaker 2  14:53
+to be. Okay, okay, understand. So how how it was done in Ohio? It was done in in ADO itself. They did it, or how how the team did it? I can
+
+Monowar Hossain  15:09
+I can answer that. So the way we did Liliana, we initially created all of the test cases in Excel. So mainly we attach that Excel in there's your DevOps user story level that was reviewed with the team and that's how we got the approval and also test results were in user story level or the feature level itself but now we are using everything in LM. That's a good question actually so so I'm just trying to understand, Tuan. You know, everyone is using, including Emily's team, right? They're coming in the LM, looking into the recom. I'm sorry, test cases, providing their feedback, and mainly approving it from there, so why can't you do the same? You have the feature over here, feature number and things. All you just need to do come up over here as you have the access to and see what is is over here, because if you're asking the previous process needs to be attached as a form of Excel. There's going to be an additional work, and then we will have two source of truth, and we are going to be missing their update and here update. You know, kind of confusion back and forth. Whereas if we have everything in the same, and you can leave a comment over here, that will be there always, like you are seeing right now. You know that was initially done by the Jessica. She mentioned this test case has been completed and is ready for review. Then VNA as a peer reviewed it, internal review completed, and you see Emily approved. So all the traceability is there itself in the same source. We do not need to go in different places. So that is the process we would recommend and we would request you to do if that is okay with you. We can help you with you know kind of training on this one. It's a fairly easy tool, and we can request for a access for you as well and Jason.
+
+Speaker 1  17:23
+Yeah, but for me, I guess my point is, what what is the purpose of AOL when we have AEO?
+
+Monowar Hossain  17:31
+So there, there are multi purposes.
+
+Speaker 2  17:34
+Go ahead, please. Yeah. Yeah, hold on. I think I okay. So when I when I when I have requested the separation between the testing on product and and and and SIT, I think one of the main things that I wanted to to do is making sure everything from product perspective was tested, and that product team they have a track and a good traceability on what was tested, when was tested, and where it was tested. Like everything from point A to point C. Now, when when I have requested this this meeting, it was the the main purpose is to understand one because you're the product owner, right? What what is what is the best approach for you and for product, right?
+
+Speaker 1  18:44
+So yeah, that's that's yeah. So that's why I wanted. I mean, it's about how how us as an organizations, as I understand, AOM have different instances. You're locking into Missouri instances right now, and you're testing the base product and you lock it under the Missouri instances, how does the Ohio, Illinois, will get to see it?
+
+Speaker 2  19:12
+Yes, and and this is this is what I I just said a couple minutes ago that they should not be in Missouri. It should an outside instance, either if it's ADL
+
+Speaker 1  19:25
+product is yeah product's not gonna pay for an AOL instance. That's why I'm asking. Yeah, so if it's a base product, yeah,
+
+Speaker 2  19:34
+to ADO, yes, exactly.
+
+Speaker 1  19:37
+So so as a base product, I think we should go to the feature itself, and Monowar, if you don't mind, I'm gonna ask you to go back to your ADO instance on the browser.
+
+Speaker 3  19:52
+Sure.
+
+Speaker 1  19:52
+And when you click on related word and you click add link.
+
+Monowar Hossain  19:59
+Sorry, click add link.
+
+Speaker 1  20:02
+Yeah, add link. Right, add link. No, click on add link right there, right above that, right. Oh, a little too. Right there, almost you. You almost got it. A little to your right. Add link. Right there. Right there. Okay. Click add link.
+
+Monowar Hossain  20:15
+Okay.
+
+Speaker 1  20:16
+Right. New item.
+
+Monowar Hossain  20:18
+Okay.
+
+Speaker 1  20:20
+Okay. Now you can choose the word type.
+
+Monowar Hossain  20:24
+Choose the word type.
+
+Speaker 1  20:27
+There you go. Chicken that right there. No, no. Click on. Yeah, there's a drop down. Okay. You have to choose one. Test cases. Okay. Test cases right there. Why don't Why don't you instead of creating a bunch of those in ADO, why don't you just do it right here? That's the base product.
+
+Monowar Hossain  20:45
+So, the problem I'm seeing with this one, Liliana, then we have to do two different things, and I think it will be little bit of more work on the team. What we can do?
+
+Speaker 2  21:00
+So, so what what we're gonna do is we can link the the product test cases to the product features and use stories. If there's a test case that we we we will benefit and reuse to let's say Illinois or Missouri, we can extract that test case. Either I don't know if there's any export functionality, or somehow we export through ALM and we load into ALM and we put those into the specific folder for the specific state, but when I when I meant to say we need the separation, this is what I'm referring to. Primes need their best ability, and the state itself, the DDI itself will have their own separate testing.
+
+Monowar Hossain  21:59
+Yeah, that's not a problem. I'm just trying to understand. I don't think I have written the test cases like these I have seen. So what it does once I say add link, it will create what?
+
+Speaker 1  22:14
+Create a test case. Can I do that? I can delete it
+
+Monowar Hossain  22:18
+later, right?
+
+Speaker 1  22:19
+Yeah, you can you can do it, and we can obsolete and delete it out. This is how we did it in
+
+Speaker 3  22:25
+Ohio.
+
+Speaker 1  22:26
+You you you can have all your steps, everything in a format just like AOL does.
+
+Monowar Hossain  22:33
+Okay, so we followed this process. Jessica, you're referring to.
+
+Speaker 1  22:39
+And then what what you want to what you also want to do is for each one of these, as you guys create your, you know, your test cases, and you need an approval. Click on Add Link again. Below, below, below. No, no, no, no, no. Go back. No. Right there. Below. Right there. To your right. Go to your right. Go to your right. Go to your right. Go below. Below. Below. Oh, over here. No, no, no, no, no, no, no, no, no, no,
+
+Monowar Hossain  23:03
+no, no,
+
+Speaker 1  23:05
+right, and related work, related work, related work, relate.
+
+Monowar Hossain  23:13
+Where is the related work? Oh, over here, this one.
+
+Speaker 1  23:16
+Right there. Click on add link again.
+
+Monowar Hossain  23:18
+Yes.
+
+Speaker 1  23:19
+Okay. Uh oh, there's only oh okay. So you can't create. Can you create subtests for a test case? Go to the three the three buttons at the the the the more. Yeah. So if you want to, you can create subtests for approver peer review, and it has the same format as AOL does. That you can create your your your steps for the test case and all of those things.
+
+Speaker 2  23:49
+So just just one one quick. I I think Jessica, you just said that you did it this way for Ohio.
+
+Speaker 3  23:59
+Yes, for the an
+
+Speaker 2  24:00
+execution and everything for
+
+Speaker 3  24:02
+a prod. Yeah, for for product, yes. This is how we brought our test cases. Where we brought it in the ADO.
+
+Speaker 2  24:09
+Okay, perfect. And then Twan, we would follow the same process.
+
+Speaker 3  24:13
+Yeah, then Twan and Jason would go in. We would upload once we tested. We would upload the results to the user story, and then Jason and Twan would go in and look at it that way and approve it.
+
+Speaker 2  24:29
+Okay, perfect. We will we will follow these same process for yeah. So I think I
+
+Speaker 1  24:35
+think yeah I think for the base product this will probably be a little bit better, and then when it gets to Missouri and Illinois, you can log into Missouri and Illinois instance of AOM and track. You can just export this and copy it over if you want to, and then use their data and go from there. So this way, what you can show is that your team have tested this from the base product in ADO. So if Nalay wants to know, if some car wants to know, you can you can showcase that it's there, it's documented, and when we do patch note and release note, it pull in all your test cases and information that it goes out to all the account that they can also receive it
+
+Speaker 2  25:27
+to. Okay, so I have one question, Twan. When they're supposed to start testing
+
+Speaker 1  25:34
+now, it's it's done. The base product is a lot of them are done. You should start testing now. I mean, I raised this with Vid two weeks ago. Okay, could you
+
+Speaker 2  25:46
+please start frequently?
+
+Speaker 1  25:50
+We release it on the 12th. I asked on the 13. Who's testing it?
+
+Speaker 2  25:54
+To to who? Like to whom did you ask? I mean, never mind. Like, if anything like this, if there's a release, could you please copy me on those on those requests? I'll make sure. I mean, we're informed. Monowar is it's obviously leading it, but I will also like to to be informed and and make sure this is this is moving.
+
+Speaker 1  26:20
+I'm gonna I'm gonna have to sorry I do have to drop to the next meeting. Oh sure, Tuan, thank you, thank you, and then we'll talk. Okay.
+
+Monowar Hossain  26:30
+All right. Maybe I will set up another quick call to talk through this and also test results. I think Tuan has already talked.
+
+Speaker 2  26:37
+So Tuan. So so Monowar the the next the the next action item for us, and this is immediate, we need to start putting those test cases into into the features, right? Because everything right now it's it's an ALM, and they don't have they have no visibility onto those those test cases right now. Tomorrow has he has indicated that it was ready A12, so it's already 825. So it's it's obviously this is this is obviously obviously delayed, right? Yeah, I need
+
+Monowar Hossain  27:18
+more information on to that. I do not know when you see says the ready is ready for testing with everything because we do not
+
+Speaker 2  27:26
+we can okay we we can have a separate discussion on that with him but from our side test cases need to be need to be on the system on their system on their ADO and if if this was the approach they followed in in Ohio, we we shouldn't change anything without their approval. Okay. So the the question the question is so Nutan, I think
+
+Monowar Hossain  28:01
+because earlier what happened actually, Liliana? I do not know how much you are engaged in the way. There was a mass in a sense; everything was in different places. Excel, then Azure devolves. Very few were in ALM, so there was a direction that everything should be from AIM itself. ALM should be the single source of truth, and that is the standpoint I had.
+
+Speaker 2  28:27
+Who gave Who gave that direction?
+
+Monowar Hossain  28:30
+That came from Vidit initially. Then Erika was involved from Bio, and that is the direction we were heading towards. Okay,
+
+Speaker 2  28:43
+understand. Going forward, you you you directions you you get directions from Smithali and myself on on this approach. I understand there there was there were challenges before. We're just trying to to align. Right now, the the first thing we have to accomplish is to upload those test cases, and so if if you can start towards moving that, I don't know how how much it's going to take the team in to do it, but let's target Friday for that.
+
+Monowar Hossain  29:29
+Okay, we'll take that offline and we'll discuss about that. And yeah, team is aware of that, so we'll follow that process. Is there
+
+Speaker 2  29:35
+anyone? Is there anyone? Anyone? Biennay, Nutsan, Jessica, speak. Do you have access, and is this something you can start doing right away? Yenay, Nossan, Jessica.
+
+Speaker 3  29:54
+Do I know we have access to we have access to Illinois?
+
+Speaker 4  30:02
+No, no. This is not. This is not an ADO. This is. This is the ADO itself. The product. Oh, yeah. Yeah. For the. You mean the features and the your story just to create the test cases over the early, you know? Yeah. Right. Everyone should have access to this. Yeah. Yeah. We have access
+
+Speaker 3  30:20
+to the ADO, yes, and the test cases are actually written. So, do we need to just transfer them?
+
+Speaker 2  30:28
+Yes, just transfer them, and then we will inform Tuan and and Jason that test cases are ready. So we got their approval to execute to to to start with whatever features are ready for the A12 release. Okay.
+
+Speaker 4  30:46
+Okay.
+
+Monowar Hossain  30:48
+So that one is related to the feature and the base product. That's what we are talking about. The one is not tied with the ALM requirement. They should be in the still in ALM. But yeah, so don't delete. I don't think you have also the delete access in the LM, but we will move them in archive folder. But yeah, certainly you can just extract them and place it there based on the different feature we have. Just
+
+Speaker 3  31:18
+okay. So okay, go ahead, Janika. So, question about that because you said extract them. So, how will we extract them into ADL if they're already written?
+
+Speaker 2  31:32
+I I don't have that answer. Like, I I don't even I don't even know if it's possible.
+
+
+Transcribed by https://otter.ai
