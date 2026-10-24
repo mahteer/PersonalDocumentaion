@@ -1,254 +1,1112 @@
 Speaker 1  00:00
-Have what I call is a whiteboard sessions that we can all work through together and and oh my god second funny and brain you know a brainstorm what works best for us. So if I understand the problem statement, here is we have different testing focuses. I was going to use the word focuses for now. A focus for now. The focus is as a base product before we release it out to Ohio, to Missouri, to Illinois, to Louisiana, to Pennsylvania, to Connecticut, to West Virginia, whatever. Right. We want to test the base product. We want to say our base product is working. Correct. Then, when we release it, we then focus on hey, let's go test at the Missouri, Illinois, Pennsylvania, Ohio, whatever, and say hey, this works. Let me show you a testing document that we can go to the state and say this works like they anticipated, and they can sign off, and then they can, you know, promote that to their productions, right?
+Illinois didn't have the right data. Ohio environment from a guyia side was not or was 40% tested, and so now we have to get through and work through these issues very very quickly because this is all the time we got because it was missed.
 
-Monowar Hossain  01:30
-Correct. So,
+Speaker 2  00:18
+Yeah, but this is surprising to me when it has been already told to the testing tower that this is a multi-tenant solution going forward, so if we are releasing it, the set of API expectation is to test Ohio, Missouri, and Illinois.
 
-Speaker 1  01:31
-I think I'm just gonna get the word focus there. However, I don't have anything on the top of my mind. I would willing to basically listen on whatever idea that you guys would have on how we would achieve that and make that scalable for you and your team. You know, as you test it at the base product, and you know, and and provide all the awesome, and obviously, that at that level, Jason or myself are going to be the person you go to for responsible for say, yep, I have seen that you know the the base product is working. I am approving for this to be now released out from the base product that Ohio can have it, Illinois can have it, and then when it gets Ohio to Illinois, you know, then it's it's a fair game with the operation on how they want to kind of see like okay you know I want to test with this drug versus this drug this female versus this male this age versus that age and showcase the test result to my client. So I'm I'm I'm open happy to hear on what what your thoughts are, and whatever works best for us that you know scalable for you guys. Happy to hear it.
+Speaker 1  00:38
+I listen. I don't disagree. None of that process was set into place until yesterday, so that's where we're at, right? I do not want to waste this time going backwards. I think we got to fix it so that we know how this triggers going forward. And what I'd like to focus this hour on, right, is do we have all the right people engaged and focused to start performing testing so that we can get feedback and momentum so that we think we can get to a good spot by 11 six? That's the goal.
 
-Monowar Hossain  03:12
-Great, thank you for that openness and willingness to work with us. So my proposal is this, Tuan. So team is not. Hold
+Speaker 2  01:17
+Sure. Okay. Agree.
 
-Speaker 1  03:22
-on one second. Is someone going to write this now?
+Speaker 1  01:20
+So, Max, I probably jumped the gun. I sent you over some questions. That's what you're showing here, right? Maybe let's start here, and then we can go into the project plan. Yep. Um, but we want to walk through that.
 
-Monowar Hossain  03:26
-Yeah, I'm. I'm keeping the notes aside. So yes, yes. So I will send out the meeting notes so that that is being documented, and we know this is what we have discussed, and we can follow through, not on the Missouri and Illinois, but also for other states, as you just have stated. So there are a couple of things I need to call it out, but let's talk about the process. What I'm proposing, I'm proposing actually nothing different than what we have, but you know the process-wise, maybe we can do little better in that sense, for example, from the beginning, let's say this is the you know feature what I'm currently displaying right now. So we have the bunch of requirements in this feature, and let me see. I don't see any user story. Maybe in that other user story we have created, which is money count has created. But anyway, so usually when a feature is assigned to a tester, let's say I'm just picking Jessica over here, then she's gonna go to and see what is in the description, and the scope, and the testing, and all of these details, right, in acceptance criteria, and she's gonna look into if there is any user story. For an example, that's the user story we're gonna go to. If we have any, let me see. So it has bunch of user stories. So not only that feature, but also she's gonna go each of these user stories, and the way we have laid out in our ALM, everything is ALM. Source of truth is that currently, and it's going to be in future as well. So it's going to be the feature. Then the tree is going to be the user story, the number of users we have under that feature. So all of these scenarios, test scenarios, and test cases are going to be built based on the user stories under that feature, and the feature what is mainly overall altogether, and definitely you know Jessica as I'm picking her name, and so she's going to be discussing whatever is needed with you or anyone in your team to understand the process, or if she has any kind of clarification needed or technical question she may have. So during that process, once she does that, she creates a bunch of these test scenarios and test cases that's going to be peer reviewed internally, right? And once that is done, that phase is done, and that is ready for your or your team's review wherever it is. Then we're going to be setting up a quick call and go through the test cases to present that. Okay, these are the test scenarios and test cases we have created for that specific feature and the user stories, and we'd like to review it and get your feedback. And if there is any feedback, you know that need to be incorporated and make the update that we are going to do. So once that is done, and let's say there is a feedback and that needs to be incorporated before that's need to be reviewed. I mean, that's need to be approved. Then we'll do so, and we will submit a an updated version of the test cases or test scenarios along with whatever the changes required, right? And that is what we are expecting to get that test cases or test scenarios to be approved by you, Twan, right? So once we have that, then
+Speaker 3  01:34
+Yeah, absolutely. We'll start with those questions. Thanks for laying the context. I appreciate it. So, Monowar, thanks for answering these questions. So Dan, you asked the how many test cases can be performed each day, media number per tester in total, which I have access to Monowar. The kind of like the test case execution that has the name testers who are doing most cases, but ultimately his answer was five to six test cases per day, assuming no environment data or application issues. So, do you have how many testers do we have? Five.
 
-Speaker 1  07:07
-that's a lot of that's a lot of good information. So let's pause there for a second, and I'm just gonna do a quick summary. So what I'm what I understanding from you is if there is a feature, someone from your team, from this is the I'm talking about. I'm just gonna call this focus level one. Focus level one at the base product. Someone from your team would do the analysis Of the feature, create a correlated feature in AOM, and basically once that analysis is done, you will basically write Your, you know, write your draft of these are the focuses area that you want to test, and then you would present that plan of, you know, execution to Jason O'Meara myself to get an approval. That's that's what I heard so far.
+Monowar Hossain  02:16
+Yeah, right now we have five tester, including Hitendra and Victor from the account team, but we are assuming um one more tester to join um Jessica Fraser on Monday. She was assigned to temporarily to another task. Ah, but she's gonna be also available to my understanding on Monday, onwards.
 
-Monowar Hossain  08:24
-That is accurate. Yes, that's what I'm presenting. Yeah,
+Speaker 4  02:37
+Okay, so so two from account team and then three from Monowar from your team, so a total of five right now. Correct. Got it. So 25 to 30 cases a day. Yes,
 
-Speaker 2  08:26
-and and I think Monowar, one thing that we might need to just ask at last slightly, because right now they have the test cases in in Missouri. We will need just to put it into the Agaria SharePoint because this is going to be based like product, so so we're gonna have to keep all product testing just within the Agaria ALM.
+Monowar Hossain  02:52
+Jeff. That's the expectation so far. But again, the caveat is everything has to work as part of
 
-Monowar Hossain  08:55
-Yeah, that we can do, Liliana. There should not be a problem. I can take out an extract out of ALM, and we have you know for various state we have the SharePoint location, and I can place that. Currently we have it, but that is not 100% separated with the base product versus the state-wise requirement. But once we have that segregation 100% ready, then maybe I can set up. I mean, I can get that extract and put it in the SharePoint and share across the team that can be used for future states. Okay. Yes, Tuan, you were saying something.
+Speaker 2  03:01
+so yeah, we have to be careful about that monow. When you say everything, okay, because we are using and we are touching only API. I'm not expecting that I need to test the letter management process unless then you are or for just you. are not. You are having different reservation around it because we are solely releasing the APIs. We are not touching any other component, so it should be a targeted testing here.
 
-Speaker 1  09:42
-Yes. So I guess my question is, we have the feature in ADO, but you write your test K and AOM. How does those correlated?
+Speaker 4  03:35
+Targeted testing, but there needs to be some level of regression, right? Just to make sure nothing else results.
 
-Monowar Hossain  09:57
-Yeah, that's a good question. So you know, again, we are planning, and this should be the going forward. Everything would be the source of truth from the element itself, and that is what we are focusing on. So right now we have, again, going back the feature over here. So you know, wherever is assigned to that feature. They are going to go through again the process I already described. I'm not going to repeat as we have laid that out already. So they're going to go and then create these test cases as you are seeing right now. They have created, and I'm just going to pick the first one. I don't know who has created this one maybe Jessica, yeah. So so she has come up with the test scenario and the test cases over here. What needs to be tested? Then it was created as a test case in ALM, right? Based on the feature and the way you are seeing this is the feature under the mo underscore CRs for the Missouri state, we have it. Then the feature number and the feature high-level, you know, kind of summary of that. Then we have the scenario name mainly, and we have a you know standardized test case naming convention. That is what we're Following, and then we have the description, right? And the description contains few things, which is test case, objective, precondition, other details, and we have other things we are getting we are populating in here as well. So this is the description of it. Then Jessica adds she. she understood what needs to be tested as part of that scenario, right under that feature, she mainly came up with the test steps, designing it from initiation of that test to the ending. How she would be comfortable to say, "Okay, this scenario is working as expected. Once she execute that, right? So that is how basically we are linking from feature to the test case scenario. However, there is one part of it we do not have any way of linking these ADO features, right? As you develop features directly with Adam, these are two different system altogether that doesn't talk to each other. Some of the system they does, they do, but this is not the one we have that integration. So currently we have the requirement, and not all of the requirements, you know, can be linked from the feature to the user story label in ALM itself. Like for an example, these do not have currently a requirement to link with from ALM. So we could not identify a requirement from Missouri estate that can be linked with that feature itself, but some of the feature directly can be linked with the recombinant we got from the Missouri, and those are the things you are seeing right now as one of the feature. The next one, which is multi-tenancy, you are seeing these test cases, this test case was linked with the requirement with this one, right? So that is how basically we are linking. And I'm currently talking to my line. I haven't got a clear or the final answer on that yet. What we should be doing that one we cannot link because technically all of the test cases in a element, should be linked at least one of the requirement in a element, if if not more, right? So that is how basically from the ZU Devs feature and user stories, we're coming up with the test cases and we're linking with them. Hope that answers.
+Speaker 2  03:40
+Totally agree, absolutely agree, but not like a full-blown testing that we did during Ohio go live.
 
-Speaker 1  14:01
-So. of. I guess my my only thing here is I don't want Jason or I, you know, ask your team to go down this path. We have to walk into AOM to review these things. So that
+Speaker 1  03:48
+Correct, and I think the team met in LA and whittled down like 200 and something instances, 9094 is what I've heard, so that we've got a narrower scope to focus on that.
 
-Speaker 1  14:20
-and and and make and try and try to make that correlation back to ADO.
+Speaker 2  04:03
+Okay, that is that is one thing. Are we just testing the test the cases? Right. We are. Are we also testing the full load process, file movement, letter process going to Cypress, getting into the print vendor. Just want to confirm: Are we looking to test everything?
 
-Speaker 2  14:27
-Is there a way or because I I I remember I have seen chess cases used to or ADO right like is is that what you will prefer for product testing?
+Speaker 4  04:28
+Max, can you can you pull up the full list so we can put our eyes on at least the scenarios? Yep.
 
-Speaker 1  14:47
-I think traceability-wise, I thought ADOs is where we want it
+Speaker 3  04:35
+We can go through. Yeah. So just tell me when to go down because they're marked on this side, like in what CR they're tied to.
 
-Speaker 2  14:53
-to be. Okay, okay, understand. So how how it was done in Ohio? It was done in in ADO itself. They did it, or how how the team did it? I can
+Monowar Hossain  04:46
+Yeah, that is what I am intended to do. So since Matt William has just put that CR number, I am going to add those associated feature next to it so that that is more clear. I just had to find out that crosswalk somewhere.
 
-Monowar Hossain  15:09
-I can answer that. So the way we did Liliana, we initially created all of the test cases in Excel. So mainly we attach that Excel in there's your DevOps user story level that was reviewed with the team and that's how we got the approval and also test results were in user story level or the feature level itself but now we are using everything in LM. That's a good question actually so so I'm just trying to understand, Tuan. You know, everyone is using, including Emily's team, right? They're coming in the LM, looking into the recom. I'm sorry, test cases, providing their feedback, and mainly approving it from there, so why can't you do the same? You have the feature over here, feature number and things. All you just need to do come up over here as you have the access to and see what is is over here, because if you're asking the previous process needs to be attached as a form of Excel. There's going to be an additional work, and then we will have two source of truth, and we are going to be missing their update and here update. You know, kind of confusion back and forth. Whereas if we have everything in the same, and you can leave a comment over here, that will be there always, like you are seeing right now. You know that was initially done by the Jessica. She mentioned this test case has been completed and is ready for review. Then VNA as a peer reviewed it, internal review completed, and you see Emily approved. So all the traceability is there itself in the same source. We do not need to go in different places. So that is the process we would recommend and we would request you to do if that is okay with you. We can help you with you know kind of training on this one. It's a fairly easy tool, and we can request for a access for you as well and Jason.
+Speaker 3  05:10
+So we have the multi-tenant support, member eligibility API integration, then the prescriber API, update authorization parameters UI layout.
 
-Speaker 1  17:23
-Yeah, but for me, I guess my point is, what what is the purpose of AOL when we have AEO?
+Speaker 2  05:26
+Update authorization parameter UI layout. What does that mean? So I didn't make changes on the UI portion. Is that what we are testing?
 
-Monowar Hossain  17:31
-So there, there are multi purposes.
+Speaker 4  05:40
+Because no way, there's other things in this 1113 deployment that are not just API. At least is my understanding. So I think I think that probably aligns to that piece of the deployment.
 
-Speaker 2  17:34
-Go ahead, please. Yeah. Yeah, hold on. I think I okay. So when I when I when I have requested the separation between the testing on product and and and and SIT, I think one of the main things that I wanted to to do is making sure everything from product perspective was tested, and that product team they have a track and a good traceability on what was tested, when was tested, and where it was tested. Like everything from point A to point C. Now, when when I have requested this this meeting, it was the the main purpose is to understand one because you're the product owner, right? What what is what is the best approach for you and for product, right?
+Speaker 2  05:54
+Got it. Got it. Okay.
 
-Speaker 1  18:44
-So yeah, that's that's yeah. So that's why I wanted. I mean, it's about how how us as an organizations, as I understand, AOM have different instances. You're locking into Missouri instances right now, and you're testing the base product and you lock it under the Missouri instances, how does the Ohio, Illinois, will get to see it?
+Speaker 3  05:59
+And then state specific prompt PA integration from secure portal.
 
-Speaker 2  19:12
-Yes, and and this is this is what I I just said a couple minutes ago that they should not be in Missouri. It should an outside instance, either if it's ADL
+Speaker 2  06:05
+No, so when we say state-specific prompt PA integration from Cainville, it will be the same prompt PA portal URL. So, it's my envision is Agaria will be changing prompt PA to have that state identifier selection there. Have we confirmed that they are releasing the prompt PA also with that tenant awareness? Let me confirm that.
 
-Speaker 1  19:25
-product is yeah product's not gonna pay for an AOL instance. That's why I'm asking. Yeah, so if it's a base product, yeah,
+Speaker 4  06:44
+can you what? I don't I don't think Max or Christine can. Tuan, can you give any insight into that piece of this deployment and what Gotti is releasing with PromPA?
 
-Speaker 2  19:34
-to ADO, yes, exactly.
+Speaker 5  06:57
+Sorry, I just hop onto the call. I just got done speaking with Perry, which one are we looking at? We looking at line 46. Okay, so real
 
-Speaker 1  19:37
-So so as a base product, I think we should go to the feature itself, and Monowar, if you don't mind, I'm gonna ask you to go back to your ADO instance on the browser.
+Speaker 4  07:05
+quick, Paul, we're done. Right, we're just reviewing high level the CRs with what's included in the 1113 deployment. So in the lay, we get in the layup to speed with the test case scenarios that you, Jason, Monowar, gosh, and others. Sorry, I know there's others that are included, and just understanding that the deployment is not all API multi-tenancy driven. There's other code changes that Agadia is planning to release. Everything up to this point has been API multi-tenant. This one, line 46, is state-specific prompt PA integration. Nale had a question regarding how Agadia is releasing this. If you want to ask that question again, so Tuan can hear it, so he can provide a response.
 
-Speaker 3  19:52
-Sure.
+Speaker 2  07:48
+So Tuan, my question is: When you click on the when you log into the PBM portal and go to Agadia Prompt PA, that Prompt PA portal is going to be updated with tenant awareness,
 
-Speaker 1  19:52
-And when you click on related word and you click add link.
+Speaker 5  08:02
+that's correct.
 
-Monowar Hossain  19:59
-Sorry, click add link.
+Speaker 2  08:03
+That is correct, right? So they have added a new required fielding the flow there.
 
-Speaker 1  20:02
-Yeah, add link. Right, add link. No, click on add link right there, right above that, right. Oh, a little too. Right there, almost you. You almost got it. A little to your right. Add link. Right there. Right there. Okay. Click add link.
+Speaker 5  08:09
+Yep. So they giving each of our client or state a unique URL. So for so for Ohio,
 
-Monowar Hossain  20:15
-Okay.
+Speaker 2  08:20
+it is yeah. So what I remember, if they are giving us a unique URL, are we going to pay extra for that URL maintenance?
 
-Speaker 1  20:16
-Right. New item.
+Speaker 5  08:32
+As far as I know, they have not told us that we're paying extra for it. And I remember during June call, we say we are not paying extra for those.
 
-Monowar Hossain  20:18
-Okay.
+Speaker 2  08:42
+So okay, here I'm little not clear. They don't do URLs, but prompt PU instance is the same, right?
 
-Speaker 1  20:20
-Okay. Now you can choose the word type.
+Speaker 5  08:53
+It's the same instance, yes, but it's unique URL for each states.
 
-Monowar Hossain  20:24
-Choose the word type.
+Speaker 2  09:00
+Okay, as long as the prompt PA portal component is one, I'm perfectly fine. If they have a unique URL for each account, that's absolutely fine. That's how they are identifying the content. I'm good with it. But I need a confirmation that again, I'm not sure Dan or Pari or Jeff, you are aware. So yeah, we I don't want to get any surprise bill around it that hey we have to manage a different URL for different clients. So this is your bill because I remember there was a conversation in on-site kickoff and we did for Elena.
 
-Speaker 1  20:27
-There you go. Chicken that right there. No, no. Click on. Yeah, there's a drop down. Okay. You have to choose one. Test cases. Okay. Test cases right there. Why don't Why don't you instead of creating a bunch of those in ADO, why don't you just do it right here? That's the base product.
+Speaker 5  09:38
+Yeah, so it you know I think originally they were trying to create a new instance, but we basically say no, we're not basically paying for each instance. So they kind of agree, I believe, to basically just have the URL, but it's the same instance. And I can share the the FRD here for us. So they basically list the the listed new URL. They never mention anything about that they they charging us for new instance. So
 
-Monowar Hossain  20:45
-So, the problem I'm seeing with this one, Liliana, then we have to do two different things, and I think it will be little bit of more work on the team. What we can do?
+Speaker 2  10:12
+as long as we have this decision documented somewhere, I'm good with that, and then business is okay. I'm good.
 
-Speaker 2  21:00
-So, so what what we're gonna do is we can link the the product test cases to the product features and use stories. If there's a test case that we we we will benefit and reuse to let's say Illinois or Missouri, we can extract that test case. Either I don't know if there's any export functionality, or somehow we export through ALM and we load into ALM and we put those into the specific folder for the specific state, but when I when I meant to say we need the separation, this is what I'm referring to. Primes need their best ability, and the state itself, the DDI itself will have their own separate testing.
+Speaker 5  10:18
+Okay, I I can certainly reach out to Edgaria to get that in writing for you. But from from what I'm seeing in the FRD, there's no mention that there'll be a separate charge because they're creating new instances for us. They're just creating URL to help identify the the tenant aware. So I'm attaching the FRD here for us. Okay.
 
-Monowar Hossain  21:59
-Yeah, that's not a problem. I'm just trying to understand. I don't think I have written the test cases like these I have seen. So what it does once I say add link, it will create what?
+Speaker 6  10:42
+There will never be a new instance until unless we approve it.
 
-Speaker 1  22:14
-Create a test case. Can I do that? I can delete it
+Speaker 5  10:45
+Yeah. So so one 1.1 within within the FRD say utilize a single instance of of prop PA. Does that does that help? It
 
-Monowar Hossain  22:18
-later, right?
+Speaker 2  11:02
+helps, but as it would be a URL strategy, it's a URL. If I'm logged in as a Ohio subscriber, right? I log in there. I give up prompa. The URL should say something inwell.daria.com or promptpa.com/pohio.
 
-Speaker 1  22:19
-Yeah, you can you can do it, and we can obsolete and delete it out. This is how we did it in
+Speaker 5  11:21
+That's correct. Exactly. That's that's what it is. Let me let me go ahead and paste all of this in for you, and they follow what I have in the FRD structure. I'm sorry, my my my my document for the CR, and yep, and I also share this with the portal team as well too, so the portal team should already know to update this on their side.
 
-Speaker 3  22:25
-Ohio.
+Speaker 2  11:46
+Okay, perfect. So so it
 
-Speaker 1  22:26
-You you you can have all your steps, everything in a format just like AOL does.
+Speaker 4  11:49
+sounds like we're good there, right, Nalaia? We we're not
 
-Monowar Hossain  22:33
-Okay, so we followed this process. Jessica, you're referring to.
+Speaker 7  11:52
+getting far forward, but we need to
 
-Speaker 1  22:39
-And then what what you want to what you also want to do is for each one of these, as you guys create your, you know, your test cases, and you need an approval. Click on Add Link again. Below, below, below. No, no, no, no, no. Go back. No. Right there. Below. Right there. To your right. Go to your right. Go to your right. Go to your right. Go below. Below. Below. Oh, over here. No, no, no, no, no, no, no, no, no, no,
+Speaker 4  11:53
+test it to make sure that if an Ohio prescriber goes in uses this URL, it doesn't mistakenly point it to an Illinois. I mean, so the testing needs to be done.
 
-Monowar Hossain  23:03
-no, no,
+Speaker 2  12:03
+Yes, yes, exactly. That's what I'm going to suggest you name it because testers needs to go to different portals, different FPVM portals, click on the link. Depending on from where they are coming, it should land to either slash Ohio or slash mo or slash I so where is that test case here? Do we have it? Okay, in it's in only Ohio test scenario, row number 46. Now I'm good, Max. I'm looking into this row number 46, right? States specific prompting integration with Gamewell test prompt via portal with promptia for Ohio test scenario. So those are
 
-Speaker 1  23:05
-right, and related work, related work, related work, relate.
+Speaker 8  12:47
+showing pending because we told them to add new test cases because they were missing those test cases. We told them not to add them yesterday. So Jason, Swan, you already identified that those need to be added, and so we're just in the process of getting them added.
 
-Monowar Hossain  23:13
-Where is the related work? Oh, over here, this one.
+Speaker 1  13:00
+Yeah, either Lega or
 
-Speaker 1  23:16
-Right there. Click on add link again.
+Speaker 8  13:01
+Jessica or VNA is tasked with that.
 
-Monowar Hossain  23:18
+Monowar Hossain  13:10
+Right. I just wanted to add. Remember, Lega has mentioned earlier that we do not have the access to his themes on that portal side, so that needs to be look into that, but I know this is
+
+Speaker 2  13:25
+what is not what access is not there. Help me understand. Is a SPBM portal access Monowar or is something else? That's
+
+Monowar Hossain  13:34
+what yes SPBM portal access in
+
+Speaker 5  13:38
+one so
+
+Speaker 4  13:40
+So Max, Max, just make sure we're talking through this. We need to be we need to be typing this out. That's a that's a that's a gap that we need to make sure we solve for. I already have that captured for right here for the project plan, and it's at risk here for the tester access. So yeah,
+
+Monowar Hossain  13:57
+so we need some escalation on that, and to get that resolved exactly.
+
+Speaker 5  14:02
+So it's not it's not about the access to the SPPM portal. It is actually Lega is accessing the same SPPM portal that she tested before, but the URL is down. So we need to get with the portal team to understand why the URL is down. They may they may be doing a strategy of downtime to not spin up the the resources. So we need to kind of understand with the portal team why is it down and can we have this spin up within the next two weeks for our team to test
+
+Speaker 2  14:34
+24/7.
+
+Speaker 4  14:35
+Who's the portal team, Tuan? Who's the name?
+
+Speaker 2  14:39
+Yeah, I'm trying to understand. So, Tron, when you say portal, are you talking about the Dev Ohio portal or Ohio UAT portal?
+
+Speaker 5  14:50
+Yeah, I think that like we still have that same problem. Portal can only be tested on the Ohio UAT. The Dev portal was never really worked.
+
+Speaker 2  15:03
+The Ohio UAT portal never worked. This is first time I'm hearing. Honestly speaking, I thought no,
+
+Speaker 5  15:10
+no, the the death, the death, the death, the death one did not work. You know, if you remember that the death, the death, the death portal connected Ohio death. That when we have a challenge, so we we we test it at the UAT level for Ohio. Yeah. Yep. Yep.
+
+Speaker 2  15:26
+So Lager is Lager is doing it in UAT, right? Ohio UAT. Yes. Okay. So it may be possible that yes, you are actually right because we have a schedulers on to bring down the servers. So Max, I need you to send out an email to Anil Falcon, Steve Addison, and Mike Limbo that we need to keep these resources on or these servers on for next two weeks. So they have to remove the scale down policy from these servers.
+
+Monowar Hossain  16:03
+I'm sorry, Nilay. Why there has to be next two weeks? We need to do the product testing on our environment later as well. Correct? If we're not completed by these two weeks, in these two weeks.
+
+Speaker 2  16:18
+Yeah, we can extend that for Monowar, but and the reason is it incur the cost, and if Anim is not in agreement to consume that cost, it's a problem. So that's the reason I'm requesting for two weeks. And if if team thinks we have to go for three weeks, I'm perfectly fine. We will request for three weeks approval from it. Yeah, I mean, if
+
+Speaker 1  16:38
+we're going to request it, just go ahead and request it through 1112. Everything needs to be done until go live because I don't want to. I like heaven forbid testing at the end and we stop access.
+
+Monowar Hossain  16:51
 Yes.
 
-Speaker 1  23:19
-Okay. Uh oh, there's only oh okay. So you can't create. Can you create subtests for a test case? Go to the three the three buttons at the the the the more. Yeah. So if you want to, you can create subtests for approver peer review, and it has the same format as AOL does. That you can create your your your steps for the test case and all of those things.
+Speaker 3  16:52
+So what is it actually called? Sorry, I don't want to miscategorize it when I reach out to Nell Steve Falcon and Mike. Is is he S P M S P D M portal? URL in depth.
 
-Speaker 2  23:49
-So just just one one quick. I I think Jessica, you just said that you did it this way for Ohio.
+Speaker 2  17:07
+Max, we have to send a request to Anil that in Ohio UAT environment we want to make sure all servers are running 24 by seven till 11.
 
-Speaker 3  23:59
-Yes, for the an
+Speaker 8  17:27
+Thank you.
 
-Speaker 2  24:00
-execution and everything for
+Speaker 1  17:35
+All right, so we jump straight in to the project plan, right? Which I think this is good. Can we go back to the questions, Matt? Because I, like, what I want to make sure we have confidence in is the handoffs, so that when we get into all of these scenarios we're talking about here, right? So we got five to six testers per day. Are we testing things right now? Like, has the team been able to jump in and get started on anything? And do we have any weekend coverage?
 
-Speaker 3  24:02
-a prod. Yeah, for for product, yes. This is how we brought our test cases. Where we brought it in the ADO.
+Monowar Hossain  18:15
+Yes. So team started all three of us from a gate day testing team, and I believe also Matt Williams, Victor, and Hitendra they started. But the main problem at this moment we are seeing we do not see any prescriber member data in the PA hub, so we could not proceed.
 
-Speaker 2  24:09
-Okay, perfect. And then Twan, we would follow the same process.
+Speaker 1  18:35
+Okay, and is that because my understanding is there's a 404 eligibility error.
 
-Speaker 3  24:13
-Yeah, then Twan and Jason would go in. We would upload once we tested. We would upload the results to the user story, and then Jason and Twan would go in and look at it that way and approve it.
+Speaker 5  18:44
+So yesterday I was testing. It seems that the multi-tenant strategy to to do the routing for Ohio and not actually onboard Ohio as part of the platform Gainwell, there seems to be some issues with that routing. And Bit created a ticket for the IoT.
 
-Speaker 2  24:29
-Okay, perfect. We will we will follow these same process for yeah. So I think I
+Speaker 2  19:14
+Yeah, I know. I'm sorry, John. There are two incident tickets which were created as a result of that issue. So the firewall connection was 500. The security group was not updated to allow traffic from Fiji environment to Ohio. Okay. I requested Jonathan to escalate that ticket with Anil and team so that we can get it done quickly. So Max, let's connect with Jonathan and see where are we on that status. So that that was the root cause.
 
-Speaker 1  24:35
-think yeah I think for the base product this will probably be a little bit better, and then when it gets to Missouri and Illinois, you can log into Missouri and Illinois instance of AOM and track. You can just export this and copy it over if you want to, and then use their data and go from there. So this way, what you can show is that your team have tested this from the base product in ADO. So if Nalay wants to know, if some car wants to know, you can you can showcase that it's there, it's documented, and when we do patch note and release note, it pull in all your test cases and information that it goes out to all the account that they can also receive it
+Speaker 3  19:52
+Yeah, I have that incident ticket that Venoor made yesterday, and I'll follow up with Jonathan. Hey,
 
-Speaker 2  25:27
-to. Okay, so I have one question, Twan. When they're supposed to start testing
+Monowar Hossain  19:58
+wait, wait.
 
-Speaker 1  25:34
-now, it's it's done. The base product is a lot of them are done. You should start testing now. I mean, I raised this with Vid two weeks ago. Okay, could you
+Speaker 6  19:58
+I will ask Jonathan to join the call, like real quick.
 
-Speaker 2  25:46
-please start frequently?
+Speaker 1  20:04
+So here's my concern. We said it was an issue yesterday. It's 3o'clock on a Friday. We haven't fixed it. Like we gotta get faster. So how do we get faster?
 
-Speaker 1  25:50
-We release it on the 12th. I asked on the 13. Who's testing it?
+Speaker 2  20:21
+Let me see where is this ticket. Give me a second, Dan. Yeah, you you are right, Max. This is what I request you. Whenever you have received an incident ticket, right? I need someone who can track it down. Who is working on that ticket? And if you are not getting any response in a timely fashion, I would like that to be escalated immediately.
 
-Speaker 2  25:54
-To to who? Like to whom did you ask? I mean, never mind. Like, if anything like this, if there's a release, could you please copy me on those on those requests? I'll make sure. I mean, we're informed. Monowar is it's obviously leading it, but I will also like to to be informed and and make sure this is this is moving.
+Speaker 3  20:45
+Okay,
 
-Speaker 1  26:20
-I'm gonna I'm gonna have to sorry I do have to drop to the next meeting. Oh sure, Tuan, thank you, thank you, and then we'll talk. Okay.
+Speaker 2  20:46
+I feel like I'm looking into this ticket right now, and yeah, this ticket is still in open. Hold on, just my guardian auto. able to connect again. Well, okay. You see. First of all, why urgency is medium and impact is medium? It is not correct. Okay, was medium now changed to high?
 
-Monowar Hossain  26:30
-All right. Maybe I will set up another quick call to talk through this and also test results. I think Tuan has already talked.
+Speaker 1  21:21
+Yeah. Well, just blanket statement. Every ticket associated with this is absolute highest we can go. Like, like we just we gotta get through this. So let's just max make sure that's clear and how we enter. I don't know who's entering tickets, but let's make sure we we track
 
-Speaker 2  26:37
-So Tuan. So so Monowar the the next the the next action item for us, and this is immediate, we need to start putting those test cases into into the features, right? Because everything right now it's it's an ALM, and they don't have they have no visibility onto those those test cases right now. Tomorrow has he has indicated that it was ready A12, so it's already 825. So it's it's obviously this is this is obviously obviously delayed, right? Yeah, I need
+Speaker 3  21:37
+it. And it
 
-Monowar Hossain  27:18
-more information on to that. I do not know when you see says the ready is ready for testing with everything because we do not
+Speaker 2  21:39
+is an entity data side, Max. Here is my request: send out an escalation email immediately to Kenvashan and talk about this incident. Kenvashan and Indraroy. I need both of those folks to be aware of this incident. It needs to be fixed ASAP. It is not completed yet.
 
-Speaker 2  27:26
-we can okay we we can have a separate discussion on that with him but from our side test cases need to be need to be on the system on their system on their ADO and if if this was the approach they followed in in Ohio, we we shouldn't change anything without their approval. Okay. So the the question the question is so Nutan, I think
-
-Monowar Hossain  28:01
-because earlier what happened actually, Liliana? I do not know how much you are engaged in the way. There was a mass in a sense; everything was in different places. Excel, then Azure devolves. Very few were in ALM, so there was a direction that everything should be from AIM itself. ALM should be the single source of truth, and that is the standpoint I had.
-
-Speaker 2  28:27
-Who gave Who gave that direction?
-
-Monowar Hossain  28:30
-That came from Vidit initially. Then Erika was involved from Bio, and that is the direction we were heading towards. Okay,
-
-Speaker 2  28:43
-understand. Going forward, you you you directions you you get directions from Smithali and myself on on this approach. I understand there there was there were challenges before. We're just trying to to align. Right now, the the first thing we have to accomplish is to upload those test cases, and so if if you can start towards moving that, I don't know how how much it's going to take the team in to do it, but let's target Friday for that.
-
-Monowar Hossain  29:29
-Okay, we'll take that offline and we'll discuss about that. And yeah, team is aware of that, so we'll follow that process. Is there
-
-Speaker 2  29:35
-anyone? Is there anyone? Anyone? Biennay, Nutsan, Jessica, speak. Do you have access, and is this something you can start doing right away? Yenay, Nossan, Jessica.
-
-Speaker 3  29:54
-Do I know we have access to we have access to Illinois?
-
-Speaker 4  30:02
-No, no. This is not. This is not an ADO. This is. This is the ADO itself. The product. Oh, yeah. Yeah. For the. You mean the features and the your story just to create the test cases over the early, you know? Yeah. Right. Everyone should have access to this. Yeah. Yeah. We have access
-
-Speaker 3  30:20
-to the ADO, yes, and the test cases are actually written. So, do we need to just transfer them?
-
-Speaker 2  30:28
-Yes, just transfer them, and then we will inform Tuan and and Jason that test cases are ready. So we got their approval to execute to to to start with whatever features are ready for the A12 release. Okay.
-
-Speaker 4  30:46
+Speaker 8  22:01
 Okay.
 
-Monowar Hossain  30:48
-So that one is related to the feature and the base product. That's what we are talking about. The one is not tied with the ALM requirement. They should be in the still in ALM. But yeah, so don't delete. I don't think you have also the delete access in the LM, but we will move them in archive folder. But yeah, certainly you can just extract them and place it there based on the different feature we have. Just
+Speaker 2  22:14
+So until that issue resolved, I don't think testing team can continue testing because.
 
-Speaker 3  31:18
-okay. So okay, go ahead, Janika. So, question about that because you said extract them. So, how will we extract them into ADL if they're already written?
+Speaker 1  22:30
+So do we have an idea of how soon we can get that fixed? I'm
 
-Speaker 2  31:32
-I I don't have that answer. Like, I I don't even I don't even know if it's possible.
+Speaker 2  22:34
+pulling cameras on. Give me a second.
 
+Speaker 1  22:56
+Hey, Monowar. Can you make sure that as y'all run into issues, right? We're gonna open tickets. We're gonna follow the process. So, like this distribution list, like any issues, make sure everybody knows about it, so we can get the right people. Okay. Definitely not.
 
-Transcribed by https://otter.ai
+Speaker 2  23:15
+So Ken, Ken, just joined. Hey, Ken. Thank you very much, and appreciate it for hopping on the call at a very you know instant moment.
+
+Speaker 9  23:23
+Yeah, yeah, I gotta leave another call in two minutes, so I don't. Yeah, yeah.
+
+Speaker 2  23:28
+You just take one minute only. We have an incident open to be completed where security groups needs to allow traffic going from PG environment to Ohio environment, and we need to close this ticket ASAP because it is blocking the Alaria testing.
+
+Speaker 9  23:44
+Well, what PG environment we talking about for Ohio? They're all on GMS, aren't they?
+
+Speaker 2  23:48
+No, no. So Alaria service multi-tenant version is deployed. Oh, Agadia. Yes. Okay. So we need the connectivity traffic allowed from our PG environment to Ohio. So this is not
+
+Speaker 9  24:03
+open right now. These are we deployed in Ohio. Is this like not already in place?
+
+Speaker 2  24:07
+No. So the initial version we deployed was not multi-tenant. Now we deployed the multi-tenant version in PG environment, and now all the traffic for multi-tenant solution is routing from PG to Ohio to Missouri to dilemma.
+
+Speaker 9  24:23
+Oh, I see. Okay, so they were on a single tenant solution before. Now they're now they're moving multi tenant. Yes,
+
+Speaker 2  24:28
+exactly, exactly. Yeah.
+
+Speaker 9  24:29
+When did they move the multi tenant, or is that happening like this weekend or something?
+
+Speaker 2  24:33
+It is right now in testing. We are testing in lower environment, and because testing is blocked, traffic is not coming actually. I got
+
+Speaker 9  24:41
+you. Okay, so you you need the immediate issue is we need to fix the lower development environment so you can do testing.
+
+Speaker 2  24:48
+Exactly, that is correct. Okay, who's the right
+
+Speaker 9  24:51
+person, Elay, from your team for my guys to work with?
+
+Speaker 2  24:54
+So Jonathan already raised this request, and he is waiting for someone. I I told him to reach out to Jeff Carpenter to get additional help, but I did not get any.
+
+Speaker 9  25:05
+Okay, all right, not a problem. You said there's a ticket for this already, Nilay.
+
+Speaker 2  25:09
+Yes, sir. It is in the chat. Max, can you bring it up in to? Yeah, I
+
+Speaker 3  25:14
+sent it to you in the chat here.
+
+Speaker 9  25:18
+Okay, cool. Okay, hey guys, I'll get. Can you just fund like today, or just like something we can do on Monday, or how critical is this?
+
+Speaker 1  25:24
+Today, very critical, very critical.
+
+Speaker 9  25:27
+Okay, I would be shocked if somebody ever told me, "Oh no, you wait till Monday." Nobody ever
+
+Speaker 7  25:32
+said. Okay, I told
+
+Speaker 9  25:33
+it up a whole bunch of work, Ken. All right, let me see what I can do, guys. I got to get you another call, but let me make this in parallel. You'll hear back from me shortly. sir.
+
+Speaker 2  25:42
+I appreciate it.
+
+Speaker 9  25:44
+Thank you. Okay, guys. Thank you.
+
+Monowar Hossain  25:45
+Sorry, meeting. I think I think you're good. Thank you. So,
+
+Speaker 2  25:49
+Max, I need to keep an eye on this and keep tap on checking with him if this is on or not. Also, I think I would be pulling the presentation. Align to work over the weekend this weekend. I'm
+
+Monowar Hossain  26:29
+sorry. I was speaking on mute, Nilay. So yes, team is available to work in the weekend. I checked with them. Once these issues are resolved, we are ready to execute the test cases in the weekend.
+
+Speaker 2  26:47
+Okay, whatever. I need you to work very closely with Max and bring this incident ticket to the closet. There are two incident open, one for Ohio and then one for I don't know what is the other one. I need you to lead on this. The moment we close it by next two hours or three hours or four hours, I need you and Max to communicate tomorrow when we are starting the testing. And before we communicate that, I would like you to make sure. And Tuna, I may need some help from you as well because I need to make sure all the APIs routing are happening correctly. When I say routing, the sense just the concrete testing.
+
+Speaker 5  27:32
+Yeah, and
+
+Speaker 6  27:34
+I want to ask add on to that, right? So, so Monowar, your team is you know queued up to right do weekend testing, but is there support for them over the weekend as well? Like, I don't want them to hit a blocker or hit a question and have no one to reach out to.
+
+Monowar Hossain  27:53
+Very good question. I did not hear any confirmation on that yet. I'll revert that question to Max, or I don't know if Vite has joined or not.
+
+Speaker 4  28:10
+Who? Sorry. So I think. So I think we need to
+
+Speaker 6  28:13
+put together. We. So I think we need. Like, if the testers are working this weekend, right? If we expect them to execute test cases. We need to have support for them, right? So everybody from each team needs to have a either on-call person that we can reach out to if they run into any questions or any blockers.
+
+Speaker 2  28:39
+The one thing I see here, Max. We are not adding the chain of command here. I do not see Jennifer Matas. She should be in this conversation to make sure we have a coverage for the weekend, first thing first. I do not see the James Tyers as well. I see Soros there is not available at this point. But going forward in these kind of escalations, Max. I need those two people available.
+
+Speaker 8  29:05
+Okay.
+
+Speaker 2  29:06
+Okay. I cannot be in every call and need these escalations. I need my leadership to step up and get these things to the closure. Now, coming back to the availability over the weekend, that's where Max request you reach out to from the engineering perspective Paul Sorup and James Tyers and Jennifer Matas get an alignment that who is going to be available to support from engineering side. I did not give any heads up to offshore team at all because I was not aware, so I am not anticipating any kind of support from them for the weekend. I will try. I will send out a message on WhatsApp and see if they can align someone over the weekend to support from the engineering perspective. But I would like onshore team is available.
+
+Speaker 6  30:08
+So, can we put together that roster before we end the call? I want to know who's on call this weekend.
+
+Speaker 3  30:19
+Make sure anything of the template.
+
+Speaker 2  30:22
+me
+
+Speaker 3  30:30
+find that previous tempo that we used in Ohio. Well, I'm looking for that.
+
+Speaker 2  30:37
+Believe it. We do have that right on-call roster. Do you have it? Can you share with Max? I believe it was shared earlier. I gotta find it out. Yeah, please work with Max. Share with the team and Max, when you send out the release notes, let's the meeting notes. I want that roster to be part of that. Like, who is the POC for the weekend? Okay.
+
+Speaker 1  31:06
+And then Max, can you? We're going to need you to get with them and explain what's going on, so that we then got some awareness.
+
+Speaker 2  31:12
+Agreed.
+
+Speaker 10  31:14
+And then from my side, I think Jason's out of pocket this weekend. Tuan, can you cover, or do you want me to cover?
+
+Speaker 5  31:22
+Yeah, I can cover. The only thing is Saturday morning I won't be available. My cousin is actually ordained as a deacon. I will be at mass, so I think I'll be home like around 1pm. or so. But I can be, you know, trying answer anything over teams on above.
+
+Speaker 1  31:45
+So I think what would be helpful, right, is just let's get this the roster. Let's get people educated. I don't know if we do like a midday call. I'd like I'd like a 30 minute check in to just see where we're at, right? Like, are we getting through cases? Are things working? Are people responsive? It does not need to be fast. We don't have to go through everything, but I'd just like to make sure that we're we're making progress and we're able to check things off the list. So I don't know one Eastern. I don't know what works. 132. I mean, somewhere in that time where it's midday, right? Still time to recover for some stuff, but not too late. I mean, again, I don't care. I'll I'll jump on whenever. But y'all tell me what works. Let's just do one Eastern. Call it call it that, and go from there. Does that work for everybody?
+
+Speaker 11  32:43
+I think it sounds reasonable. Hey, I just joined, so I know I missed the meeting at our Deer Fire. But did we? I know you and I talked earlier, Dan. To be aligned.
+
+Speaker 1  32:53
+So Malay, we're going to the roster of the people that will be on call. We have a pretty big blocker that I guess the multi-tenant API is not turned on, so there's no eligibility, so we can't do testing. So, Nala has escalated the ticket. We got Ken Mashan and his team, I think, lined up to try to get this open in the next couple hours, so that Monowars team can test over the weekend. We've got we've got a plan in place, but basically we got to open up the eligibility to see where everything works from there.
+
+Speaker 11  33:26
+Right. And is Max? If you guys have a plan, Max, are you taking everything up? The next steps that we've all aligned on the details and putting them in the plan so we can start tracking them.
+
+Speaker 3  33:36
+Yeah. That was the intent of this call in 40 minutes. I just want to make sure
+
+Speaker 11  33:44
+all the good stuff that comes out of this call, we need to put it in a plan, and we need to say Jason owns this, Juan owns this, Greg owns that, and when people, you know, and then I need you and Christine, depending on what it is, to you know herd the caps, right? Your jobs are hard, right? You got to bug everyone. You have to be annoying.
+
+Speaker 1  34:04
+Hey, I think Max. I think the roster then goes to number three a little bit, right? As far as who's on point for what, my question is, who's on point for if there's an Agadia ticket or issue that needs to be entered? Then we've got someone entering to Agadia. Juan, is that you?
+
+Speaker 5  34:31
+I mean, that can be me, or that could also be Monowar to report. The testers can do
+
+Speaker 6  34:39
+that. Yeah. Okay. The tester should open the tickets.
+
+Speaker 1  34:42
+All right. So Monowar, y'all can do that. We're good there. If you got a guytia questions, because I've called, I called Mira and said y'all have to be on over the weekend as we're going through this to be ready to respond quickly.
+
+Monowar Hossain  34:56
+Sure, Dan. Yes, that is gonna be what we're going to be doing going forward, so any sort of issues or blocker, we are going to be opening a defect in as a device. And
+
+Speaker 11  35:06
+then, and then if there's an issue, do we have an on-call list with people's cell phone numbers? So I agree with everything that we said. You know, let's the testers can open those, but let's say someone gets an appeal and they don't know what they're looking at. Hopefully, it's not realized. Do we have cell phone numbers so that we can reach out to the experts on the product team if needed, or engineering the tech lead. I just need these resources. What I don't want to happen is on Monday is on Saturday at 3pm. Monowar hit a wall and doesn't know who to go to. Do we know? Does he have everybody he needs to go to, and when? That's also part of working on the weekend. So I look for the PM and have a master list of all the contacts. Share the contacts over the weekend. Everyone sells so that in case there's an issue, they can reach out to those experts.
+
+Speaker 3  35:58
+Yeah, I'm looking for what we use in Ohio that it shouldn't change.
+
+Speaker 11  36:01
+Exactly. That's what we should be doing. Have that system call so that when Monowar calls you and says, "Max, I don't know what to do," you're like, "I do. I'm going to call this person right now." If you can,
+
+Speaker 4  36:14
+just make sure that it's updated so we don't have outdated information. We run into problems before where this person doesn't work here anymore. We don't need that.
+
+Speaker 1  36:23
+Yep. So, so Max, we'll give you a little bit of time to try to find that because I do think it would be helpful for us to cement this on the call if you're able to pull it back up. So maybe while you're looking at this, like number four is from me and it's very tactical and it may not make any sense, but like we spent a crapload of time performance testing these APIs, and it took weeks to get them to perform where they need to go. Do we have to do the same thing, or do we have confidence that these APIs are going to function to where they're at today? Like beyond actually understanding if they're transmitting the data, and and we've got the connectivity. Like Malay, how do I think of the actual performance testing?
+
+Speaker 2  37:10
+No, you you are right, Dan. You are right. We have to do the performance testing because now it is moved. The infrastructure is moved from Ohio centric to PG Greenwell Center, so there is an additional network pop is happening now. So yes, we had to run the performance testing.
+
+Speaker 1  37:38
+So when does that happen? Is this is this after we get through the 90 cases that we do the performance testing? Like, when does that come into place?
+
+Speaker 2  37:47
+It it it can happen in parallel too. It doesn't need to be happening sequentially. So if if testing team has, I think last time who did the performance testing day, right? Monowar, do you remember Dave executed those automation scripts for performance testing?
+
+Monowar Hossain  38:10
+I think that was John.
+
+Speaker 2  38:13
+Okay. Right. Yeah. So we need to run the same scripts again against these new set of APIs, so it can go in parallel. Now, when I say in parallel, we have to be careful because when you when you nuke the system, nuke during the ops, so that there is no load on the system during that time. So what I'm trying to say is, like testers can test during the daytime, and then John can trigger his automation script at 8 p.m. EST or whatever time he's comfortable, and run through it.
+
+Speaker 1  39:01
+So is is John McGee still around?
+
+Monowar Hossain  39:05
+So I'm checking on that while we are talking. I can confirm on that maybe in a couple of minutes, please. Okay, thank you.
+
+Speaker 11  39:16
+And and and if not, if someone else is doing it, we should know who the SMEs are, right? I remember very clearly who they were. If we have
+
+Speaker 12  39:24
+a performance
+
+Speaker 11  39:24
+testing issue, we should know from Jonathan. He should be pulled
+
+Speaker 4  39:27
+in
+
+Speaker 13  39:27
+to assist,
+
+Speaker 11  39:31
+right? Those are the two folks that worked with John McDeman. He got lousy results. Those were the two experts that did the tuning. Yeah, yeah.
+
+Speaker 2  39:43
+Then that should be part of that roster itself. What is needed? But long story short, if John is not around on our, I he has those scripts. I need someone else from your team to execute those. And if you see performance deviations, Max, I need your help to pull Jonathan and you know to tweak the performance and server configuration. Now again, yes, last time I remember we bumped the server capacity and then we bring it down. So if server capacity is lower at this time, we have to go and request to bring it up again to the previous version or previous IOPS number, which we did earlier this year for Ohio. Did I use you guys?
+
+Speaker 1  41:00
+Oh no! I saw your
+
+Speaker 2  41:01
+indoor science all the time. Yeah,
+
+Speaker 1  41:04
+I think Monowar is looking. I don't see John McGee in the organization anymore, which is unfortunate because I thought he did a good job. But let him go look. Maybe I'm maybe I'm doing something wrong, and we're gonna need to get that set up and lined up because I mean, Nale, is there a way to take the lessons learned for the setup with Gino and Jonathan on what we did previously to to get further faster?
+
+Speaker 2  41:36
+Yeah, absolutely. They they know exactly what's being done last time, and we can bring that back to the same capacity. Capacity will work with Dino and Jonathan, and give them the heads up that this is coming, and we can plan it hopefully mid next week to execute this performance testing, or we can plan it early next week, depending on the availability of resources. So a quick follow-up, like we need to do this in UAT, right? To be, you know, close to like the amount of data we're dealing with. Yes. Yeah.
+
+Speaker 1  42:15
+Okay. So, so question on that, Tuan Perry, like, are we are we in UAT or Dev? Because I thought we were blocked from going to UAT because of the PHI and multi tenancy.
+
+Speaker 6  42:30
+We're in Dev right now.
+
+Speaker 1  42:33
+So like, I don't, I don't think you can test in UAT, right?
+
+Speaker 6  42:38
+Um. Well, PHI. We need another promotion, right? So once we're out of sit, then that's when the performance decision happens. It needs to be tested in the most production-like environment we have.
+
+Speaker 1  42:59
+So how do I translate what Vid just said to what we need to
+
+Speaker 2  43:04
+do? Now what Vid said that he is thinking that we have to do it in lower dev environment. That's not where we are going to do the performance testing. We have to do it in UAT. So what that means is the API, the multi-generation API, needs to be promoted to UAT so that we can execute the performance testing work there instead of Dev.
+
+Speaker 6  43:25
+Yeah, so it has to be right. It has to be done first, and then the code gets promoted to UAT.
+
+Speaker 2  43:31
+Yes, for Agaria, there is no stick, so only API needs to promote there. As I as I articulated in previous diagrams as well. So when you are clear, you have any concern on that? Are you clear on? Yeah.
+
+Speaker 6  43:47
+So, so Dan, if we're in we're in Dev right now, right? Because they they haven't connected to Sit. So it goes from Dev to UAT right now, right, Nali?
+
+Speaker 2  44:00
+No, it goes from dev to UAT, so from there to state to UAT, but we don't
+
+Speaker 6  44:06
+have a a guardian state.
+
+Speaker 2  44:09
+That's what I'm saying. So it is a pipeline, but we cannot bypass the process in pipeline. So we have to follow this, but there is no guardian connectivity in state.
+
+Speaker 6  44:19
+So when you say you have to bypass it. Are you going to do one deployment to both SIT and UAT, or are you going to, or is there something that has to happen between that deployment? Are you going to do just?
+
+Speaker 2  44:31
+I think yes. I think we. You remember when I presented the whole diagram, Magic here initially. ABS will follow the pipeline process. Help connecting to Agaria non PHI UAT environment. Then API will get promoted to the SIT environment, Ohio state environment. No connectivity there as well. Once that deployment is done, it will move to UAT environment, and that's where UAT Ohio UAT will connect to the Agaria PHI UAT environment.
+
+Speaker 6  45:10
+And then, according to the timeline right now, when is that deployment going to happen to UAT?
+
+Speaker 2  45:20
+21st, we have to fix this issue. Then only we can decide when it is happening to UT. At this point, I don't have the timeline, honestly speaking, because until unless this security group issues get resolved, I cannot guarantee when it is happening. So we
+
+Speaker 6  45:35
+need to put a target date out there, right? Because our runway, right, our finish line right now, is november 13 or 12th. Whenever whenever Agadia needs a go no go sign off.
+
+Speaker 1  45:48
+So
+
+Speaker 4  45:49
+there's there's a no go. We don't have an option of a no go, Perry.
+
+Speaker 6  45:53
+But but part of the process, right? The part of the Agadia process as well is we have sign off.
+
+Speaker 1  46:02
+Yeah, I mean that that's fine. But what I'm hearing, Perry, is they're going whether we give sign off or not. That's right. Like there is no option to go back. So like we can say we're not going and there's still the full. For
+
+Speaker 6  46:15
+our planning purposes, right? I just want to see dates, right? Like we can't say we don't know, so like if we know that is level 1211 12 is the date, right? We can right now say let's plan on performance testing on 11 nine. That's all I'm asking for.
+
+Speaker 2  46:34
+No, I cannot come into date at this point, buddy. To be honest with you, first of all, I am surprised to know that a vendor is dictating when client has to accept their product. I'm surprised with that that there is no choice client is having it all, and vendor is dictating you have to take this product or deal with it. So I'm trying to understand then what is the pushback on that part.
+
+Speaker 1  47:00
+Yeah, and this is this is what has got us in such a precarious situation, Elaine. So, the way Agatia does their deployments and the way they've been writing the code, they are saying they are unable to back out the code if we decide that we're not going forward with the deployment,
+
+Speaker 2  47:22
+so any member because it's the same code base and multiple clients are running.
+
+Speaker 1  47:27
+Correct. So, so they said at this point, like they are unable to back it out. So whether we say we're ready or not, the code is going right. So like we we don't need to tell Ohio that, but we've got to get Ohio comfortable because otherwise we're going to tell them they have to do it, and that's going to get really bad.
+
+Speaker 2  47:48
+Agree, agree. Okay, then, then, then we need to move pretty fast. Okay, there is no choice. We have to make it happen. Now, again, whether we can, you know, meet the performance criteria or not. That is something we can discuss later. Hey, River and Max, I would like you guys to take it back and come back with the timelines. When can we deliver this to? It's already in Ohio Devs. When can it be promoted to Ohio UAT environment, James, thank you very much for joining this call. I pulled you in here because I was not able to hold Jennifer's app. I need your help to first let's connect with the videoer and get the insights video and Matt. What is the plan for this weekend and support needed. Second thing is how quickly we can promote it to UAT because it is dependent on OEMs approval, which I remember Palm told me. But how can we bypass once we have a green signal in Denmark? So I need those timelines shared with the team, and once that is done, Max, I need the timeline on when we can execute the performance testing. So, James, I need your help to coordinate this with Max.
+
+Speaker 14  49:14
+Okay, and Jen's here. I'll pull her in because I think she's been a little closer to it, but yeah, Jen and I will certainly
+
+Speaker 2  49:24
+work with. Yeah, Jen, thank you very much for joining the late evening call here. I am looking for some help here for Ohio Agaria API rollout right now. Agaria API are blocked in dev environment because of the security groups are not updated, so Mir and Max can provide you more insights there. That first thing, I have told ITO team and they are working on it. I need that to be closed in next couple of hours. First thing, second thing is we need to align some support from engineering perspective because testing team is going to do some testing over the weekend. So if anything required, we have coverage from engineering perspective. That is the second thing. Now, third thing is to come back with a release timeline for a Guardia API to Ohio UAT, and we have to be very aggressive on these timelines because 10:30 is our drop date, and we cannot miss that date at any cost. Let me know what is needed, what help is needed. I'm here to support you guys.
+
+Speaker 13  50:46
+Do we know the kind of support we need? Like, do I need to reach out to Ohio folks, or is this all engineering?
+
+Speaker 2  50:54
+All so connect. That's what I'm saying. Let's connect with Max and Vedivar and you, James. You all come together and come up with the support. So, Jennifer, high level, we just purely engineering support.
+
+Speaker 13  51:10
+Okay.
+
+Speaker 2  51:12
+Okay. So, Vidhu or Shriyari, please be aligned for that support for the weekend needed. I did not get access to IPO team yet. If we need any help from ITO, because I did not realize we are in an issue at this time. Honestly, pardon my French. So, so this is this is the plan at at this time. I would say, Pari, my apologies. I will get back to you in the date. Hopefully by that's fine,
+
+Speaker 6  51:46
+right? Like even even so, if we just have a date for a date, right? Like we know that presumably testing has to happen within the next two weeks, but we want to try to you know have the team target and track to something.
+
+Speaker 2  51:59
+Absolutely, absolutely. I did not realize that Agadir's solution is having other clients as well. Now I understand payer concern as well. Okay, makes sense. We will make it happen, guys. I'm pretty confident.
+
+Speaker 1  52:14
+So appreciate that. So if we promote to UAT through what you just said, do we have to get ODM approval to do that?
+
+Speaker 2  52:26
+Yes, but correct me if I'm wrong, Janet. That's what I heard from Hossman. Actually, I'm not sure if that's true or not.
+
+Speaker 13  52:39
+I'm sorry. One more time, please.
+
+Speaker 1  52:42
+Yes. So currently, right, we are connected to the dev environment, trying to get the APIs opened up so we can start doing testing. What we heard is that in order to do performance testing, we have to promote to UAT so that we can do performance testing in UAT. Jeff also wants to get his team into UAT. So what we're trying to say is, ultimately, we are going to need to promote to UAT most likely next week, so that we can do concurrent testing with what Monowars team is doing in depth. My question is, what are the dependencies that need to happen in order to promote to UAT? And is ODM sign-off one of those dependencies that we're going to need to promote this multi-tenant API to UAT?
+
+Speaker 13  53:36
+Yes. Well, we are not allowed to promote anything to UAT without ODM approval.
+
+Speaker 1  53:41
+Okay, so who from this team is going to be on point for working with Falcon and Neil in identifying what collateral is needed or explanation to promote to UAT?
+
+Speaker 13  54:00
+I can work with Matt Williams, the test team lead, for that because they usually handle all that.
+
+Speaker 1  54:08
+All right. So I think Jen, what would be helpful is if we can try to target mid next week, getting lined up to promote to UAT. I don't think we're going to have all the test cases done then, but if we can promote to UAT, it will allow us to do performance testing concurrently. Because I'm afraid if we push this out too far, we're going to run into issues.
+
+Speaker 13  54:35
+I mean, we don't have to. We don't have to be done with dev testing in order to migrate up.
+
+Speaker 1  54:40
+Okay, so can we pick a date that we shoot for Wednesday to promote to UAT? If there are blockers that we can't get to, we can address those. But let's just leave here today with Jen. You working on Wednesday to promote to UAT with Matt and Anil Falgin, and we go from there. Does that work?
+
+Speaker 13  55:00
+Yeah, and just FYI, I'm checking. I am checking with Matt because we do need to request permission to have some of our to have some of our environments up over the weekend hours. So I'm making sure that nobody loses access over the weekends for the next two weekends.
+
+Speaker 1  55:17
+Thank you. So you use next three weekends. I can do
+
+Speaker 13  55:21
+next three weekends. That's fine.
+
+Speaker 2  55:22
+Yeah, yeah, that's what I'm about to say. Thank you. Hi,
+
+Speaker 14  55:27
+sorry to call you on the spot, but Jere, but I know you're typically the one who solicits the approvals for a MoDM, and I just want to get your feelings related to Wednesday and what Dan's asking for, it is it doable? Either.
+
+Speaker 1  55:48
+Hey, to add to that, James, I talked to Anil yesterday, and I told him and Fallagan that they need to get Candy comfortable with all this multi-tenancy by today or Monday.
+
+Speaker 9  55:59
+Okay.
+
+Speaker 1  56:00
+So he said he could do it. He felt confident about it. But then I think he could. Right? You may have questions. Thank you for sounding too. If y'all can stay close, like Anil is aware of what has to
+
+Monowar Hossain  56:17
+do. G like the second
+
+Speaker 11  56:39
+approval from ODM slash Candy. Put Monday's date on. Put a Neil's name next to it, and if doesn't happen, that should trigger you to ask the question. Hey guys, where are we with this? Right? It's just all these items we have to be tracking at that level. Whether it's you or Christine, you need everything tracked in the project plan. Historically, Jen, you mentioned
+
+Speaker 4  57:00
+we don't need everything done to promote to UAT. What
+
+Monowar Hossain  57:09
+So, Monday meet call with that. review. Acacia ultra da likar akhirnya kita korang yang guli color. Acati kes tahu dah masyarakat pora share kurang, just match? Can I have a check call? I got meeting at. Thank you. Yes, but again,
+
+Speaker 15  58:10
+Palvin,
+
+Monowar Hossain  58:10
+Palgun would be the best person to confirm on that. But I agree with you on that.
+
+Speaker 13  58:16
+Okay. Yeah. Well.
+
+Speaker 2  58:17
+Yeah. Bj, please.
+
+Speaker 13  58:22
+I'm sorry, Neely. What?
+
+Speaker 2  58:23
+Saying you work with Falgun and VG, and let's get the confirmation on this one. If it is something we can address it quickly, great. If not, let's escalate it. What is needed? Okay. So, Jonathan, thanks for hopping on this one. I think one thing I would like to call it out, Max. I need incident tickets open for UAT security group access from Fiji to Ohio UAT, and the same ticket needs to open up for production as well. Now, production we can put a timeline around it. I don't see those two tickets out there. So, Jonathan and the river, I need your help to submit those tickets ASAP. One thing. Second thing, Jonathan, we need to pull Geno as well. We want to do a performance testing to make sure our performance is doing great as we did earlier this year for Agari APS.
+
+Speaker 16  59:18
+Okay, so we're going to integrate from network proper to our Ohio environment. That is that correct?
+
+Speaker 2  59:28
+Yes. So we will do performance testing in Ohio UAT environment.
+
+Speaker 16  59:33
+Okay. Do we have a date when PA Hub will upgrade there? Because we have to be in lockstep, and then I need to talk to the security folks as well because that was not they're they're going through a security OR so we have to bypass that in order to get that in in so
+
+Speaker 2  59:49
+okay so help me understand we will escalate it we will get a exception from security OR that should not be a blocker it can happen in parallel too okay promotion. That's a great point, Max. Do we know if what is the Agadir's rollout date for their UAT PHI environment? Because I want to make sure when we promote our APIs to UAT environment, Agadir system UAT PHI environment is also up to date, so that we have end-to-end connectivity without any issues with multi-tenant APIs. Do we know when they are planning to release?
+
+Speaker 11  1:00:37
+Okay.
+
+Speaker 6  1:00:39
+From what I recall, from what I recall, it's a sign off from us to sit, right? So that was the process last time. I don't know if those dates have been published, but I'm pretty sure we can do you know very high level testing in sit and just have the code be in UAT for what people need.
+
+Speaker 2  1:01:06
+Okay, so sorry,
+
+Speaker 6  1:01:07
+and sorry for non-PHI, right? So for they consider the non-PHI RSIT. I know it's all confusing, but we sign off on that first phase of testing. Let's just call it phase one. After we sign off phase one, that's when they usually promote it to non. That's when they usually promote it to the environment with PHI. So Max, can you is if it's not published yet, right? Can you get that date from Avery?
+
+Speaker 3  1:01:44
+Yeah, I'll reach out to
+
+Speaker 2  1:01:57
+him. Okay, let's move on to the next. What are the other questions we have here? Did we miss any? I'm sorry, we changed the conversation multiple times. Yeah, all these questions addressed here, or is anything still pending?
+
+Speaker 3  1:02:10
+Yeah. Well, the the other thing was to walk through the basically the part of the project plan for this deployment into Ohio, and then I've been working with a few people to identify all of the steps. I know we're already at time. It took an hour to go over those four questions and everything else that came up from that.
+
+Speaker 2  1:02:38
+Yeah, next. You show me quickly the test cases. I want to just cursively review all the test scenarios. What are going to execute? It's high level. I don't want to deep dive this one. Yeah, let's just keep going and yeah.
+
+Speaker 3  1:02:50
+Okay, so we we stopped at state specific and
+
+Speaker 2  1:02:56
+authorization service API enhancement. Okay, enhance our claim history integration daily prime of reconciliation, batch file integration. Okay. Okay. Good EPA integration with CMM vendor. Do we still need to test these two bottom scenarios? I'm just trying to understand. Monowar or Tuan, can someone confirm?
+
+Monowar Hossain  1:03:26
+I think that is the suggestion we got from Tuan and team other day yesterday. I would say
+
+Speaker 4  1:03:30
+yes. So I would say yes. That's definitely insane. Unless anyone says like has clear reason why we would not to. These are certainly upstream connection points that I mean we need to make sure that as prescribers are submitting through these vendors, they're routing appropriately. Have we
+
+Speaker 6  1:03:48
+and have we confirmed with Cover My Meds and Sure Scripts that everything is configured with them?
+
+Speaker 17  1:03:58
+Yes, it is. I know that they're having trouble with CMM today, and they there it's a McKesson specific holiday today, so we couldn't reach anybody at CMM.
+
+Speaker 2  1:04:12
+But but help me understand. I remember Shostak's workmen don't allow us to pass PHI information.
+
+Speaker 6  1:04:22
+This has to be tested in a lower environment. Correct. Neither of them do.
+
+Speaker 2  1:04:26
+Okay. So can can we have to add another column here? Which environment we are going to execute these max?
+
+Speaker 3  1:04:34
+Yeah. Monowar, do you care if I alter your your tracker here?
+
+Monowar Hossain  1:04:39
+Sure. Please do. Yep.
+
+Speaker 2  1:04:42
+Because I don't want here like okay in UAT this is not working. So we know exactly clearly where are we testing what and where are we giving sign off for which test case.
+
+Monowar Hossain  1:05:00
+At this point, and I also
+
+Speaker 10  1:05:02
+want hold on. I also want to confirm that the testers have the right access to the workbench. I don't know if any access has changed between November than now. Yes, for for EPA. All right.
+
+Speaker 2  1:05:28
+Okay, I'm good. Bye. Thank you.
+
+Speaker 18  1:05:32
+Okay.
+
+Speaker 6  1:05:37
+I'll tell you which ones are not critical right now. This is a daily batch file. That one number 80 is lower priority, right? Also, claim integration between
+
+Speaker 10  1:05:54
+claims hist authorization enhancement adjustment. Yeah, the rest are critical. Let's see, prescribing. Yep, I would put 80 as lower priority.
+
+Speaker 2  1:06:17
+Yeah, Max, we need to add another test case for performance testing, I don't see that one. So unless Monowar, you are tracking separately.
+
+Speaker 12  1:06:30
+No, this is
+
+Monowar Hossain  1:06:31
+all. Yeah, we can add that. I think everything should be in the same one. And earlier, I couldn't confirm. I think you already have seen. Yeah, as Dan mentioned, John Maggie is not with the organization anymore.
+
+Speaker 2  1:06:47
+Yeah, but John Maggie is not with organization. All the automation scripts he wrote will be there somewhere in your team share folder, right? Can we confirm that part?
+
+Monowar Hossain  1:07:00
+Okay, I'm gonna be checking on that. Because
+
+Speaker 2  1:07:03
+if we lost that, it's a huge, huge problem. Because I like we made it very clear in the beginning of this Ohio Agardia program that the testers who are working on this, keeping all this as a knowledge base and lessons learned in a single place, and share that knowledge with other testers. And that
+
+Speaker 6  1:07:27
+was supposed to be reusable, right? Like it was, yeah. Agree. Yeah, yeah.
+
+Monowar Hossain  1:07:33
+All right. I'm gonna be checking on that, and we'll confirm you, Nilay, on that. Thank you.
+
+Speaker 2  1:07:41
+I would recommend just action items, Max. You, I need your help to track it now. Okay. Correct. And moreover, this is my concern. If we are not able to find those automation scripts, we have a big problem. We have to bring someone quickly who can write those automation automation scripts and identify the test data and trigger them.
+
+Speaker 14  1:08:11
+Okay.
+
+Speaker 6  1:08:12
+Hey Tuan, why is 49 noted as regression?
+
+Speaker 5  1:08:18
+49. You mean as a test claim regression test claim?
+
+Speaker 10  1:08:24
+There were changes to test claim, right?
+
+Speaker 5  1:08:27
+There were changes. So basically, we have some optional fields that the team could pass. So I think part of the regressions plus those optional fields, so those test cases haven't been created.
+
+Speaker 6  1:08:46
+The the new test cases haven't been like the optional field test cases haven't been created. All of these test cases, as part of regression, should have already been created, right? It's an enhancement to the previous test cases that were already executed. We're not starting from scratch. I'm hoping we're not starting from scratch.
+
+Speaker 2  1:09:12
+I was about to say the same thing for everyone. I'm hoping the same way.
+
+Speaker 6  1:09:19
+We had our core APIs right, phase one APIs. We've enhanced those APIs, right? So you have regression plus new functionality. So I need somebody to tell me: Are you guys rebuilding every single test case at this point?
+
+Speaker 2  1:09:39
+An hour, you have your hands up. Go ahead, please.
+
+Monowar Hossain  1:09:43
+Nilay, I just wanted to one thing to confirm. So all of these test cases, what we're planning to do in Ohio Dev, but to my understanding, I'm not sure the performance test has to be done in Dev environment or UAT environment. We did that last time on UAT environment.
+
+Speaker 2  1:10:02
+Yeah, it's in the UAT environment, not in dev environment. I'm not expecting in dev environment.
+
+Monowar Hossain  1:10:09
+Okay, so only performance test has to be done in UAT.
+
+Speaker 8  1:10:13
+Yes.
+
+Monowar Hossain  1:10:13
+Okay. Thank you. Can
+
+Speaker 2  1:10:14
+you answer this question? Are we writing all these test cases from scratch, or are we leveraging the test cases we have built it out in past when we went live with Ohio?
+
+Monowar Hossain  1:10:27
+So these test cases are created as part of the product-based product testing in Azure DevOps. Those are the one we're leveraging for this 11-13 release from the KDR.
+
+Speaker 2  1:10:41
+What that mean, whatever? Is it okay? Let me. So when you say test cases created in DevOps, are you saying these are the same test cases we utilized last time?
+
+Monowar Hossain  1:10:57
+Many of them, yes. Okay.
+
+Speaker 2  1:11:00
+So we are not building from scratch, right?
+
+Monowar Hossain  1:11:03
+That's correct. Yes.
+
+Speaker 2  1:11:07
+Okay, but so like in
+
+Speaker 6  1:11:09
+my head, right? Because these APIs have been enhanced. Okay. There's really not regression testing, in my opinion, right? It's and it's actually just making sure the new APIs work.
+
+Speaker 2  1:11:30
+Yeah, but there are new there are new fields been added, right?
+
+Speaker 6  1:11:35
+Right. So so there's like not really regression, right? You just update the the test claim with the new fields, and you rerun that test claim. The new API works.
+
+Speaker 3  1:11:47
+Right, right.
+
+Speaker 6  1:11:47
+It's not gonna right. Like that's why I was confused with test claim being noted as regression.
+
+Speaker 2  1:11:58
+So, Monowar, there are changes in the test claim API, so you may not be able to execute the exact same test scenario. You have to look into your scenario and enhance it according to the new changes in the test claim API.
+
+Monowar Hossain  1:12:17
+Okay, I'm not exactly sure how the CR testing focus and who has updated? Yes, but we have the test cases as part of that CR. That is what we are planning to execute. If I understood correctly, Neli.
+
+Speaker 5  1:12:32
+Yeah. So sorry, this may have been during that call yesterday, Monowar. What I meant by that, and sorry, we have to put this together fast for you guys yesterday. Is the out of the box functionality the team will continue to run their test claim as is, but they have the option to update the DAW or the additional fields to pass to the test claim. So I would say run the regression, which is majority of the case that they're doing, and then run those additional fields that we added when the team selected to do that. Is that okay, Monowar?
+
+Monowar Hossain  1:13:12
+Yes, perfect. Thank you, and thank you for doing that quickly yesterday with us. That was helpful. Yeah,
+
+Speaker 5  1:13:19
+sorry, I had to put this whole thing together yesterday, so yeah. So majority of the time, the test plane will be triggered, right, with the current fields that we have, and then the team have the options to make those changes. So test those additional ones as well.
+
+Speaker 2  1:14:00
+Okay. Anything else? So Max, after this, I would like this consolidated action items after this and share with me. Group actually. In the meantime, whenever I would like your pair of eyes to focus on this issue resolved with the ITO team. We need to close this next couple of hours. Okay, I don't want this to be pushed out till tomorrow morning.
+
+Monowar Hossain  1:14:31
+Okay.
+
+Speaker 2  1:14:40
+Okay. Anything else, Dan? Greg, you want to discuss?
+
+Speaker 3  1:14:46
+Do you want me to find time on Monday to review the project plan for going into Ohio? Like so, because this covers everything from where we're currently at all the way to deployment. Can you send
+
+Speaker 6  1:15:02
+it out and have people do offline feedback, and then we can have a quick review call. I don't want to go line by line in a call. Want to task people to review it and come back with right note their feedback, and then we can consolidate all the changes all at once.
+
+Speaker 3  1:15:16
+Okay.
+
+Speaker 1  1:15:17
+And then Max, what I would say is, like I think you set up a call for Monday at 8am. I think let's try to find some midday time frame so it gives us a little bit of time to get work done. You know, I don't know, anywhere in the 10 central to noon, 1o'clock time frame central time. We've still got time to get stuff done throughout the day after we've had time to get through it, right? And so, like, let's maybe expand that goal a little bit. Let's go through it to really get aligned. But let's see what we can get done at least initially over the weekend. So I think get that out. The focus right now is going to be getting the APIs back open so that the team can start doing work over the weekend and going from there.
+
+Speaker 5  1:16:04
+Okay.
+
+Speaker 6  1:16:04
+Did we get an update from Ken? He said give him about an hour. Did anyone get an update from him?
+
+Speaker 3  1:16:13
+No, not yet. You are sorry.
+
+Speaker 1  1:16:40
+Yeah, let's ping him, Max, and let's stay on top of that because we need to get that done today.
+
+Speaker 6  1:17:06
+I'm gonna make Greg laugh this afternoon. I just got home from the airport, and the first people that knocked on my door were my missionary friends.
+
+Speaker 11  1:17:15
+Of course, they were. All right. Do we have everything that we need? It sounds like we have a plan.
+
+Speaker 14  1:17:25
+I I think so, but can I change the subject slightly, or to a different state? Something I'm doing with parallel, parallelly. I can't use words. There's a question for Missouri related to multi-tenancy. The client has a document that we need a blurb exactly how they will verify that our multi-tenancy for PA Hub is doing what it needs to do. Is that something that we have available to give Missouri?
+
+Speaker 6  1:18:00
+Wouldn't that just be the design, the architecture of what multi-tenancy is for platform gain well in the life? If you're talking, you know what I mean.
+
+Speaker 2  1:18:22
+Yeah, so James, what type of document are we expecting? Are we expecting from Gainwell or are we expecting from our SaaS vendor?
+
+Speaker 14  1:18:31
+So it's for from Gainwell. It's not a deliverable, but it was something that Missouri requested, and I was and Tammy and and AJ have authored a document, but there's one question that we got back from the client, which is that said, how would they verify that our multi-tenancy is secure and it's not a deliverable? It's just
+
+Speaker 2  1:18:57
+yeah, it's a twofold question. So it's not just Gainwell. It requires the Agardias RBAC control documentation as well. So I would request James. Let's send out an email to Jonathan and Max. Include me there. Okay, Jonathan will provide our side, and Max, I need help to get the documentation from Agadia. I think they already shared that one, so let's review that internally first before we go to Agadia. Which one is perfect to share with Missouri?
+
+Speaker 1  1:19:36
+Hey, and when you do that, Max, copy omit because we have had a lot of back and forth, right? So Nale, just so you know the background here, right? Like we created all the architecture, how this is going to work, and then MHD is kind of going through with a microscope, asking for oversight that we've got of the solution. So that that's what where this is coming from, so just make sure Amit copies for what's already been provided, just so we're not duplicating.
+
+Speaker 14  1:20:07
+So Amit's actually part of the group requesting that, Dan.
+
+Speaker 1  1:20:12
+Yeah, no, I figured. I just want to make sure that we're coordinating it because I'm asking Amit to take the lead on this, right? Make sure that we've got all the different pieces, but you're exactly right. This is our solution. MHT has a lot of questions for how are we overseeing Agadia and how it's set up.
+
+Speaker 2  1:20:39
+Hey, thank y'all for letting me take a few minutes and for the answer there. Got next steps, no? No reason, James. And then yeah, anything else, guys? I think we have a clear line of sight now. What is needed? We have action items. So Max, I will wait for your consolidation, consolidated email, and action items around it.
+
+Speaker 3  1:21:10
+You're already. I'll start working on that now, or get that compiled for you. And I'm working on them right now.
+
+Speaker 1  1:21:25
+And then
+
+Speaker 6  1:21:26
+the on call, and then the on call roster, right? Like Max, you're gonna send that out. Yeah, I already sent
+
+Speaker 3  1:21:32
+an email out and tied it back to SharePoint to have people go in and update their their contacts, and then here I go follow up again to make sure. I mean, I just sent it. I don't know how many people are actually going to go go in and give their their information, but I did send out a rough contact list. Can you pull it
+
+Speaker 10  1:21:52
+up real quick?
+
+Speaker 3  1:21:53
+Yeah, yeah. Let me go.
+
+Speaker 14  1:21:55
+And and can we use utilize the previous on call rosters with phone numbers and information we've been provided.
+
+Speaker 3  1:22:04
+Yeah, so I was trying to find that, but it was tied to my old credentials, and then the it's on Carl's Keller's SharePoint. I'm sure I've downloaded
+
+Speaker 14  1:22:15
+it. Let me see if I've downloaded it.
+
+Speaker 3  1:22:17
+Okay, yeah, because it would be on there because I was like, that's when I was requesting access, I was like, "Okay, I saw them tied back to Carl."
+
+Speaker 14  1:22:27
+You see the record for
+
+Speaker 11  1:22:39
+you.
+
+Speaker 2  1:22:46
+You can look over project plan also, right? The old version that the deployment checklist we have. I think there is a sheet in that one too. We have all the contact and phone numbers.
+
+Speaker 16  1:23:00
+There's mainly
+
+Speaker 3  1:23:01
+like Ohio contacts, and I looked at the I looked at the R 31 version, and it was this is this is what I have. So I have like the main leadership, so Dan, Greg, Perry, Mila, Anil, and then project management, of course, myself and Chris, testing Monowar, Biandra. I'm sorry. Is that Matt Williams? Yep.
+
+Speaker 5  1:23:38
+Oh, Matt Max. I'm sorry, not Matt. Max, I set out a quick list earlier. I don't see Porto folks on here. And before we end the call, I would just recommend that we get a assurance that the security is going to be resolved tonight, and the environments for Ohio will be up tomorrow. Because if we don't, and we'd be part today. Tomorrow, we'll back at square one anyway.
+
+Speaker 13  1:24:25
+So, I'm trying to for our dev. I need to get information to Matt to make sure what servers need to be up, and so I was hoping to get. I needed Bitoar to respond, so I'm working on that, and people have my cell phone in case something happens and I need to jump on the call. But
+
+Speaker 2  1:24:52
+Vidya is on call. Video, can you send out the response back? What Jen is looking for?
+
+Speaker 13  1:25:00
+He dropped from the call, so I'll follow up with him to get the info I need.
+
+Speaker 2  1:25:06
+Yeah, let me know if you are not getting response, Jen, and I will call him directly.
+
+Speaker 13  1:25:11
+Okay. Yeah, I need the server names and stuff. So.
+
+Speaker 5  1:25:21
+All right. Yeah, Christine. Sorry, sorry, James. Go ahead. Oh, thank you, Christine. Did we ever get CMM ensure script cleared out? Why the test bench was down, or was it just CMM test bench was down?
+
+Speaker 17  1:25:39
+It was CMM, and they have that that McKesson holiday today, so everybody is out of office.
+
+Speaker 10  1:25:50
+I put it in that which is fine, right?
+
+Speaker 6  1:25:52
+So so the testers know they can't test EPA this weekend. They just need to get back up and running first thing Monday morning, and yeah, I sent Neil an email. guys can submit a ticket, yeah. Like I don't know if they do tickets. Sure, Scripps does tickets. But if you need to submit a ticket today, then go ahead and do that.
+
+Speaker 1  1:26:16
+All right.
+
+Speaker 12  1:26:21
+Uh. But those are things, right? The testers need to
+
+Speaker 6  1:26:26
+be aware of, right? So, like, I don't know, Lego's on the call or who's doing EPA, but Lega's the one who
+
+Speaker 17  1:26:32
+told us that there were issues with CMM, so they know they could get into they they could get into SureScripts though. They confirmed that in the testing chat,
+
+Monowar Hossain  1:26:41
+right? Actually, everyone can get into CMM, but sure scripts is good. So, just to reiterate, no, I thought
+
+Speaker 5  1:26:50
+it's the other way around, Monowar.
+
+Monowar Hossain  1:26:53
+No, actually, sure escapes everyone has access. It's CMM.
+
+Speaker 8  1:26:57
+Right.
+
+Monowar Hossain  1:26:58
+None of us has access as we cannot log into the application,
+
+Speaker 17  1:27:06
+so I think so, and I think we already talked about this. I think what Neil told me was it is not an individualized access. Everybody has the same access, and it's the same access that you used for Ohio, and I think I confirmed a couple weeks ago with Lego that she still had that login information. So if you guys are using that login and information and you can't get in, then there's something wrong.
+
+Monowar Hossain  1:27:34
+Right. So we need to resolve that. Maybe jumping on a call in a working session with the engineering team to see if we are doing something differently as we used to do. But to my understanding, we are doing the exact same thing as used to do. So,
+
+Speaker 6  1:27:49
+but but what error are you getting? Right? Are you getting an invalid password, or you are logging in and you don't see anything in the sandbox? There's it's two different things, right? Our engineering team doesn't, our engineering team doesn't manage the CoverMends workbench sandbox, right? So I just heard I heard a bunch of different things there. Is it you don't have access because you don't have the right user ID and password? Is it CMM sandbox is down, and we can't work with them today because it's a McKesson holiday, or you guys are actually logged in, or you have logged in and you don't see the right configuration.
+
+Speaker 17  1:28:35
+No, I'm gonna show. So this is what Lega put in the chat for CMM error message. Let me just put it in this chat.
+
+Monowar Hossain  1:28:47
+There is an email chain for that as well, right?
+
+Speaker 5  1:28:51
+Yeah. So the the sandbox is down pretty much. They they can't get to it.
+
+Speaker 17  1:28:57
+Okay, I put it in the chat. Right. So that's
+
+Speaker 6  1:28:59
+fine. Right. So we know the sandbox is down. I want to make sure that the entire testing team is aligned, that they cannot test CMM this weekend. I don't want a phone call that says I'm trying to log into CMM and do an EPA transaction and it's not working. Right, those are like the public service announcements that we need to make, where everybody's aligned, to say what is currently in and out of scope, what is currently broken, what are our current blockers.
+
+Monowar Hossain  1:29:33
+That's what I'm confirming right now, Perry. That none of us can get into the CMM right now.
+
+Speaker 19  1:29:41
+So CMM. Okay, so. right in in your
+
+Speaker 6  1:29:44
+testing chat, in your testing chat, we're gonna write, "Hey guys, confirmed that Cover My Meds workbench will be down this weekend. Please do not try to test any EPAs through Cover My Meds."
