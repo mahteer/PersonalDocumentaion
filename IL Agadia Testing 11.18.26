@@ -1,0 +1,452 @@
+Speaker 1  00:00
+It's like compliance and legal. It's like you build a house. You can just basically say, "Hey, you know, the previous house I built that same wall, the same specs, and you know, it works on the other house. It passed, you know, you know, audit or whatever. No, it's this wall. We gotta see exactly what you did for this wall, and is it you know the same specs and everything we have to prove on paper that we tested it? Otherwise, we'll be in a war of
+
+Speaker 2  00:30
+hurt.
+
+Speaker 1  00:31
+Yep. Sorry. And by the way, when when we thinking about a 270 case, I think the the room for improvement here is last time when I we went we did it for Ohio, the 80 something test case. I went in, and a lot of them were like nonsense test case, not disrespecting to the testing teams, but a lot of them were being testing with kind of nonsense. Like you test this, why even testing this? So I guess what we really need to do is see are there improvement in those 270 test cases that we could you know you know review and and you know so that that's that would be my my feedback.
+
+Speaker 3  01:18
+Okay, so
+
+Speaker 2  01:19
+what do you mean by nonsense cases?
+
+Speaker 3  01:23
+Wait, can I? Can we just start from the beginning? So, because can I just start real quick from the beginning? Because Liliana and Monowar jumped on after I said what I said. So basically, this meeting was to see right if we could leverage anything from the regression testing from Ohio, could we take some of the more complex test cases that Monowar's team has to execute and push it to UAT? The answer to that, I got that answer on a call that I was on right before this, and Erin Costel was on it, and she said no to those two things. So, and then Tuan. Before you get into that next part, I also want to preface Max and I and Emily and I were on that call, and April was on there. Tom was on there. Aaron was on there, and they were pushing for you know. Basically, I told them we're two weeks away from 1130, not even I guess really. We have a holiday in there, and I said we are still completely blocked. There's several issues. It's not just the edit issue, and I said there's no way that the testing team can execute 80% of the cases by 11:30. It's just not going to happen. So they said, and Erin said, I can't work with that. I need the testing team to come back and say I can execute 60% of the test cases by 11:30 or 50%. And I said, well, I said I get where you're coming from, but I said I can't go to Monowar today and ask that question because he can't answer it because we are blocked completely, and it's not just one issue. It's not just get the edits in, everything's fixed. Monowars team can test. I said there's, there's like three issues working against us right now, so I said I can't get you that today because we're not we're not in a position to provide provide you that information. So that is what Liliana and Monowar. That is what they are going to ask of you. They know that we can't do 80% by 1130. They want to know what you can get done by 11:30, and again, they know as of today you cannot give them that because we are blocked due to several issues. But that is going to be something that they're going to want you to provide. Also, Monowar, I sent you a Teams message. There's like Joel, April, Aaron, and Tom, they want to be added to your leadership update that you send out at the end of the day. So, if you could please add them to that distribution list, I would be greatly appreciated.
+
+Monowar Hossain  04:17
+Sure, Christine. And Christine,
+
+Speaker 2  04:18
+I I totally I totally agree with you. I mean, Monowar and from testing perspective, we cannot we cannot provide a plan right now because in order to provide a plan, we need a plan from whoever is the owner of the blockers or the defects to give us a plan so we can plan on top of their plan. Just to say it some way, and to see what it what what is what we can do, right? Like I cannot say yes, I can commit to 50% of the edit or of the execution if I don't even know when they're gonna remove my blockers. So this is this is a this is not a a quote unquote solely testing issue, right? Like testing team is the most affected because we cannot perform our work, but we are totally dependent on on on the edits and all of the other issues that Monowar has raised up, so so I would like to see a plan and dates on when when they they are committing to resolve, so I can we can draft a plan from testing perspective.
+
+Speaker 3  05:35
+So the only dates I know for sure are the from the edits team, and that's eight. And that's the eight eight edits. I think they said will be in tomorrow. 7705 being one of them, and the rest won't be delivered until the 25th.
+
+Speaker 2  05:52
+And and do we know which edits? Because if so, I asked that. Yeah, if 78705 is not in there, Monowar. You can we you can confirm, but I highly doubt we can do much.
+
+Speaker 3  06:06
+No, 7705 will be in there because Emily told them that that's our biggest one that they have to get in ASAP. So that one will be. I think they said it's tomorrow. So I think. Sorry, Chris. I think you meant to say
+
+Monowar Hossain  06:23
+after tomorrow, right? It's not tomorrow. Friday is the after. That's
+
+Speaker 3  06:26
+what. Well, in the email from Madhu, she says 1119. So I said that to Erin on the call. I said I thought you guys only did deployments Monday, Wednesday, and Friday, and she said it's probably a hot fix, and she said they can put in a hot fix after. For I guess they're very protective of a sit environment right now because I guess they have a demo or something with CMS tomorrow. So she said that after the meeting with CMS, they can put in a hot fix. So maybe that's why Madhu said 1119 and not 1120?
+
+Monowar Hossain  07:04
+All right, I heard different thing in the errands call this morning. I heard, I could be wrong. That was Friday, but I see what you're saying.
+
+Speaker 3  07:17
+Yeah, and okay, I know. I just want to ask one more thing before we go to Tuan about these 274 test cases. We were on that. We were on our weekly call with Agadia today to talk about Illinois and Louisiana. So we have phase three, right? The release in December for Agadia. So, are we? And I'm I'm guessing. And I'm sorry if this is a stupid question, but I'm thinking we have to do this, right? So, just like we did regression testing for Ohio for those CRs that went in 1113, we're doing that again, right? For the whatever I can look on my tracker, like the six or whatever CRs that are in phase three. We are doing Ohio regression testing for them, correct?
+
+Monowar Hossain  08:19
+What is that release date again. I'm sorry. You're talking about the phase
+
+Speaker 3  08:23
+312. I believe it's 1218. Is the release date? Let me pull up my LOE tracker. So Tuan and Jason, they we should be doing that, right? Or am I making a big deal out of something that doesn't need to be a big deal. We
+
+Speaker 1  08:46
+definitely should do regression for Ohio, but I don't think it's something that Monowar should own. It's something that we should communicate to Jennifer Matas and the Ohio testing team.
+
+Speaker 3  08:59
+Okay, so then I should take that to Jen. Okay. Let me just see here, real quick, how many CRs there are in Phase Three. Um, looks like there are seven. Seven. Okay. All right. I can email Jen. Okay, so go ahead, Juan. Sorry, sorry, Monowar. I didn't mean to make you have a heart attack. One on top of everything else that's going on.
+
+Monowar Hossain  09:31
+Thank you for caring for
+
+Speaker 2  09:34
+us.
+
+Monowar Hossain  09:36
+Whenever I get chance, I would not. Sorry, Juan. Please.
+
+Speaker 1  09:40
+I mean, I'm. I'm just basically, you know, last time when we did it for Ohio, I felt like I have to step in, review all the test cases, and say which one is, you know, really an actual test case or just something just written and does it make sense? And you know, like these are the one that we really need to to say, yep, we test everything is needed in order to get Ohio out the door. But I don't want to be the bottleneck, or I don't want to have to be that that smeeze moving forward. But I I would imagine the testing team have made the evaluation. So my guess, my question here is, the 207 something test case are all of them are on the critical path, and the and and the last time when we did it for Ohio and I and I came in and I have to compile the list of test cases, I remove a lot of them because a lot of them did not make sense or relevant. A concrete example, I don't have one right now, but I'm pretty sure I can go back and take a look at my notes. But we, you know, we went in. We there was a lot of stuff that got removed because the test kit that was written was not relevant. So do we actually have 270, or do we have more like 150?
+
+Monowar Hossain  11:11
+I think there are multiple fold of it. Sorry, Lilian, go ahead, please. No,
+
+Speaker 2  11:14
+go go ahead. Go ahead, and then so
+
+Monowar Hossain  11:17
+there there are multiple fold of it. Let me start this way, Tuan. What you are referring to? First of all, I need to understand that, and Liliana, you can pitch in the test we have done for 1113 release, which is a Gaudia release we wanted to match with having these multi-tenancy changes in their prod environment, so that nothing is getting impacted. So the test cases were written for the product in Azure DevOps. Who should be responsible for them to review and approve them? Because testing team has presented these test cases, whether that is valid, invalid, that is not required. Who should be going in there and review and provide the feedback? That's the first question we answer. Shouldn't that be the SMEs? My assumption
+
+Speaker 2  12:14
+is the product owner, right? It was the one that was reviewing those test cases, isn't it?
+
+Monowar Hossain  12:21
+That was my expectation was, but I was told in the earlier call that should be testing team. So if that is the case, then we are writing the test cases. We are approving by ourselves. We need to come up with that process first.
+
+Speaker 2  12:33
+No, it doesn't. It doesn't work that way. So you you for the product you write the test cases, and the product owner needs to to do the verification, and and if there's anything that it might feel to be irrelevant, we just cancel the test case. And if there's something that he or she thinks that needs to be added, we can include. But testing cannot verify their own test cases. Exactly. So,
+
+Monowar Hossain  13:02
+can we come up with that decision first before I come to the Illinois? Because we are talking about two different things. One is the product, Tuan, as you have mentioned. Another one is the Illinois DDI. We have to separate them and go slowly so that I can explain and come up with the decision as a team. It's not only testing team; it has to be everyone aligned, all the teams on the same page. So the question again, who should be reviewing them and approving them?
+
+Speaker 1  13:32
+Good question, Christine. Who should be reviewing those? And and here's here's the thing, right? So product wrote the requirement. We can certainly be in a consultive approach with with your team. Say, hey, you, what should I test on? We can certainly be in a consultive manner, but you are the one that basically going in and trying to verify if this system is going to work for the state of Illinois. There should be some kind of testing discipline methodology to say, "Hey, we're delivering for delivering for Illinois, and here is the things that we want to test in order for us to say this is going to work for Illinois." Product shouldn't be the person to say, in order for your testing to prove that it works for Illinois, you need to test X, Y, and Z. We can certainly be consultive, you know, to help you say, hey, you can be, you can come to us and say, hey, if if I were to test this, I test the following thing, you know, what you think about it, we can certainly be in in that regard. But as a testing discipline, there's a reason why you guys are all your own tower and you're not part of the the team. Is because you're supposed to come in with the with the discipline to say, hey, I know what I need to test in order for me to certify this system for Illinois. So who is supposed to be leading that?
+
+Speaker 2  15:06
+I I think we have two two faces here. We have the product, and and that's the distinction. Monowar it's it's trying to do right here. We have the product itself, and then we have Illinois. And my assumption is Monowar has sent the Illinois test cases to Emily. Sorry,
+
+Speaker 1  15:23
+sorry, Emily. Sorry, Liliana. You can't just dump a list of test cases and making us reading through those. We can be in consultive, you know, manner to you. You can walk us through. Hey, here's what our overall target and what we're trying to test, we can certainly provide feedback, but we're just not going to be here digging through layer and layer of spreadsheets, and then basically correct your work. Sorry.
+
+Speaker 2  15:52
+So we're not requesting to correct the work. We're talking about scenarios, right? And and I'm bringing this because because you said that you reviewed and you find scenarios that were not relevant. So one thing is relevant, another thing is not relevant, another thing is not applicable. So this is why Monowar is bringing up these because of the statement that was previously made. So as testing tower, we we have implemented those verification and and we do submit the test cases for SME review and approval, not only for the products but for the overall testing practice. So this is something that we do. I I'm not saying Tuan that you are the one that should be or should not be responsible for reviewing. I am just saying that someone, an expert, an SME needs to needs to do that verification.
+
+Speaker 1  16:53
+Yeah, I think what we what we should do is we should basically bring this up in the next tier code, whatever the case may be, but I I think there's there's a little bit of currently how it works is individual tester being assigned to different area, right? They go in and they write whatever they write. There's no peer review among the test teams. There's no basically validation, you know, at first to say, hey, what I wrote, everything here is this even great? Basically, everything just being wrote, dumped over, and then no, that's
+
+Speaker 2  17:29
+not correct, Juan. We we don't we we don't write and just dump the test cases. And I'm I'm sorry, but I but I've been following up with Monowar, and and at least I have requested peer verification before the test cases are sent over to the SMEs.
+
+Monowar Hossain  17:47
+Exactly, we have done that in multiple ways, and oh,
+
+Speaker 2  17:50
+sorry, Tuan, that is not the true statement.
+
+Speaker 1  17:53
+Okay, so you're telling me all the test cases you have written have been peer review?
+
+Monowar Hossain  18:00
+Yes, they are. I can confirm you on that.
+
+Speaker 1  18:05
+Okay, and what? Okay, you know what? I think I I am not gonna try to resolve this here. This is a process that we need to figure out moving forward, but I I think we just need to have a better understanding where does this MEEs come in, and whether this SMEs actually like you know whether they be more of a consultative you know row and say hey everything that you have looks pretty good, or are they more of like okay well here is the tower list of test cases, now I have to figure out what test case is relevant in order for the test team to test, and and and and that's what I feel like right now.
+
+Monowar Hossain  18:44
+So again, I think we're coming back and forth on the same thing. Like Liliana has mentioned, I think we need to have a name or the team who should be responsible from the product side, and from the I think the DDI side, we already have a path forward. Emily and Emily's team is taking care of that. That is not something we are asking your team or the product team to review and approve. I think that process is being established, and to my knowledge, no one has any objection to that. And I meet with Emily whatever question we have. Also, the team met is not only dumping the you know test cases to Emily and her team, and Emily is free to speak up to that. We had set up the call, and I requested uh time and over. If we need to set up the call again, we can go through the test cases and present that to you so that we can do that on the call, and you know we can resolve it there, but oftentimes that was done offline due to the time constraint. Because she and her team need to look into that more broader way to see all of these scenarios and the steps making sense and providing the feedback to us. It should not be again testing team writing these test cases and approving it, and you know, kind of deciding whether or not we can move forward with that scenario. At the same time, for the DDI, we should be submitting to the estate. I don't think that's the process for Agaria. Not also for the process for DDI PBM team. They go through also the SMEs.
+
+Speaker 1  20:20
+It sounds like we need to have this process written down, because otherwise, right now we're running to this problem.
+
+Monowar Hossain  20:27
+Right, and just to be precise, and I can share my screen what you are referring to earlier that you had to review and you know a bunch of to word that nonsense test cases. Those nonsense test cases were only 13 were identified, not required in the spreadsheet that is being documented. As you see, also this is being mentioned. Some of these test cases are not being executed because of the data, like MCO plan we are looking for with the multiple plans, and we could not find it neither in IO Dev nor in the UAT environment, those we have identified not required for multi-tenancy test cases to be executed. So we have marked them as not required. So I filtered, and we still have the access to that spreadsheet. Not required. Those are the 13 test cases out of 86 test cases. And again, these are not reviewed before you executed them, we hope them that someone, someone whoever has written that the process should be reviewing and providing the feedback whether or not they should be executed or approved before we execute them. That has not been done before 1113 release when we started our execution.
+
+Speaker 1  21:42
+Okay. Yeah. So is we don't have that process right now. That needs to be defined.
+
+Monowar Hossain  21:50
+Okay.
+
+Speaker 2  21:56
+So what is the process you need to be defined, Twine? So sorry. I mean, I I thought that the only thing that was missing is the point of contact to review the product test cases.
+
+Speaker 1  22:17
+So I'm sorry. What is the product test cases? Monowar and team does not test the product; they test for the state. That's what the last time I heard.
+
+Monowar Hossain  22:27
+That's not true. We are also testing the product, right? The 1113 was the pro the product, correct?
+
+Speaker 1  22:33
+Well, originally you right. Originally, you guys said you guys don't test Ohio anymore, but due to the time constraint, you guys were being pulled in, so are you guys? So that's the question. Earlier, when I say, "Hey, we should reach out to Jennifer Team Ohio to test the regression." So are you guys testing the product for all the state moving forward? So every time there's a release, so let's just think. Let's just think two years. Now we have California, Washington, or someone else on board. Louisiana, Missouri, Illinois is a thing of the past. They're already in production. If there's new changes, are you guys testing every single account to make sure no impact to everyone, or are you only testing the new states being implemented? That that is a question.
+
+Monowar Hossain  23:22
+Yeah, that's a valid question. I will refer that to Liliana. That's true. Initially, Matt Williams' team took care of that. Then we jumped in to help them out to release that 1113.
+
+Speaker 1  23:38
+So so that's so that's that's the that's the that line that is not clear. Are you testing the product or you testing for the new implementation? That's what I need to understand.
+
+Monowar Hossain  23:48
+So currently we're doing. Go ahead, please, Lena. Go
+
+Speaker 2  23:50
+ahead, Monroe. No, no, it's it's fine. Go on, go
+
+Monowar Hossain  23:53
+ahead. Oh, currently what I was saying, trying to clarify, since we have started from 1113, whatever the date was, forgot few weeks ago, right? When we jumped in and helped with the account team, Lahaino testing. It was
+
+Speaker 1  24:08
+it was it was last Friday. We we were all out and working Saturday and Sunday.
+
+Monowar Hossain  24:14
+No, no, no. I meant to say when we initially started that 1113 release testing.
+
+Speaker 1  24:18
+Okay, got it, got it, got it. Okay, yeah. So
+
+Monowar Hossain  24:19
+that since then we are still like Jessica to be precise and VNA still continuing on the product testing. So we haven't left the product yet, but that's a good question what you raise that we may have to kind of sort that like you said yourself is not only now but also in future we'll be having these changes in product, who should be responsible primarily, and
+
+Speaker 1  24:44
+I do not know. In my mind, there are two separate swim lane. Swim lane number one is when there are new changes going into production that impacting existing account. That is the product testing. Who's responsible for that, and who is the reviewer and approver for those test cases? Swimlane number two is new implementation. Okay, they're not live yet, and when the the the code from Egadia being delivered or from outside being delivered, who is responsible for proving those test cases, right? So those are very two distinct swim lanes, and I think we really need to figure it out. Maybe it's Jason and myself to be included. Maybe it's not us. Maybe we're just more on the consultant. You know, we we basically intake the CR. We make sure the CR capture all the requirement, and then it has been executed. Maybe we just more on the consultive side. We can, we can be basically listening in, and anything that we can offer as an insight, we can. But maybe the actual like you know approver of your test case is someone else. I don't know, so I think there's a two separate swim lane that we need to be clearly identify who responsible for testing those, and who's the responsible approving for those.
+
+Speaker 2  26:14
+So I can help clarify some of those questions, Tuan. So let let's say let's say you're gonna have a product change that is going to impact four states, right? So you're gonna have the product. The product itself, before it's released to every individual state, needs to be tested. So that that specific piece is going to be. Hold on.
+
+Speaker 1  26:40
+Yeah. That
+
+Speaker 2  26:41
+specific piece is going to be tested by Monowar. After the product is tested, it's going to be released to Ohio, to Missouri, to Illinois, etc., etc., etc. Ohio, it's going to test their own regression and it's going to make sure everything works for them. Same thing as Missouri, same thing as Illinois, etc., etc., etc. On top of that work, hold on. On top of that work, Monowar is helping the DDI implementation. So he's creating the test cases for the DDIs, and he's doing the testing for the DDI implementations.
+
+Speaker 1  27:20
+Okay. So once
+
+Speaker 2  27:21
+once Miss Sudi goes live, there's gonna be a testing team that we're gonna have to we're gonna have to provide some training so they can in further releases do their own regression testing when a release comes.
+
+Speaker 1  27:39
+Okay, so sorry, that's not gonna work, Liliana. So right now with Agadia, when they make the code available until the date that they actually push it to live is two weeks. Based on what you describe, if it's a product change that goes to across all states, and then Mono One team tested, and then they basically provide that that sign off, and then each individual state to test, and they have two weeks to actually respond to this. Right now, based on our current pace, it's impossible. Then
+
+Speaker 2  28:12
+that's a discussion we need to have because that's the current model that it was agreed with Greg and with everyone, and this is how we have been doing. If you see that going forward, it's not gonna work because FYT we can have the discussion and we can see what adjustment needs to be done.
+
+Speaker 1  28:31
+So so so that model is not gonna work right now. Egadio will make that code available on Thursday. So let's say Thursday this week, right? I'm gonna I'm just gonna call it the the 19th. Okay, so they make the code available on the 19 by the by the 30th of this month. They will need us to basically provide them with a sign off that this can go to production, and then on the 4th of December they're gonna push that into production. So based on what you're saying, if the code is available on the 19, mono one team will test the the the base product level. That means they only have one week to test everything, and then the next week from the from the second to the I'm sorry from the 31st. Yeah, yeah, that's not that's not gonna work. I'm sorry, yeah. So right now, Agari only giving us two weeks to test. Then I think we
+
+Speaker 2  29:32
+can have have a separate discussion. I mean, Tuan, we we can definitely talk. We can definitely try to to align it and and look what is best for everyone, right? And and that's not a problem.
+
+Speaker 1  29:45
+Okay, so so that's that basically that's that's one thing. So right now, with the with the base product testing, like you say, it's going to be Monowar team who's responsible, right? So then I need Monowar team to be more in sync with the engineering team who actually deliver the functionality and work with Agadia to partner to deliver the functionality and what test cases that they have written and they have demoed to me, and I approve those because Monowar team right now are on a on a separate island, right? They just basically say, "Okay, when is this feature available?" They reviewed it, and then they write their own test case with really no working with the engineering testing team, and look at the look and look at the demo that have been given, etc. Right? So, so, and and and that basically now I have to basically review two separate up test testing approach: one from the engineering team, one from Monowar team, and that's something that we should definitely sync together. If that is something that need to filter to me and Jason first, is that's that is the thing that that we needed, and I have been inviting Monowart and and the the team to the grooming session, the demo that we have, all the test cases we've written by engineering. What I ask in those meeting of what you need to test, what you need to do, all of those information will really never translate it back.
+
+Speaker 2  31:23
+Yeah, and and I think, Tom, we we will need an additional session about this because if you remember earlier, I was suggesting to do the separation, and I was requesting Monowar to focus on the BDI implementation and and and all of that work, and and and it didn't happen, so we got we got escalations. So again, we need to talk again about this.
+
+Speaker 1  31:51
+Yeah. So I think we really need to sit down, map this out, and really understand it correctly because right now we have multiple testing. We have Agadia do their own testing, and they're telling me, "Hey, these things are passed." We have our own engineering team testing, working in conjunction with them, and write their own test cases, right? And everything was demo, and everything is passed. And then Moowart team come from a side and say, "Hey, these are my test cases about this," but they haven't been in sync with the the engineering implementing team or the Agati implemented team. They just kind of came in almost like an auditor on the side, which I I appreciate the the fresh set of eye, but then it basically another independent set of test cases that sometimes is not lining up with everything that we have, so we really need to clear this out.
+
+Monowar Hossain  32:45
+That should be the case, right? We should not be relying on the other test cases what they have executed because whatever they have came up with, if we are doing the same thing, how we are coming up with a new thing, right? I'm thinking out of the box or maybe a different scenario, so that we can try to break the system, right?
+
+Speaker 1  33:03
+So that's so that's exactly Monowar is is like I say that earlier. You you proved my point exactly. Is you guys are your own testing discipline who gonna come in after the fact to try to break the system? So us as products should not be approving or driving your test cases. You should be understanding what being deliver and be the expert of tester trying to break the system. We can be your consultant, you know, person on the side to to kind of you know for for you to run to and ask question and things like that. But you you know like for instance you know they I'm just gonna say make a car, the engineer can basically you know test everything they can about the engines about a suspension and all those things. Monowar, you are like the test driver. You're gonna take that car. You're gonna beat the heck out of it. You're gonna drive it over you know down the stairs, up the stairs. You know, maybe I didn't ask the team to to to test the car suspension when it goes down and up the stairs. There's nobody trying to do that. So by by saying that Jason and Tuan should be approving your test case up and down the stairs, we were not the right person to do that. So there's a there's a there's a clear misguided where where things should be between the practices. Then
+
+Speaker 2  34:26
+I think it goes back to what I was saying a couple weeks back that Monowar shouldn't be doing the product testing, right? Like okay, now now you say Monowa is not doing product
+
+Speaker 1  34:37
+testing, exactly. So that's a problem. I will really want to know what is exactly the between the two swim lane. Who's doing what, and yeah, here's
+
+Speaker 2  34:49
+the pink one. So when we were on the on the on the circle calls, I suggested that then we we we we got these open items for weeks and for weeks and for weeks for Ohio. For Ohio, in order to make everything move, we took back again the work, and we move forward.
+
+Speaker 1  35:16
+Exactly, I I get it. I I get it. So that's why I want to really clearly understand is how do we make sure that if if Monowar is supposed to act like an independent group, right? Like I say, you're the test driver, real world tester. You don't see our engineering testing, right? You came in and it's a car that we made. You're gonna go in there, turn the AC down to 40 degrees, or put the car in reverse at 60 miles per hour on the highway and see how the transmission perform, or maybe you put in a a bad gas versus the gas that's the the the car was recommended and see how that perform. So by going to Jason and I, we would we would kind of tell you, okay, well the car is made this way. Here's the gas. So if we guide you, you know, you will your test case will be shaped like the engineering test case. If you're supposed to be that independent testing and say, "Hey, this car is perfect, ready to go in real life," then I think your practice need to be in a way, self-guided and really figure out what you need to actually test. My hope is your team will break the system and come back to Jason and I and say, "Hey, I drove on the highway at 100 miles per hour. I put a car in reverse, and the transmission blow. So, your your car sucks, so fix this. Versus Jason and I will tell you, okay, on this area of the highway, only drive 45 miles per hour, and this area highway drive 80 miles per hour.
+
+Monowar Hossain  36:55
+Okay,
+
+Speaker 2  36:56
+and and and again and again, Tuan, it it all goes back to to to who's doing what like exactly the first time this is the first time that you're saying that you have a team an engineering team that is doing the whole testing for the product so so so my my question then then is why Monowar was plugged in in a lot of those activities when he really should be focusing on on on the actual space. Like I cannot go back and and and we cannot go back in time. I really think we need we need to have this conversation with the right stakeholders and and and have a decision and move forward. We can we can talk hours and hours, and we're not gonna we're not gonna make a decision between you and me.
+
+Speaker 1  37:49
+Yeah, I agree with you. I think we need to go back, and it's very clear there are two separate swim lanes. There's a product swim lane. Who is owning testing that right now? The engineering team, they will test certain things that I ask them. I'll be like, "Hey, can you guys see if a PA can be created from PA Hub? Does it, you know, hit the API? Does it looks good?" I want to see all those things. Some of those things, Monowar teams are repeating, right? But I don't have a full team that basically testing end to end everything, right? So some of those things, what what I'm just trying is basically I don't want monow water come in with a fresh set of eyes. You know there are things that could be leverage, right? But for me, there's two clear swim lane. There's the product basically we're introducing a new change to the system. Who is testing this before we say this is good to go to Ohio, to Missouri, to Illinois, to Louisiana, to Oklahoma, and then who's then at each one of those account level, right, going to be testing that, and who's testing the third swim lane is the new implementation that based on the base product and added these for the new implementation. Who testing that, right? And like I say, for those people, they should be the one like the test driver. Jason and I are at the factory. We put the car together. You go in, you get the key. You can roll up the window up and down 100 times. See if the motor of the the the window is going to break. You drive it 100 miles per hour, see if the engine is going to blow. Right? We should be influenced you on what you're going to test.
+
+Speaker 2  39:33
+Oh, and I and I agree, and I agree, and and and and and you know, to just to to reiterate, Monowar is in charge of the of the DDI testing. The only thing that is question in question here is that he was supporting the product engineering testing. Probably he should not be, because like you said, if you're in charge of the car, he should not be helping to push the button to to to lower the window when it's inside of the factory, right? So that's the thing we're gonna we're gonna we're gonna have the the discussion. Uh, so so so so we can move forward. I mean, I I think at the end of the day, uh, we're here because Illinois is totally blocked. We cannot move forward, and this is DDI scope. The the Ohio scope. We need to. You're gonna release the product. You have the engineering team that is taking care of the of the changes, and you need to contact Ohio. I think you already said the the contact names, and and they have to do regression.
+
+Speaker 1  40:40
+Okay. So so again, that that is that is basically the current status quo. I think we do like your suggestions. I think we really need to sit down and say there are three swim lanes: product level change, the the the existing account testing, and the new account testing. Okay, who owns those testing at each one of those level? And right now, that testing window at those three levels before we sign off is going to be two weeks. How do we work across all the different groups for those three swim lanes in two weeks to give a Gaudia sign off because that is exactly what Agadia is giving us right now.
+
+Monowar Hossain  41:30
+So can I say something, please? Here, I think, and correct me if I'm wrong. If that is a recreation, what we discussed earlier, then to me that should be taken care of by the account team, which is Victor Hitendra, then BJ in that team.
+
+Speaker 1  41:47
+But again, that is that's our status quo, right, Monowar? Yeah.
+
+Monowar Hossain  41:51
+Right. So that's the this distinction. I agree with you. Those three swim links should be very clear. Who should be owning them? The first thing I wanted to say. Second thing, what you referred to earlier, Tuan, and again we cannot make a decision. I'm just giving you some data. So with this 1113 testing gain, right? So out of 86, we executed 73 test cases. We came up with the 20 defects. Do you see the defect ratio? Is being almost 30%. So whatever you know, let's say this. I'm not pointing to any team or any person. They tested. That was not something we could certify, right? That is the reason testing team, with the collaboration with the account team we came up with, right? So 30% defect is really high, correct? So we cannot certify if engineering team is doing their own testing. They're writing the code at the same time they're testing, so we really need to have this distinction: who is doing what and who should be responsible of reviewing it and approving it.
+
+Speaker 1  42:54
+So, so I'm glad that you bring up stats Monowar. So I would say let's schedule a postmortem, postmortem review. but right now you say you came up with 30 defects. 20 defects,
+
+Monowar Hossain  43:07
+30%.
+
+Speaker 1  43:08
+Yeah, yeah. Sorry, sorry. 20 defects, 30%. But as far as engineering fix, there was only two fixes that they actually implemented. Number one is the truncation of the reasons. Number two was the the the the username more than 15 characters. So, so
+
+Monowar Hossain  43:30
+whether that defect is related to any changes or environment related or the data or whatsoever, right? None of these defects are invalid. Correct.
+
+Speaker 1  43:41
+I. I yeah so yeah you you right so you know 10 of those defects could be I'm sorry 10 of those defects could be related to one of those code fixes but yes but I I think what what yeah so I think we we should sit down kind of really think about it, you know. So, but but yeah. So I.
+
+Monowar Hossain  44:06
+So again, I think we are going back. Sorry to cut you off. Back and forth on the same topic, but our point, I think, Liliana, what she is saying, you know, we brought in is not something we wanted to do, but it that is something. Let's say everyone is aligned and the right stakeholder they say okay we do not be involved we then we are good on that, but you know I was just presenting some data
+
+Speaker 1  44:28
+to it. Yeah, let me let me just help us go to the next step. So so so Christine, I think what we really need to do is we really need to understand when it comes to testings, who is responsible for what testing moving forward. Understand that Agadia would drop the code to us on a Thursday afternoon, and they expect us to be finished testing in two weeks and provide them with a sign off.
+
+Speaker 3  44:56
+Uh huh.
+
+Speaker 1  44:57
+And right now we have three distinct testing track that must happen in that two two weeks. Track one is the product testing, is the base product functionality to offer to all the states working. Track two is at the individual account that is already exists, right? Are the base product change impact any of those account track three? Is the new account that is not yet to be live have have the base product plus any customizations for that new account added is satisfactionable? You know satisfaction. You know, in a way that you know it meet that requirement, and we have to do all of that in two weeks, and we have to coordinate our release schedule with them. That is something that we're gonna have to deal with, and we need we need clear name in seats regarding who owns the testing effort, who owns the approval of those test cases, who owns basically approving of those test test cases creation and what need to be tested. That's it. That that at the end of the day, that's what we need.
+
+Speaker 2  46:31
+Okay.
+
+Monowar Hossain  46:31
+And I know, Chris, we have just 10 minutes. Uh, and I thought the reason we are, uh, circling on this, uh, Illinois testing is that we wanted to discuss about, you know, kind of point Jeff brought that in one of the call also on the hysterical two weeks back. That can we leverage the testing, right, from states of Illinois right now and later on in Missouri, in the product testing, right? Let's say we execute a test case or a scenario as part of Illinois, and we have a feature in the product which is a global one, and instead of executing that feature in three different environment, can you just do in one environment, and leverage other two state wise scenarios what we have already executed, and make that as pass kind of not reinventing the wheel, Right, so I don't know if you can discuss that now here.
+
+Speaker 3  47:53
+Well, we can, and I know this is crazy to bring this up because we still haven't really even started fit testing, but I think one of the things that came out of Steerco right when we were looking at like original dates is UAT also. So Monowar, I was just asked to find out if you have like a UAT testing plan. I know, I know, it's insane to even like comprehend to bring that up right now, but it is something that we have to have visibility on.
+
+Monowar Hossain  48:42
+So to be honest, I'm going to be very clear that I was not very clear based on the EOT ask what basically is being asked to us to do. I know we discuss many things, but I don't think we have come to a Conclusion that I I know we have to do extend our support beyond kind of supporting the UAT. So we have to do more. That's what my understanding is. But do you have clear understanding what exactly we have to do? Do we have to execute on behalf of them, all the test cases we identify, was that task or we just have to train them and do more activity with them so that we can prove this UAT test scenario, whatever we identify as part of subset, you know, engaging with Amelia's team and Tuan and Jason, that okay, these are the one we can do in UAT and have them execute on behalf of the states.
+
+Speaker 3  49:53
+Yeah, so I know Calvin, you've been involved with that recently, right? Pulling that together of what UAT is going to look like for Illinois, Calvin. Are you still there? Are you talking on mute? And maybe that's just something, Monowar. We can I can schedule a separate call on that. I also just want to bring up we have phase three CRs going in on 1218, so I don't know what that's going to.
+
+Monowar Hossain  50:36
+And I'm a bit confused on that. Can I share my screen a little quick? When you say the phase three CRs for 89, right? You are referring to. So I had these phases. I had only historical data load on the phase three, which is 1218. That's what you're referring to, correct?
+
+Speaker 3  50:56
+Yes.
+
+Monowar Hossain  50:57
+And you said earlier. I don't know how many three or four. What are the other ones?
+
+Speaker 3  51:03
+I'll share my screen. So, so I think you were. You know, you have this one, right?
+
+Monowar Hossain  51:20
+I have it.
+
+Speaker 3  51:26
+So this one is getting pushed.
+
+Monowar Hossain  51:30
+Okay.
+
+Speaker 3  51:32
+But we have this 17395, and then 7450, and these were all relatively new. They're just continuation, and I guess that's a question too, right? There, so they're continuation of other CRs that went in already. So you could say 7639 is in addition to 7383, and then the 7647 is a continuation of 7392.
+
+Monowar Hossain  52:09
+I know one of the new CR was added by Jason, which is related to the edits. Right? What was that? Was that?
+
+Speaker 4  52:23
+I added one yesterday. Is that what you're talking about?
+
+Monowar Hossain  52:27
+Ah, a couple of days ago, maybe or last week. Yeah, and they
+
+Speaker 3  52:30
+don't show up in. I mean, they're in this tracker, but I filtered on like phase three because for some of the newer CRs that Tuan and Jason entered, we don't have. Yeah, we don't have a release date yet. So these are ones that we definitely know are in phase three. So I don't know. Do we? How do we approach this? You have the list
+
+Speaker 4  52:52
+of the ones that don't have a release yet. We can look at those as well.
+
+Speaker 1  52:55
+Yep.
+
+Monowar Hossain  52:57
+Sorry. Do you mind to copy that? Actually, it doesn't let me take a screenshot. Yeah, I can.
+
+Speaker 3  53:03
+I can. I can just send you the link.
+
+Monowar Hossain  53:05
+That'd be great. Thank you.
+
+Speaker 3  53:07
+Okay, so I have the additional
+
+Speaker 4  53:10
+configurable close code message that one at the end that I did yesterday.
+
+Speaker 3  53:16
+This one. Yep.
+
+Speaker 4  53:18
+But I don't know if I told you about it, so that's probably not the one you're talking about. You're talking about the Illinois changes to the edit list. This one, the inclusion edit, update include list and edit override list.
+
+Monowar Hossain  53:48
+I'm so sorry. I thought you were asking that to Chris. Yes, I was talking about that inclusion and exclusion edit list. Yeah, so
+
+Speaker 4  53:56
+this this is phase three, Christine. Yep.
+
+Monowar Hossain  53:59
+Okay, that's 1218. That's what I thought. Okay.
+
+Speaker 4  54:04
+There was an update. Did I add a audio test feature for that?
+
+Monowar Hossain  54:11
+I think you did. Yes, I saw that.
+
+Speaker 4  54:17
+Um, I'm waiting for them to get back to me on whether I can remove one of the edits from the price, the NDC not payable one. Once I get the answer to that, I'll add it to the to the ADO ticket as well.
+
+Speaker 3  54:34
+But so, are there no? What about okay? So these are our other ones, right? And they are they're not in the Nagatia release yet. But to go back to the phase three ones, because it sounds like Monowar, you are not aware of these.
+
+Monowar Hossain  54:52
+I might have missed the email or something, but earlier the one I was tracking, I didn't have this list. I had historical data load that was coming on 1118 for Illinois. This is Illinois, right? And then most of it I had it in phase one and phase two mainly. Oh, and the NMI auto close was 1125, and historical data loot. These are the two I I was tracking 1125. Yeah, like I said, if you can send that link to me, please. I will update my sheet where I'm tracking, so that I can communicate the same.
+
+Speaker 3  55:46
+Okay.
+
+Monowar Hossain  55:55
+So Chris, I really need that discussion to be in place in a sense that can we leverage what I just mentioned earlier, right? Because the reason I will tell you, Jessica and VNA, right? So I actually told them if we have a test case for Illinois, which is a global feature, and similar test case we are executing Illinois. We should not be doing at this moment in Ohio because we are going to be anyway executing that Illinois. If that changes, then eventually we have to do that, right? So until that decision happens, if we can take that Illinois test case, same test case, and have that scenario mainly included in the product. Then we don't have any other choice than executing this in two different environments at this moment, right? So we need to have that discussion and come up with the decision. What is the plan for it? What is the approach for it? I don't think I can call it. No, I'm gonna be.
+
+Speaker 3  57:01
+I'm gonna be honest with you. I'm very confused, but I can set up the call. Who needs to be there?
+
+Monowar Hossain  57:07
+So we need from the testing. We need the Liliana and it's mentally possible. Then we need Jeff. We need Emily. We need Jason. Antoine. Obviously, you and Max, and some representation from engineering team. Maybe with Maddie, and if James can join also, because yeah, Madd Alexander.
+
+Speaker 3  57:36
+Oh, Maddie, and then James. Okay. Okay,
+
+Monowar Hossain  57:43
+because again, this may not be just testing team decision or approach. It should be a team approach as a guardia team. Okay, this is the approach we're taking. Everyone is comfortable, or if they have any concern, then we have to plan as a team together, right? Ah, we cannot just say okay. This global feature we can just execute in one environment, and certify unless everyone is on the same board.
+
+Speaker 3  58:14
+Okay. All right. I know we have to jump to the other call. All right.
+
+Monowar Hossain  58:19
+Sure. Thank you.
+
+Speaker 3  58:20
+I will work on scheduling that. Thank you. Thank you.
+
+Monowar Hossain  58:41
+Then, sorry, I'm an actor. Proacta, show upni eshu bili, apni tu jalan ni jenis juga boleh 10, shu no 10. Apne jira boleh tu makes sense kurchen a, esen se je utashoji, jodi active member hai, ebole deh tak ke, dale dulu ashau chi. Tina, active member, emo Claim ace kind of glide ki klemet kuno ya se ki bali dollar amount ace ate ki etak ki ujiu ya na ui nam ki shiba na uji ya
+
+Speaker 5  59:18
+shiva shiva
+
+Monowar Hossain  59:20
+shiva to offshore, right? Or should I communicate? I left a comment in the user story. Please take a look and let me know if you have any question. But the other place ticket. Okay, 8,002nd, right? Ask it today, na?
+
+Speaker 2  59:51
+Oh, it is
+
+Monowar Hossain  59:54
+bottom ta. Acha. The first ita or third tag? Acha, ita second or third time right start kuriya
+
+Speaker 6  1:00:03
+kona.
+
+Monowar Hossain  1:00:04
+Oh, aske dili bilaji miza.
+
+Speaker 2  1:00:08
+Only important. Oh,
+
+Monowar Hossain  1:00:16
+cha cha. Musa awasi. Aja tiga sa. Ah, tahu le arikuliti, tu kurte barin dakin tika saja teruk koraja, si hossaini. Aja, ami tahu luka ni back kuri ama arah mita.
+
+Speaker 6  1:00:30
+Ada.
+
+Monowar Hossain  1:00:31
+Thank you. Dia den, please.
+
+Speaker 7  1:00:50
+And all day and multiple multiple meetings. So there's a lot of moving moving parts there. So there's a beyond those main defects that are being addressed. I wanted to kind of focus on those new tickets that were that were brought in to.
+
+
+Transcribed by https://otter.ai
