@@ -1,0 +1,410 @@
+Speaker 1  00:00
+That a different email referred to that's not happening. It looks like all other edits will be available 1125, so only 7705 will be is expected to be in fit this afternoon. That's number one. Number two, Ovid, I see you came off. Did you want to say something?
+
+Speaker 2  00:25
+Okay.
+
+Speaker 1  00:28
+Number two oh, go ahead, Tuan.
+
+Speaker 3  00:30
+Yeah, yeah. Sorry, you say this afternoon. 4705. Yep. And that email was from who?
+
+Speaker 1  00:41
+Hold on. It was in one of those many emails.
+
+Speaker 4  00:47
+Yeah.
+
+Speaker 1  00:48
+Aaron Aaron asked if it could be put in today, and then someone responded. Let me see if I can find it. I think
+
+Speaker 5  00:58
+Cynthia. Cynthia responded that. Yes, it was Cynthia.
+
+Speaker 6  01:02
+It
+
+Speaker 1  01:04
+was Cynthia.
+
+Speaker 3  01:12
+No, no, no, no. You took a one. So, so, so I think that the thing here is Cynthia. All Cynthia is saying she's not saying it's going this afternoon. She's saying, "Hey, per your request, we can try to do it at 1pm. Today, if we have the right prep and receive security slash account leadership approval.
+
+Speaker 1  01:49
+Yep, and then she was on the call this morning. She was on that war room call.
+
+Speaker 3  01:56
+Okay.
+
+Speaker 1  01:57
+So she said that they were going to try to get it in today, this afternoon, she was asking if there were what did she ask Max if there were
+
+Speaker 3  02:06
+data. Yeah, that that is all. That's all I needed, Christine. So because from the email versus what you sent me, there's a there's a development gap that I was not aware, which is the word that you guys had this morning, and that's all I just want to make sure. Yeah, yeah, she's gonna do her best to get it in today because I told her that that was like a huge win for us. Okay, perfect. Yeah, yep. Without without being there, the email did not give me the indication that they promised it was going out this afternoon. All they're saying is yes, it could happen if the following things could happen, could occur, right? So, thank you for that for that context that in this morning she confirmed with you guys. Yep.
+
+Monowar Hossain  02:54
+Check.
+
+Speaker 1  02:55
+Okay. Number two. Again, in one of the many emails that were going around yesterday, last night, and let me just pull it up.
+
+Speaker 5  03:08
+Also, I'm glad that you know Bill Shelley clarified that D1 is part of the waste product and not a CR, so it's a defect. Yep, it's a
+
+Speaker 1  03:17
+defect. Yeah, I know. Okay, so Asha sent out an email last night. It came into my inbox at 9:52 p.m. Eastern time, and she said she called me out in the email and said Mach one data is currently available in sit, and Mach two is scheduled to be available in sit on 1125. So I responded to her and took off the 500 people that were on that email and added Max. And I just said to her what Max and I had been told previously, and we were given a file, an Excel file, of the identified data that was in that we were told was in Illinois sit and Illinois dev, and I told her I said we were told that that Mach one data was in the de-identified data. Mach one data was part of it. Provider medical claims was available 1010, and that Mach two was available 1030, and that was member eligibility, pharmacy claims, and PA. So I said, can you please define from your email what is included in Mach two? So I don't know exactly what this means for us and testing. When she said Mach two will be in sit on 1125 because I was under the impression we already had the de-identified data that was in lock two at the end of October, the beginning of November, because that was the data that was extracted by Nancy and provided to me in a spreadsheet that I shared with Agadia Monowars team at CMM and SureScript. So right now I don't have any clarification. I don't. I don't have a response from her yet. So I honestly, at this point, I don't understand what's going on when she says Mach two will be in sit 1125. So if that
+
+Speaker 3  06:06
+so so what what what that to me, Christine, and I'm not the expert of the data, but I'm just an outside looking in. What they're saying is, hey, there's the mark one data, right? But FYI, we're gonna replace that with a mock two data, and that's coming in six days on Thanksgiving. Actually, right, the day before Thanksgiving. So I think what they're prepping us is use what you had before, but when the mock two data comes, you have to update it to the new data. That's how I read that message,
+
+Speaker 1  06:48
+but I guess I don't know what what's new with this Mop Two data
+
+Speaker 3  06:55
+that we don't already have. Yeah, that's what I'm telling you, Christine. So the way at Gainwell at order organization, you can do it several ways. But at Gainwell, you they they the way they do it is they just go in, they find older member and older provider data, and they just wiped it out and they put in a brand new set.
+
+Speaker 1  07:25
+So when you say brand new set, is it going to be different members than the original data? I
+
+Speaker 3  07:33
+think I think so. Yeah, yeah. So that that's that's that's that's what that's what I meant is, hey, you you need to use your data now. You have an expiration up until the 25th. On the 25th, you need to use the new data. And they do this for several purposes, right? You know whether they were not they the initial test just for them to validate can be tested these you know these bank member they may ask additional things like diagnosis code or link to diagnosis informations or link to claim information or I think we've seen before where PA history were were bad right so creating historical and link data. Believe it or not, in my past life I've done this. The easiest way is just wipe the slate clean, create a new connection, and then reinstate it. And if we and if we want to be sure, we can certainly reach out and say, "Hey, when your Mach 2 data comes, does it mean that it wiped out the Mach 1 data, and we have to update to the Mach 2 data?" But they're probably going to tell us to do it that way.
+
+Speaker 1  08:52
+So that's the thing that's confusing, though, right? Because we were told that we already had Mach 1 and Mach 2. So if this is, if we truly did have Mach two, because we got we were told that we got Mach two data at the end of October, beginning of November, and that was part of the data that was in the spreadsheet that Nancy provided for me. So now Asha is referencing Mach two. So if there is a refresh or additional data coming? Wouldn't it? If we've already had Mach two, wouldn't this be called Mach three?
+
+Speaker 3  09:29
+Was the previous Mach two successful?
+
+Speaker 1  09:34
+As far as well, what do you mean by successful?
+
+Speaker 3  09:37
+That's a good question. Were they happy with the previous mark too,
+
+Speaker 7  09:47
+get that one. So we will keep you posted on these two vacuums as well. So we received few one one group eligibility user stories. We started reviewing them as well, and so we are prioritizing the ticket which Shiva just pinned. This is for Naomi Health and ICL for a couple of groups. Yeah,
+
+Speaker 8  10:17
+it the files shouldn't really change on that. Basically, what happened is I got the wrong vendor for those. So we're
+
+Speaker 1  10:30
+okay. I guess my question is, and if we run into issues, right, more issues. How do we know? Is it data related? Like, I don't know. I guess I kind of see what you're saying, Juan. But I also am like, doesn't that having iterations of test data to me? I would think that that would be disruptive to a to a testing team. It's like, oh, here's your here's your test data, but wait, we're gonna give you brand new data 10 days from now. So if they're like in the middle of executing a test case, they're gonna start over on it, right?
+
+Speaker 3  11:14
+Yeah, I I think this is this is something that you should bring up with Joel. If if our test if there if our testing windows start on 11 two and they and they gonna have a refresh of data on 1125 how was that acceptable at the Illinois project management group?
+
+Speaker 1  11:37
+Well, and that's what that's what I thought earlier. There's I think there was a if, I think there was a dependency missed, right? Because if we were if we're supposed to have testing done by 1130, but we're not getting true full representation of testing until 1125, like successful testing is dependent on test data, good test data. So there was a miss there with that window, that time frame, that dependency. There was definitely a miss there. Yeah, yeah.
+
+Speaker 3  12:12
+That's exactly what I'm saying. Is you should get with Joel, who's the Illinois project management lead. How was this not identified? That's it, and then that's all we can do for right now. So to answer your previous questions, right, Christine, is 7705, right, is going to be unblocked today. The symptoms that we've seen so far when testing EPA and auto and auto test is that a PA cannot be created due to 7705. So let's get over that hurdle first, right? And when a new date, the new fresher data comes, and we run into any other issues, we just track it. Whether it has to do with the integration, or it has to do with the member information, or it has to do with the test claim, and that would will go from there. That's all we can do for right now, right? It's it's it's sort of like a three leg stool, right? You have the the claim functionality to allow us to say yes, the claim is rejected. So create a PA. The integration is working to call the member and the provider back, which that is our job, right? And then the the the the other thing is is the member and provider data is good to where it satisfies all of the business requirement. That's it. That's that's all we can do. We only control one of the stool. We need the other two stool to to to work with us.
+
+Monowar Hossain  13:53
+Right. So that's a good breakdown. So how we're gonna make sure that number two, the integration is fine. I mean, it's working
+
+Speaker 3  14:02
+for Ohio. It
+
+Monowar Hossain  14:04
+was not working for Illinois. It
+
+Speaker 3  14:08
+was not working for Illinois.
+
+Monowar Hossain  14:10
+No, we could not find those member and prescriber information, right? That was wiped out.
+
+Speaker 3  14:18
+Yes. So, so I saw an email back and forth between Bit and Bargo, is it is it an issues with Agaria or is it issues on outside Bit? Oh, it's an API.
+
+Speaker 5  14:29
+Yeah, it's not an API issue. So, I mean, if if you remember back when we were doing Ohio integration, there was an instance where some of the edits that we were posting, Agardia was not able to show because those edit description has those special characters, right? And at that time, Agardia wasn't handling those. They made some code changes and handled those. Now, since we had this new field regarding, we introduced a new field, and now the same special characters are coming in that field from DDL.
+
+Speaker 9  15:05
+Okay. So
+
+Speaker 5  15:06
+essentially, Agardia need to handle in that UI as well. So it's an Agardia change because I know Bhargav said like we need to.
+
+Speaker 3  15:16
+Yeah, yeah, yeah. So so this is regarding Monowar email yesterday, which is a Gaudi incident 199201. Is that correct?
+
+Speaker 10  15:29
+Monowar.
+
+Speaker 1  15:30
+Yeah, that's the member. That is correct. Yes, we created two. One is internal. Another. When
+
+Speaker 3  15:36
+did you report this?
+
+Speaker 5  15:39
+Reported this yesterday.
+
+Speaker 3  15:41
+You reported yesterday. Was that yesterday or day before yesterday?
+
+Monowar Hossain  15:44
+Like I can take that timing. Can you remind me? Was that yesterday or day before?
+
+Speaker 5  15:50
+First reported this. I first reported this at 10:41 a.m. CST.
+
+Speaker 3  15:55
+Okay, so this was reported yesterday. You asking for the status today, so let we get with the guardian, see when they're going to get this fixed, and I'll let you know. Is that all you need to know?
+
+Speaker 1  16:09
+I just sent Bargov an email.
+
+Speaker 3  16:12
+Oh, great! Thank you, Christine. I'll I'll do I'll do a second email just so for for him to feel nervous. Okay, so so Monowar, we have a three like stool, right? We talk about the integration, we talk about the member information, and we talk about test claim, right? You test claim gonna be fixed today. One of the like stool, right? The integration, right? Is we're gonna get an answer when that's gonna be fixed, right? But, but, do we have these issues with every member or only certain member that have certain certain claim history in their in their history that's causing the issues? So, is there a workaround, right? Because what what we say is, hey, right now we return the member, we return all of their claim history, right, and into some of those claims.
+
+Speaker 5  17:11
+It's it's related to the rate code and rate code description.
+
+Speaker 3  17:16
+Okay, right, right, right, right. Is there is there is there one without a special character that we could use? If there's not a workaround, sure, your team will be totally blocked, and then we will give you a date when this will be resolved. This just identified yesterday. It was escalated in your email at 10 p.m. Central last night, right? So it's 9:22 a.m. Central right now. We will figure that out and provide you back an answer.
+
+Monowar Hossain  17:46
+Sure. To my knowledge and team, you can speak up. We tried quite a bit of the member and the prescriber information. None of them are getting populated. It's not just some, right? So we do not have a workaround at this moment. I would suggest,
+
+Speaker 5  18:03
+Manoj, start with members. Don't search prescribers because prescriber and like first you supposed to do member search, then only prescriber search will work. And so I mean I have been. I believe that is how we have been doing.
+
+Speaker 10  18:18
+All of those have those you know percentage or some characters that might be causing the issue on Agardia. Yeah, Monowar, and also the testing team in in the initial case, so they were able to successfully search members, right? So use that members and continue their testing. Meanwhile, Agardia fixes this issue.
+
+Speaker 3  18:39
+So, so there is a workaround, Monowar, right? Because I kind of know that certain member would not have those special characters in. So, is this a workaround? Can we use a workaround for now until Agalia fixes it? And again, this was escalated 10 p.m. last night. It's 9 a.m. right now. We'll get you an answer when this will be fixed.
+
+Monowar Hossain  18:59
+So again, what is the workaround? What video you are suggesting? Search the member information first, and that one do not have the special character that should get populated. That's the workaround.
+
+Speaker 2  19:12
+So I did like 10 to 15 members and prescribers to one. Like I was, yeah, it was not populated the data. Was not populated in the work
+
+Speaker 3  19:23
+work with work with Bit and Shree to find a member that doesn't have those special character in the rate code. They can certainly scrub through the database and give you one or two. Okay.
+
+Speaker 11  19:35
+And I and I also want to confirm this. Like you have to you have to select the member first. This is how multi-tenancy works. If you don't select the member, then the multi-tenant does not recognize as Ohio, and that's why folks are getting the issue. So that is built as intended, and how you know attaching members and prescribers and drugs needs to go moving forward. Oh my!
+
+Monowar Hossain  20:08
+Go ahead, please, guys.
+
+Speaker 5  20:09
+If the member search is not working, you're not gonna get the
+
+Speaker 2  20:14
+prescriber searches. Yeah, BT, can you help us get some members that does not have special character in it, so that.
+
+Speaker 5  20:24
+Yeah, I can. I'm actually trying to find someone my side.
+
+Speaker 2  20:28
+Okay. Yeah. Thank you, Beth.
+
+Speaker 12  20:30
+Hi everyone. Uh, this is interesting on the Ohio on that, and I trying to create EOC, and I think I have the same problem like Lega, and not be able to use any member or any prescriber. I don't know. I don't know this part. Sorry, what was that?
+
+Speaker 5  20:51
+You saw this in Ohio also.
+
+Speaker 12  20:54
+Yes, but when I try to create UOC, I can I can enter the member. This is like accepted, but after on the on the summary on the page 3D is not saving the members, not saving the provider.
+
+Speaker 10  21:11
+Yeah, it can happen on Ohio also because the same code page, so it can happen on Ohio also. If the rate code description, what will the change
+
+Speaker 5  21:22
+like rate code is changed there? We we didn't see a rate code change like we didn't see this issue earlier, right? This rate code we didn't like Ohio didn't have a mock data. This mock data just got added to Illinois. If the
+
+Speaker 10  21:38
+rate code has the special characters, then it will it will be happening in everywhere,
+
+Monowar Hossain  21:45
+right?
+
+Speaker 10  21:45
+Yeah, it is a data issue.
+
+Speaker 12  21:48
+Yes. Ah, for example, over here, I just I already enter my information on the PPA, and it send me over here, and then I enter over here the the information, and it will send me to the same ah window. Let me enter again.
+
+Speaker 5  22:08
+So then, it's possible that this issue might reoccur in the. Yeah, you take
+
+Speaker 3  22:11
+your maybe.
+
+Speaker 5  22:17
+No, this is a simple member. First seven.
+
+Speaker 12  22:21
+Ah, yes, it's like that. It's on that. It's on the file. It's very simple. Just remember that we have a. This is a
+
+Speaker 5  22:28
+prescriber. Go ahead.
+
+Speaker 12  22:30
+Let me enter the prescriber. Okay.
+
+Monowar Hossain  22:41
+Thickness.
+
+Speaker 12  23:45
+He sent me back to the to fill out again information.
+
+Speaker 5  23:55
+Let me check the logs.
+
+Monowar Hossain  24:00
+And Vienna, you did not see this issue previously, right?
+
+Speaker 3  24:03
+No.
+
+Monowar Hossain  24:03
+During the 1113 testing.
+
+Speaker 12  24:08
+No, this is the first time that I well yesterday in the afternoon I saw this issue, but I was thinking that something happened on the on the system. Then I started then on the UAT. I think it was until we were with Illinois.
+
+Speaker 3  24:23
+Okay, you are in what what state are you in right now? Can you go back home, sir? Yes, can you go back home? Yeah, yeah, sorry. Can you go back home for me real quick?
+
+Speaker 12  24:35
+Okay.
+
+Speaker 4  24:36
+Yeah, yeah. Okay, does show you select Ohio with their prescription drug, okay. And you're not using the classic either, okay.
+
+Speaker 3  24:50
+Start again for me if you don't mind.
+
+Speaker 12  24:52
+No, yeah, you should.
+
+Speaker 5  24:53
+But you were able to get through the claim claim test because I do see the claim test coming in.
+
+Speaker 4  25:01
+Yeah, hold on, hold on. Yeah, keep keep going, keep going, keep going, keep going for me, real quick. This is Ohio Dev, right?
+
+Speaker 12  25:12
+This Ohio Dev, yes.
+
+Speaker 3  25:14
+Yeah, because Ohio UAT, the member number should not be like that. mr.
+
+Monowar Hossain  26:00
+President. is
+
+Speaker 5  26:16
+something else. After finalizing, it's going back. It's like not even saving that data. So this is a lot.
+
+Speaker 3  26:26
+Yeah, yeah, yeah. So yep, this is a bot. Okay. So do me a favor, please capture the sequence that you did and everything, and then please create a ticket for Argadia, and please give me that ticket. Okay. Okay. And also give it to Monowar. Thank you. Great job.
+
+Speaker 12  26:45
+Okay. Thank
+
+Monowar Hossain  26:46
+you. Yeah. Post that in the group chat, please. This is
+
+Speaker 5  26:50
+really helpful.
+
+Monowar Hossain  26:54
+Thank you.
+
+Speaker 1  26:59
+Okay. So I just want to make sure, Monowar. I'm sure your team is very aware of this. But Joel sent out an email this morning, just saying, "Hey, I think everybody is aware, but just a reminder that there's a CMS demo for Illinois happening at noon Central today in Sit. Please don't make any changes or do anything that would slow the environment until that is complete. Monowar, I'm assuming you were aware of that.
+
+Monowar Hossain  27:30
+Yes, but anyway, we're not doing anything. We can't do anything right until those issues are fixed.
+
+Speaker 1  27:37
+Yeah. So, but just in case, like you know, a miracle happens, and we're clear to actually, you know, six like test cases are actually working. Just be mindful. So I guess that's what. What did it say? Noon. Um. Yeah. So noon central. Emily, do you know how long that will take?
+
+Speaker 11  28:06
+Um, I don't know. I would think no more than an hour or two. But I'm assuming that's why they didn't put an end date on it because they might not be certain. Hopefully, I'm assuming. Hopefully, they'll send out an email once it's done, right? But I didn't see an end date, so I guess I, I don't really know. Okay. So Chris,
+
+Monowar Hossain  28:29
+if I'm not included for some reason in that email, please notify in the group chat or. I forwarded it
+
+Speaker 11  28:38
+to you, Monowar, so you have it. Oh, okay. Thanks, because I was just gonna do that.
+
+Monowar Hossain  28:43
+Okay, thank you. No, I meant to say once they are done, and if I'm not included, please let us know.
+
+Speaker 1  28:50
+Okay. Yep. Oh, Shihari, go ahead. Sorry, I see your hand.
+
+Speaker 10  28:54
+Yeah. Hey, John. Can you bring up that provider search using the provider taxonomy as Emily and Christine is here?
+
+Speaker 4  29:05
+Yeah, go ahead and talk about
+
+Speaker 10  29:07
+it. Yeah. Hey, Christian and Emily. Oh shoot! I
+
+Speaker 3  29:10
+have to go to my. Sorry, I have to go to my grooming session. Sorry, sorry, sorry. I have another session
+
+Speaker 4  29:14
+to go to.
+
+Speaker 3  29:14
+I'm late. I'm late. Sorry.
+
+Speaker 1  29:15
+Thanks. Yeah.
+
+Monowar Hossain  29:16
+Yeah, I agree. Let's do it here so that we are not trying to do it separately and figuring out, and having all of these issues. And Jessica and Vienna, if you don't need to be here, you can drop, please. Uh, to focus on Ohio. Just create that defect in Vienna as we discuss.
+
+Speaker 12  29:36
+Uh yes, I will. Thank
+
+Speaker 9  29:38
+you. Thank you.
+
+Speaker 12  29:39
+Thank you.
+
+Monowar Hossain  29:40
+I'll be back. I need to join another call just in few minutes.
+
+Speaker 13  29:44
+Okay,
+
+Speaker 1  29:45
+go ahead, Shorhari.
+
+Speaker 10  29:46
+Yeah, we have a question regarding the prescribeable search. So in Ohio, what's happening is we are. He is
+
+Speaker 12  29:54
+the point of contact who reports after leadership. But
+
+Speaker 9  29:57
+yeah, see, Suman, so what what I suggest is let's forget about this email. You can create a meeting invite you need and just send that. That is okay for me. We include anyone who have raised it.
+
+Speaker 8  30:14
+Okay. I I Monowar. Stay in this call, you your turn will come.
+
+Monowar Hossain  30:24
+Sure.
+
+Speaker 7  30:24
+Agenda.
+
+Speaker 8  30:28
+SIT SIT concerned. So, brother, your job is very easy. easy because he already don't want?
+
+
+Transcribed by https://otter.ai
